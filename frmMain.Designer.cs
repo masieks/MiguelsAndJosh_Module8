@@ -717,7 +717,6 @@
             this.cbxPasta.TabIndex = 0;
             this.cbxPasta.TabStop = false;
             this.cbxPasta.Text = "Main Dishes";
-            this.cbxPasta.Enter += new System.EventHandler(this.gbxMainDish_Enter);
             // 
             // cbxSteak
             // 
