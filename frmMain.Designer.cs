@@ -31,6 +31,9 @@
             this.tabBackground = new System.Windows.Forms.Panel();
             this.tabOrderDisplay = new System.Windows.Forms.TabControl();
             this.tabOrderBackground = new System.Windows.Forms.TabPage();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblDisplayItem = new System.Windows.Forms.Label();
             this.btnRemoveItems = new System.Windows.Forms.Button();
             this.lstOrderDisplay = new System.Windows.Forms.ListBox();
             this.btnOrder = new System.Windows.Forms.Button();
@@ -112,22 +115,19 @@
             this.btnSteak = new System.Windows.Forms.Button();
             this.tabSalads = new System.Windows.Forms.TabPage();
             this.gbxSalads = new System.Windows.Forms.GroupBox();
+            this.cbxCeasarSalad = new System.Windows.Forms.ComboBox();
+            this.cbxGreekSalad = new System.Windows.Forms.ComboBox();
+            this.cbxItalianSalad = new System.Windows.Forms.ComboBox();
             this.lblSaladPrice = new System.Windows.Forms.Label();
             this.lblGreekPrice = new System.Windows.Forms.Label();
             this.lblCeaserPrice = new System.Windows.Forms.Label();
-            this.lblCeasar = new System.Windows.Forms.Label();
-            this.lblGreek = new System.Windows.Forms.Label();
+            this.lblCeasarSalad = new System.Windows.Forms.Label();
+            this.lblGreekSalad = new System.Windows.Forms.Label();
             this.lblItalianSalad = new System.Windows.Forms.Label();
-            this.nudItalianSalad = new System.Windows.Forms.NumericUpDown();
-            this.nudGreek = new System.Windows.Forms.NumericUpDown();
-            this.nudCeasar = new System.Windows.Forms.NumericUpDown();
             this.btnItalianSalad = new System.Windows.Forms.Button();
             this.btnGreekSalad = new System.Windows.Forms.Button();
-            this.btnCeasar = new System.Windows.Forms.Button();
+            this.btnCeasarSalad = new System.Windows.Forms.Button();
             this.tabDesserts = new System.Windows.Forms.TabPage();
-            this.lblDisplayItem = new System.Windows.Forms.Label();
-            this.lblQuantity = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -140,9 +140,6 @@
             this.cbxPasta.SuspendLayout();
             this.tabSalads.SuspendLayout();
             this.gbxSalads.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudItalianSalad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGreek)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCeasar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabBackground
@@ -188,6 +185,33 @@
             this.tabOrderBackground.Size = new System.Drawing.Size(447, 929);
             this.tabOrderBackground.TabIndex = 0;
             this.tabOrderBackground.Text = "Order";
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Location = new System.Drawing.Point(315, 17);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(57, 28);
+            this.lblPrice.TabIndex = 5;
+            this.lblPrice.Text = "Price";
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Location = new System.Drawing.Point(155, 17);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(93, 28);
+            this.lblQuantity.TabIndex = 4;
+            this.lblQuantity.Text = "Quantity";
+            // 
+            // lblDisplayItem
+            // 
+            this.lblDisplayItem.AutoSize = true;
+            this.lblDisplayItem.Location = new System.Drawing.Point(16, 17);
+            this.lblDisplayItem.Name = "lblDisplayItem";
+            this.lblDisplayItem.Size = new System.Drawing.Size(54, 28);
+            this.lblDisplayItem.TabIndex = 3;
+            this.lblDisplayItem.Text = "Item";
             // 
             // btnRemoveItems
             // 
@@ -256,7 +280,7 @@
             this.tabMainMenu.Location = new System.Drawing.Point(4, 37);
             this.tabMainMenu.Name = "tabMainMenu";
             this.tabMainMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainMenu.Size = new System.Drawing.Size(1257, 929);
+            this.tabMainMenu.Size = new System.Drawing.Size(1323, 929);
             this.tabMainMenu.TabIndex = 0;
             this.tabMainMenu.Text = "Main Menu";
             // 
@@ -1093,18 +1117,18 @@
             // 
             // gbxSalads
             // 
+            this.gbxSalads.Controls.Add(this.cbxCeasarSalad);
+            this.gbxSalads.Controls.Add(this.cbxGreekSalad);
+            this.gbxSalads.Controls.Add(this.cbxItalianSalad);
             this.gbxSalads.Controls.Add(this.lblSaladPrice);
             this.gbxSalads.Controls.Add(this.lblGreekPrice);
             this.gbxSalads.Controls.Add(this.lblCeaserPrice);
-            this.gbxSalads.Controls.Add(this.lblCeasar);
-            this.gbxSalads.Controls.Add(this.lblGreek);
+            this.gbxSalads.Controls.Add(this.lblCeasarSalad);
+            this.gbxSalads.Controls.Add(this.lblGreekSalad);
             this.gbxSalads.Controls.Add(this.lblItalianSalad);
-            this.gbxSalads.Controls.Add(this.nudItalianSalad);
-            this.gbxSalads.Controls.Add(this.nudGreek);
-            this.gbxSalads.Controls.Add(this.nudCeasar);
             this.gbxSalads.Controls.Add(this.btnItalianSalad);
             this.gbxSalads.Controls.Add(this.btnGreekSalad);
-            this.gbxSalads.Controls.Add(this.btnCeasar);
+            this.gbxSalads.Controls.Add(this.btnCeasarSalad);
             this.gbxSalads.Location = new System.Drawing.Point(15, 20);
             this.gbxSalads.Name = "gbxSalads";
             this.gbxSalads.Size = new System.Drawing.Size(1211, 877);
@@ -1112,11 +1136,35 @@
             this.gbxSalads.TabStop = false;
             this.gbxSalads.Text = "Salads";
             // 
+            // cbxCeasarSalad
+            // 
+            this.cbxCeasarSalad.FormattingEnabled = true;
+            this.cbxCeasarSalad.Location = new System.Drawing.Point(161, 261);
+            this.cbxCeasarSalad.Name = "cbxCeasarSalad";
+            this.cbxCeasarSalad.Size = new System.Drawing.Size(56, 36);
+            this.cbxCeasarSalad.TabIndex = 55;
+            // 
+            // cbxGreekSalad
+            // 
+            this.cbxGreekSalad.FormattingEnabled = true;
+            this.cbxGreekSalad.Location = new System.Drawing.Point(592, 276);
+            this.cbxGreekSalad.Name = "cbxGreekSalad";
+            this.cbxGreekSalad.Size = new System.Drawing.Size(56, 36);
+            this.cbxGreekSalad.TabIndex = 54;
+            // 
+            // cbxItalianSalad
+            // 
+            this.cbxItalianSalad.FormattingEnabled = true;
+            this.cbxItalianSalad.Location = new System.Drawing.Point(1006, 292);
+            this.cbxItalianSalad.Name = "cbxItalianSalad";
+            this.cbxItalianSalad.Size = new System.Drawing.Size(56, 36);
+            this.cbxItalianSalad.TabIndex = 53;
+            // 
             // lblSaladPrice
             // 
             this.lblSaladPrice.AutoSize = true;
             this.lblSaladPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblSaladPrice.Location = new System.Drawing.Point(52, 842);
+            this.lblSaladPrice.Location = new System.Drawing.Point(888, 300);
             this.lblSaladPrice.Name = "lblSaladPrice";
             this.lblSaladPrice.Size = new System.Drawing.Size(65, 28);
             this.lblSaladPrice.TabIndex = 43;
@@ -1126,7 +1174,7 @@
             // 
             this.lblGreekPrice.AutoSize = true;
             this.lblGreekPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblGreekPrice.Location = new System.Drawing.Point(69, 529);
+            this.lblGreekPrice.Location = new System.Drawing.Point(491, 273);
             this.lblGreekPrice.Name = "lblGreekPrice";
             this.lblGreekPrice.Size = new System.Drawing.Size(65, 28);
             this.lblGreekPrice.TabIndex = 42;
@@ -1142,86 +1190,68 @@
             this.lblCeaserPrice.TabIndex = 41;
             this.lblCeaserPrice.Text = "$9.99";
             // 
-            // lblCeasar
+            // lblCeasarSalad
             // 
-            this.lblCeasar.AutoSize = true;
-            this.lblCeasar.ForeColor = System.Drawing.Color.Black;
-            this.lblCeasar.Location = new System.Drawing.Point(69, 44);
-            this.lblCeasar.Name = "lblCeasar";
-            this.lblCeasar.Size = new System.Drawing.Size(132, 28);
-            this.lblCeasar.TabIndex = 23;
-            this.lblCeasar.Text = "Ceasar Salad";
+            this.lblCeasarSalad.AutoSize = true;
+            this.lblCeasarSalad.ForeColor = System.Drawing.Color.Black;
+            this.lblCeasarSalad.Location = new System.Drawing.Point(69, 44);
+            this.lblCeasarSalad.Name = "lblCeasarSalad";
+            this.lblCeasarSalad.Size = new System.Drawing.Size(132, 28);
+            this.lblCeasarSalad.TabIndex = 23;
+            this.lblCeasarSalad.Text = "Ceasar Salad";
             // 
-            // lblGreek
+            // lblGreekSalad
             // 
-            this.lblGreek.AutoSize = true;
-            this.lblGreek.ForeColor = System.Drawing.Color.Black;
-            this.lblGreek.Location = new System.Drawing.Point(69, 335);
-            this.lblGreek.Name = "lblGreek";
-            this.lblGreek.Size = new System.Drawing.Size(123, 28);
-            this.lblGreek.TabIndex = 22;
-            this.lblGreek.Text = "Greek Salad";
+            this.lblGreekSalad.AutoSize = true;
+            this.lblGreekSalad.ForeColor = System.Drawing.Color.Black;
+            this.lblGreekSalad.Location = new System.Drawing.Point(491, 79);
+            this.lblGreekSalad.Name = "lblGreekSalad";
+            this.lblGreekSalad.Size = new System.Drawing.Size(123, 28);
+            this.lblGreekSalad.TabIndex = 22;
+            this.lblGreekSalad.Text = "Greek Salad";
             // 
             // lblItalianSalad
             // 
             this.lblItalianSalad.AutoSize = true;
             this.lblItalianSalad.ForeColor = System.Drawing.Color.Black;
-            this.lblItalianSalad.Location = new System.Drawing.Point(77, 596);
+            this.lblItalianSalad.Location = new System.Drawing.Point(913, 54);
             this.lblItalianSalad.Name = "lblItalianSalad";
             this.lblItalianSalad.Size = new System.Drawing.Size(125, 28);
             this.lblItalianSalad.TabIndex = 21;
             this.lblItalianSalad.Text = "Italian Salad";
             // 
-            // nudItalianSalad
-            // 
-            this.nudItalianSalad.Location = new System.Drawing.Point(134, 842);
-            this.nudItalianSalad.Name = "nudItalianSalad";
-            this.nudItalianSalad.Size = new System.Drawing.Size(60, 35);
-            this.nudItalianSalad.TabIndex = 20;
-            // 
-            // nudGreek
-            // 
-            this.nudGreek.Location = new System.Drawing.Point(142, 527);
-            this.nudGreek.Name = "nudGreek";
-            this.nudGreek.Size = new System.Drawing.Size(60, 35);
-            this.nudGreek.TabIndex = 19;
-            // 
-            // nudCeasar
-            // 
-            this.nudCeasar.Location = new System.Drawing.Point(151, 259);
-            this.nudCeasar.Name = "nudCeasar";
-            this.nudCeasar.Size = new System.Drawing.Size(60, 35);
-            this.nudCeasar.TabIndex = 18;
-            // 
             // btnItalianSalad
             // 
             this.btnItalianSalad.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.download__1_;
             this.btnItalianSalad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnItalianSalad.Location = new System.Drawing.Point(46, 627);
+            this.btnItalianSalad.Location = new System.Drawing.Point(882, 85);
             this.btnItalianSalad.Name = "btnItalianSalad";
             this.btnItalianSalad.Size = new System.Drawing.Size(171, 185);
             this.btnItalianSalad.TabIndex = 15;
             this.btnItalianSalad.UseVisualStyleBackColor = true;
+            this.btnItalianSalad.Click += new System.EventHandler(this.btnItalianSalad_Click);
             // 
             // btnGreekSalad
             // 
             this.btnGreekSalad.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Greek_Salad;
             this.btnGreekSalad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGreekSalad.Location = new System.Drawing.Point(46, 359);
+            this.btnGreekSalad.Location = new System.Drawing.Point(468, 103);
             this.btnGreekSalad.Name = "btnGreekSalad";
             this.btnGreekSalad.Size = new System.Drawing.Size(165, 167);
             this.btnGreekSalad.TabIndex = 14;
             this.btnGreekSalad.UseVisualStyleBackColor = true;
+            this.btnGreekSalad.Click += new System.EventHandler(this.btnGreekSalad_Click);
             // 
-            // btnCeasar
+            // btnCeasarSalad
             // 
-            this.btnCeasar.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Cesar_Salad;
-            this.btnCeasar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCeasar.Location = new System.Drawing.Point(46, 75);
-            this.btnCeasar.Name = "btnCeasar";
-            this.btnCeasar.Size = new System.Drawing.Size(171, 171);
-            this.btnCeasar.TabIndex = 13;
-            this.btnCeasar.UseVisualStyleBackColor = true;
+            this.btnCeasarSalad.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Cesar_Salad;
+            this.btnCeasarSalad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCeasarSalad.Location = new System.Drawing.Point(46, 75);
+            this.btnCeasarSalad.Name = "btnCeasarSalad";
+            this.btnCeasarSalad.Size = new System.Drawing.Size(171, 171);
+            this.btnCeasarSalad.TabIndex = 13;
+            this.btnCeasarSalad.UseVisualStyleBackColor = true;
+            this.btnCeasarSalad.Click += new System.EventHandler(this.btnCeasar_Click);
             // 
             // tabDesserts
             // 
@@ -1231,33 +1261,6 @@
             this.tabDesserts.Size = new System.Drawing.Size(1323, 929);
             this.tabDesserts.TabIndex = 4;
             this.tabDesserts.Text = "Desserts";
-            // 
-            // lblDisplayItem
-            // 
-            this.lblDisplayItem.AutoSize = true;
-            this.lblDisplayItem.Location = new System.Drawing.Point(16, 17);
-            this.lblDisplayItem.Name = "lblDisplayItem";
-            this.lblDisplayItem.Size = new System.Drawing.Size(54, 28);
-            this.lblDisplayItem.TabIndex = 3;
-            this.lblDisplayItem.Text = "Item";
-            // 
-            // lblQuantity
-            // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(155, 17);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(93, 28);
-            this.lblQuantity.TabIndex = 4;
-            this.lblQuantity.Text = "Quantity";
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(315, 17);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(57, 28);
-            this.lblPrice.TabIndex = 5;
-            this.lblPrice.Text = "Price";
             // 
             // frmMain
             // 
@@ -1291,9 +1294,6 @@
             this.tabSalads.ResumeLayout(false);
             this.gbxSalads.ResumeLayout(false);
             this.gbxSalads.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudItalianSalad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGreek)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCeasar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1351,13 +1351,10 @@
         public System.Windows.Forms.Button btnPasta;
         private System.Windows.Forms.Button btnSteak;
         private System.Windows.Forms.GroupBox gbxSalads;
-        private System.Windows.Forms.Button btnCeasar;
-        private System.Windows.Forms.Label lblCeasar;
-        private System.Windows.Forms.Label lblGreek;
+        private System.Windows.Forms.Button btnCeasarSalad;
+        private System.Windows.Forms.Label lblCeasarSalad;
+        private System.Windows.Forms.Label lblGreekSalad;
         private System.Windows.Forms.Label lblItalianSalad;
-        private System.Windows.Forms.NumericUpDown nudItalianSalad;
-        private System.Windows.Forms.NumericUpDown nudGreek;
-        private System.Windows.Forms.NumericUpDown nudCeasar;
         private System.Windows.Forms.Button btnItalianSalad;
         private System.Windows.Forms.Button btnGreekSalad;
         private System.Windows.Forms.Button btnRemoveItems;
@@ -1400,6 +1397,9 @@
         private System.Windows.Forms.Label lblDisplayItem;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.ComboBox cbxCeasarSalad;
+        private System.Windows.Forms.ComboBox cbxGreekSalad;
+        private System.Windows.Forms.ComboBox cbxItalianSalad;
     }
 }
 

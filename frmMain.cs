@@ -85,30 +85,62 @@ namespace MiguelsAndJosh_Module8
         //Alcohols
         private void btnRocca_Click(object sender, EventArgs e)
         {
-            string name = lblRossini.Text;
-            int quantity = int.Parse(cbxRossini.Text);
-            double price = double.Parse(lblRossiniPrice.Text);
+            double roccaPrice = 18.99;
+            if (cbxRocca.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblRocca.Text + " \t\t" + cbxRocca.Text + " \t\t " + roccaPrice.ToString("c"));
+                itemsNames[count] = lblRocca.Text;
+                itemsQuantity[count] = int.Parse(cbxRocca.Text);
+                itemsPrice[count] = roccaPrice;
+                count++;
+            }
         }
 
         private void btnSpritz_Click(object sender, EventArgs e)
         {
-            string name = lblSpritz.Text;
-            int quantity = int.Parse(cbxSpritz.Text);
-            double price = double.Parse(lblSpritzPrice.Text);
+            double spritzPrice = 9.99;
+            if (cbxRocca.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblSpritz.Text + " \t\t" + cbxSpritz.Text + " \t\t " + spritzPrice.ToString("c"));
+                itemsNames[count] = lblSpritz.Text;
+                itemsQuantity[count] = int.Parse(cbxSpritz.Text);
+                itemsPrice[count] = spritzPrice;
+                count++;
+            }
         }
 
         private void btnRossini_Click(object sender, EventArgs e)
         {
-            string name = lblRossini.Text;
-            int quantity = int.Parse(cbxRossini.Text);
-            double price = double.Parse(lblRossiniPrice.Text);
+            double rossiniPrice = 11.99;
+            if (cbxRocca.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblRossini.Text + " \t\t" + cbxRossini.Text + " \t\t " + rossiniPrice.ToString("c"));
+                itemsNames[count] = lblRossini.Text;
+                itemsQuantity[count] = int.Parse(cbxRossini.Text);
+                itemsPrice[count] = rossiniPrice;
+                count++;
+            }
         }
 
         private void btnLimoncello_Click(object sender, EventArgs e)
         {
-            string name = lblLimoncello.Text;
-            int quantity = int.Parse(cbxLimoncello.Text);
-            double price = double.Parse(lblLimoncelloPrice.Text);
+            double limoncelloPrice = 7.99;
+            if (cbxRocca.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblLimoncello.Text + " \t\t" + cbxLimoncello.Text + " \t\t " + limoncelloPrice);
+                itemsNames[count] = lblLimoncello.Text;
+                itemsQuantity[count] = int.Parse(cbxLimoncello.Text);
+                itemsPrice[count] = limoncelloPrice;
+                count++;
+            }
         }
 
         //Non Alcholic Drinks
@@ -131,23 +163,22 @@ namespace MiguelsAndJosh_Module8
         private void btnSanPellegrino_Click(object sender, EventArgs e)
 
         {
-            double sanPellegrinoPrice = 
+            double sanPellegrinoPrice = 1.75;
             if (cbxSanPellegrino.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
-                lstOrderDisplay.Items.Add(lblSanPellegrino.Text + " \t\t" + cbxSanPellegrino.Text + " \t\t " + lblCokePrice.Text);
+                lstOrderDisplay.Items.Add(lblSanPellegrino.Text + " \t\t" + cbxSanPellegrino.Text + " \t\t " + sanPellegrinoPrice);
                 itemsNames[count] = lblSanPellegrino.Text;
                 itemsQuantity[count] = int.Parse(cbxSanPellegrino.Text);
-                itemsPrice[count] = double.Parse(lblSanPellegrinoPrice.Text);
+                itemsPrice[count] = sanPellegrinoPrice;
                 count++;
             }
         }
 
         private void btnLemonade_Click(object sender, EventArgs e)
         {
-
-
+            double lemonadePrice = 1.50;
             if (cbxLemonade.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
@@ -155,7 +186,7 @@ namespace MiguelsAndJosh_Module8
                 lstOrderDisplay.Items.Add(lblLemonade.Text + " \t\t" + cbxLemonade.Text + " \t\t " + lblLemonade.Text);
                 itemsNames[count] = lblLemonade.Text;
                 itemsQuantity[count] = int.Parse(cbxLemonade.Text);
-                itemsPrice[count] = double.Parse(lblLemonadePrice.Text);
+                itemsPrice[count] = lemonadePrice;
                 count++;
             }
         }
@@ -163,60 +194,175 @@ namespace MiguelsAndJosh_Module8
         //Main Dishes
         private void btnSteak_Click(object sender, EventArgs e)
         {
-            string name = lblSteak.Text;
-            int quantity = int.Parse(cbxSteak.Text);
-            double price = double.Parse(lblSteak.Text);
+            double steakPrice = 19.99;
+            if (cbxSteak.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblSteak.Text + " \t\t" + cbxSteak.Text + " \t\t " + steakPrice);
+                itemsNames[count] = lblSteak.Text;
+                itemsQuantity[count] = int.Parse(cbxSteak.Text);
+                itemsPrice[count] = steakPrice;
+                count++;
+            }
         }
 
         private void btnChickenParm_Click(object sender, EventArgs e)
         {
-            string name = lblChickenParm.Text;
-            int quantity = int.Parse(cbxChickenParm.Text);
-            double price = double.Parse(lblChickenParm.Text);
+            double chickenPramPrice = 15.99;
+            if (cbxSteak.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblChickenParm.Text + " \t\t" + cbxChickenParm.Text + " \t\t " + chickenPramPrice);
+                itemsNames[count] = lblChickenParm.Text;
+                itemsQuantity[count] = int.Parse(cbxChickenParm.Text);
+                itemsPrice[count] = chickenPramPrice;
+                count++;
+            }
         }
 
         private void btnGnocchi_Click(object sender, EventArgs e)
         {
-            string name = lblGnocchi.Text;
-            int quantity = int.Parse(cbxGnocchi.Text);
-            double price = double.Parse(lblGnocchi.Text);
+            double gnocchiPrice = 11.99;
+            if (cbxGnocchi.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblGnocchi.Text + " \t\t" + cbxGnocchi.Text + " \t\t " + gnocchiPrice);
+                itemsNames[count] = lblGnocchi.Text;
+                itemsQuantity[count] = int.Parse(cbxGnocchi.Text);
+                itemsPrice[count] = gnocchiPrice;
+                count++;
+            }
         }
 
         private void btnChickenAlfredo_Click(object sender, EventArgs e)
         {
-            string name = lblChickenAlfredo.Text;
-            int quantity = int.Parse(cbxChickenAlfredo.Text);
-            double price = double.Parse(lblChickenAlfredoPrice.Text);
+            double chickenAlfredoPrice = 13.99;
+            if (cbxChickenAlfredo.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblChickenAlfredo.Text + " \t\t" + cbxChickenAlfredo.Text + " \t\t " + chickenAlfredoPrice);
+                itemsNames[count] = lblChickenAlfredo.Text;
+                itemsQuantity[count] = int.Parse(cbxChickenAlfredo.Text);
+                itemsPrice[count] = chickenAlfredoPrice;
+                count++;
+            }
         }
 
         //Pastas
         private void btnPasta_Click(object sender, EventArgs e)
         {
-            string name = lblPasta.Text;
-            int quantity = int.Parse(cbxPasta.Text);
-            double price = double.Parse(lblPastaPrice.Text);
+            double pastaPrice = 13.99;
+            if (cbxPasta.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblPasta.Text + " \t\t" + cbxPasta.Text + " \t\t " + pastaPrice);
+                itemsNames[count] = lblPasta.Text;
+                itemsQuantity[count] = int.Parse(cbxPasta.Text);
+                itemsPrice[count] = pastaPrice;
+                count++;
+            }
         }
 
         private void btnLasanga_Click(object sender, EventArgs e)
         {
-            string name = lblLasanga.Text;
-            int quantity = int.Parse(cbxLasanga.Text);
-            double price = double.Parse(lblLasangaPrice.Text);
+            double lasangaPrice = 15.99;
+            if (cbxLasanga.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblLasanga.Text + " \t\t" + cbxLasanga.Text + " \t\t " + lasangaPrice);
+                itemsNames[count] = lblLasanga.Text;
+                itemsQuantity[count] = int.Parse(cbxLasanga.Text);
+                itemsPrice[count] = lasangaPrice;
+                count++;
+            }
         }
 
         private void btnMinestrone_Click(object sender, EventArgs e)
         {
-            string name = lblSteak.Text;
-            int quantity = int.Parse(cbxSteak.Text);
-            double price = double.Parse(lblSteak.Text);
+            double minestronePrice = 14.99;
+            if (cbxMinestrone.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblMinestrone.Text + " \t\t" + cbxMinestrone.Text + " \t\t " + minestronePrice);
+                itemsNames[count] = lblMinestrone.Text;
+                itemsQuantity[count] = int.Parse(cbxMinestrone.Text);
+                itemsPrice[count] = minestronePrice;
+                count++;
+            }
         }
 
         private void btnSpaghetti_Click(object sender, EventArgs e)
         {
-            string name = lblSpaghetti.Text;
-            int quantity = int.Parse(cbxSpaghetti.Text);
-            double price = double.Parse(lblSpaghettiPrice.Text);
+            double spaghettiPrice = 14.99;
+            if (cbxSpaghetti.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblSpaghetti.Text + " \t\t" + cbxSpaghetti.Text + " \t\t " + spaghettiPrice);
+                itemsNames[count] = lblSpaghetti.Text;
+                itemsQuantity[count] = int.Parse(cbxSpaghetti.Text);
+                itemsPrice[count] = spaghettiPrice;
+                count++;
+            }
+
         }
+
+        private void btnGreekSalad_Click(object sender, EventArgs e)
+        {
+            double greekSaladPrice = 9.99;
+            if (cbxCeasarSalad.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblGreekSalad.Text + " \t\t" + cbxGreekSalad.Text + " \t\t " + greekSaladPrice);
+                itemsNames[count] = lblGreekSalad.Text;
+                itemsQuantity[count] = int.Parse(cbxGreekSalad.Text);
+                itemsPrice[count] = greekSaladPrice;
+                count++;
+
+            }
+        }
+
+        private void btnCeasar_Click(object sender, EventArgs e)
+        {
+            double ceasarSaladPrice = 9.99;
+            if (cbxCeasarSalad.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblCeasarSalad.Text + " \t\t" + cbxCeasarSalad.Text + " \t\t " + ceasarSaladPrice);
+                itemsNames[count] = lblCeasarSalad.Text;
+                itemsQuantity[count] = int.Parse(cbxCeasarSalad.Text);
+                itemsPrice[count] = ceasarSaladPrice;
+                count++;
+
+            }
+        }
+
+        private void btnItalianSalad_Click(object sender, EventArgs e)
+        {
+            double italianSaladPrice = 9.99;
+            if (cbxItalianSalad.Text == " ")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblItalianSalad.Text + " \t\t" + cbxItalianSalad.Text + " \t\t " + italianSaladPrice);
+                itemsNames[count] = lblItalianSalad.Text;
+                itemsQuantity[count] = int.Parse(cbxItalianSalad.Text);
+                itemsPrice[count] = italianSaladPrice;
+                count++;
+
+            }
+        }
+
+ 
 
     }
 }
