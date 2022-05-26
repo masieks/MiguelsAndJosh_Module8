@@ -64,7 +64,6 @@ namespace MiguelsAndJosh_Module8
                 }
                 else
                 {
-
                     outFile = File.CreateText(filePath); // OPENS FILE
                     for (int i = 0; i < lstOrderDisplay.Items.Count; i++) // FILLS ARRAY WITH TOTAL LIST ITEMS               
                     {
@@ -74,8 +73,6 @@ namespace MiguelsAndJosh_Module8
                     }
                     outFile.Close();// CLOSES FILE
                 }
-
-
                 frmShowOrder.ShowDialog();
             }
             
@@ -439,6 +436,11 @@ namespace MiguelsAndJosh_Module8
         private void tabMainMenu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lstOrderDisplay.Items.Clear();
         }
     }
 }
