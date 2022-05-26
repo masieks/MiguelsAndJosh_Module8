@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MiguelsAndJosh_Module8
 {
     public partial class frmMain : Form
     {
+        StreamWriter outFile;
         const int SIZE = 10000;
-
+        int count = 0;
+        string filePath = "Order.txt";
         //Arrays variables
         private string[] itemsNames = new string[SIZE];
         private int[] itemsQuantity = new int[SIZE];
-        private int[] itemNumber = new int[SIZE];
         private double[] itemsPrice = new double[SIZE];
         //Order Counter Variable
 
@@ -49,7 +51,21 @@ namespace MiguelsAndJosh_Module8
                 {
                     frmCheck frmShowOrder = new frmCheck();
                     for (int i = 0; i < lstOrderDisplay.Items.Count; i++)
-                    frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
+                        frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
+                    if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS
+                        MessageBox.Show("No items, Please Add Items!!");
+                    else
+                    {
+                        outFile = File.CreateText(filePath); // OPENS FILE
+                        for (int i = 0; i < lstOrderDisplay.Items.Count; i++) // FILLS ARRAY WITH TOTAL LIST ITEMS               
+                        {
+                            outFile.WriteLine(itemsPrice[i]); // PRICE ONLY
+                            outFile.WriteLine(itemsQuantity[i]);
+                        }
+                        outFile.Close();// CLOSES FILE
+                    }
+                    
+
                     frmShowOrder.ShowDialog();
                 }
             }
@@ -64,7 +80,7 @@ namespace MiguelsAndJosh_Module8
                 lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItems);
             }
         }
-        
+
 
         //Alcohols
         private void btnRocca_Click(object sender, EventArgs e)
@@ -98,25 +114,50 @@ namespace MiguelsAndJosh_Module8
         //Non Alcholic Drinks
         private void btnCoke_Click(object sender, EventArgs e)
         {
-
-            string name = lblCoke.Text;
-            int quantity = int.Parse(cbxCoke.Text);
-            double price = double.Parse(lblCokePrice.Text);
+            double cokePrice = 2.99;
+            if (cbxCoke.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblCoke.Text + "     \t" + cbxCoke.Text + "     \t " + lblCokePrice.Text);
+                itemsNames[count] = lblCoke.Text;
+                itemsQuantity[count] =int.Parse( cbxCoke.Text);
+                itemsPrice[count] = cokePrice;
+                count++;
+            }
         }
 
 
         private void btnSanPellegrino_Click(object sender, EventArgs e)
+
         {
-            string name = lblSanPellegrino.Text;
-            int quantity = int.Parse(cbxSanPellegrino.Text);
-            double price = double.Parse(lblSanPellegrinoPrice.Text);
+            double sanPellegrinoPrice = 
+            if (cbxSanPellegrino.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblSanPellegrino.Text + " \t\t" + cbxSanPellegrino.Text + " \t\t " + lblCokePrice.Text);
+                itemsNames[count] = lblSanPellegrino.Text;
+                itemsQuantity[count] = int.Parse(cbxSanPellegrino.Text);
+                itemsPrice[count] = double.Parse(lblSanPellegrinoPrice.Text);
+                count++;
+            }
         }
 
         private void btnLemonade_Click(object sender, EventArgs e)
         {
-            string name = lblLemonade.Text;
-            int quantity = int.Parse(cbxLemonade.Text);
-            double price = double.Parse(lblLemonadePrice.Text);
+
+
+            if (cbxLemonade.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblLemonade.Text + " \t\t" + cbxLemonade.Text + " \t\t " + lblLemonade.Text);
+                itemsNames[count] = lblLemonade.Text;
+                itemsQuantity[count] = int.Parse(cbxLemonade.Text);
+                itemsPrice[count] = double.Parse(lblLemonadePrice.Text);
+                count++;
+            }
         }
 
         //Main Dishes
@@ -177,4 +218,5 @@ namespace MiguelsAndJosh_Module8
             double price = double.Parse(lblSpaghettiPrice.Text);
         }
 
+    }
 }

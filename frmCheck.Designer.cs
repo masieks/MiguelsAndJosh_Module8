@@ -58,7 +58,7 @@
             // 
             // btnFinalOrder
             // 
-            this.btnFinalOrder.Location = new System.Drawing.Point(705, 551);
+            this.btnFinalOrder.Location = new System.Drawing.Point(709, 551);
             this.btnFinalOrder.Name = "btnFinalOrder";
             this.btnFinalOrder.Size = new System.Drawing.Size(171, 49);
             this.btnFinalOrder.TabIndex = 2;
@@ -188,7 +188,7 @@
             // 
             this.lstCheck.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstCheck.FormattingEnabled = true;
-            this.lstCheck.Location = new System.Drawing.Point(931, 77);
+            this.lstCheck.Location = new System.Drawing.Point(883, 79);
             this.lstCheck.Name = "lstCheck";
             this.lstCheck.Size = new System.Drawing.Size(220, 403);
             this.lstCheck.TabIndex = 5;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1201, 646);
+            this.ClientSize = new System.Drawing.Size(1583, 799);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstCheck);
             this.Controls.Add(this.gbxPayment);

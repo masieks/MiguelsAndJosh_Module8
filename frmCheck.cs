@@ -7,11 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MiguelsAndJosh_Module8
 {
     public partial class frmCheck : Form
     {
+        const int SIZE = 10000;
+        int count = 0;
+        string filePath = "Order.txt";
+        private string[] itemsNames = new string[SIZE];
+        private int[] itemsQuantity = new int[SIZE];
+        private double[] itemsPrice = new double[SIZE];
         public frmCheck()
         {
             InitializeComponent();
@@ -32,28 +39,42 @@ namespace MiguelsAndJosh_Module8
 
         public void btnFinalOrder_Click(object sender, EventArgs e)
         {
-            const int CARDNUMBER = 25;
-            const int PIN = 4;
-            string paymentDecline = " Your payment has been decided.";
-            char[] creditCardNumber = new char[CARDNUMBER];
 
 
-            //CreditCard
-            if (radCredit.Checked)
+            /*
+                        //CreditCard
+                        if (radCredit.Checked)
+                        {
+                            if (txtCreditNum.Text == " ")
+                                MessageBox.Show("Please enter your credit card number.");
+
+                            int info = int.Parse(txtCreditNum.Text);
+
+                            if (info < CARDNUMBER || info > CARDNUMBER)
+                                MessageBox.Show("You entered an invalid credit card number. Hint a Card number has 25 digits.");
+                            else if (!int.TryParse(txtCreditNum.Text, out info))
+                                MessageBox.Show("Please enter digits");
+
+                            else
+            */
+           
+            StreamReader inFile;
+            lstCheck.Items.Clear();
+
+            inFile = new StreamReader(filePath); // READS
+
+            while (!inFile.EndOfStream)
             {
-                if (txtCreditNum.Text == " ")
-                    MessageBox.Show("Please enter your credit card number.");
+                itemsPrice[count] = double.Parse(inFile.ReadLine()); // Converts Price
+                itemsQuantity[count] = int.Parse(inFile.ReadLine());
+                // Displays for Print
+                lstCheck.Items.Add(itemsPrice[count] * itemsQuantity[count]);
 
-                int info = int.Parse(txtCreditNum.Text);
 
-                if (info < CARDNUMBER || info > CARDNUMBER)
-                    MessageBox.Show("You entered an invalid credit card number. Hint a Card number has 25 digits.");
-                else if (!int.TryParse(txtCreditNum.Text, out info))
-                    MessageBox.Show("Please enter digits");
-
-                else
-                    MessageBox.Show(payment);
-                lstCheck.Items.Clear();
+                count++;
+            }
+            inFile.Close();
+        
                 lstCheck.Visible = true;
                 DateTime dt = DateTime.Now;
                 DateTime ts = dt.Add(DateTime.Now.TimeOfDay);
@@ -64,8 +85,9 @@ namespace MiguelsAndJosh_Module8
 
 
 
+
            
-        }
+        
 
         private void btnDebit_CheckedChanged(object sender, EventArgs e)
         {
