@@ -222,26 +222,7 @@
             "09",
             "10",
             "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
+            "12"});
             this.cbxCreditExpMonth.Location = new System.Drawing.Point(349, 83);
             this.cbxCreditExpMonth.Name = "cbxCreditExpMonth";
             this.cbxCreditExpMonth.Size = new System.Drawing.Size(61, 33);
@@ -409,26 +390,7 @@
             "09",
             "10",
             "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
+            "12"});
             this.cbxDeditExpMonth.Location = new System.Drawing.Point(349, 146);
             this.cbxDeditExpMonth.Name = "cbxDeditExpMonth";
             this.cbxDeditExpMonth.Size = new System.Drawing.Size(61, 33);
@@ -498,6 +460,7 @@
             this.lstCheck.Name = "lstCheck";
             this.lstCheck.Size = new System.Drawing.Size(304, 575);
             this.lstCheck.TabIndex = 5;
+            this.lstCheck.Visible = false;
             // 
             // lblOrderReview
             // 
@@ -520,6 +483,7 @@
             this.lblFinalOrder.Size = new System.Drawing.Size(120, 26);
             this.lblFinalOrder.TabIndex = 7;
             this.lblFinalOrder.Text = "Final Order";
+            this.lblFinalOrder.Visible = false;
             // 
             // frmCheck
             // 

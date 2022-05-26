@@ -39,6 +39,7 @@ namespace MiguelsAndJosh_Module8
         //Order Button Clicked -> Add lstOrderDisplay to lstOrders from frmOrder.
         private void btnOrder_Click(object sender, EventArgs e)
         {
+            string name = txtFirstName.Text + " " + txtLastName.Text;
             if (txtFirstName.Text == "")
                 MessageBox.Show("Please enter your first name.");
             else if (txtLastName.Text == "")
@@ -50,12 +51,14 @@ namespace MiguelsAndJosh_Module8
                 else
                 {
                     frmCheck frmShowOrder = new frmCheck();
+                    frmShowOrder.lstCheck.Items.Add(name);
                     for (int i = 0; i < lstOrderDisplay.Items.Count; i++)
                         frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
                     if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS
                         MessageBox.Show("No items, Please Add Items!!");
                     else
                     {
+                        
                         outFile = File.CreateText(filePath); // OPENS FILE
                         for (int i = 0; i < lstOrderDisplay.Items.Count; i++) // FILLS ARRAY WITH TOTAL LIST ITEMS               
                         {

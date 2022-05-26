@@ -98,9 +98,17 @@ namespace MiguelsAndJosh_Module8
 
                     if (!declinedPayment)
                     {
-                        MessageBox.Show("Payment was accepted.");
-                        getFinalOrder();
-                        stopDoubleOrder = true;
+                        if (lstCheck.Visible == true)
+                        {
+                            MessageBox.Show("You already placed your order.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Payment was accepted.");
+
+                            getFinalOrder();
+
+                        }
                     }
 
 
@@ -125,7 +133,7 @@ namespace MiguelsAndJosh_Module8
                         //See if the Numbers inputed by user is actually a full credit card number
                         else if (cardNumber.Length > DEBITLIMIT || cardNumber.Length < DEBITLIMIT || pinNumbers.Length > PIN || pinNumbers.Length < PIN)
                         {
-                            MessageBox.Show("Please enter credit card number with 16 digits and full pin.");
+                            MessageBox.Show("Please enter credit card number with 16 digits and 4 digit pin.");
                             declinedPayment = true;
                         }
                         //Make sure the string is both a full cardnumber and a string of numbers.
@@ -150,19 +158,35 @@ namespace MiguelsAndJosh_Module8
 
                     if (!declinedPayment)
                     {
-                        MessageBox.Show("Payment was accepted.");
-                        getFinalOrder();
-                        stopDoubleOrder = true;
+                        if (lstCheck.Visible == true)
+                        {
+                            MessageBox.Show("You already placed your order.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Payment was accepted.");
+
+                            getFinalOrder();
+                        }
                     }
                 }
                 else if (chbxCash.Checked)
                 {
-                    MessageBox.Show("A waiter will be with you shortly.");
-                    getFinalOrder();
+                    if (lstCheck.Visible == true)
+                    {
+                        MessageBox.Show("You already placed your order.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Payment was accepted.");
+
+                        getFinalOrder();
+                    }
                 }
 
             }
             else MessageBox.Show("Payment was already accepted");
+            
 
         }
 
@@ -200,7 +224,15 @@ namespace MiguelsAndJosh_Module8
         public void getFinalOrder()
         {
             StreamReader inFile;
-            lstCheck.Items.Clear();
+            double itemPrice;
+            
+            lstCheck.Visible = true;
+          
+            DateTime dt = DateTime.Now;
+            DateTime ts = dt.Add(DateTime.Now.TimeOfDay);
+            lstCheck.Items.Add(ts.ToString());
+         
+            
 
             inFile = new StreamReader(filePath); // READS
 
@@ -209,7 +241,8 @@ namespace MiguelsAndJosh_Module8
                 itemsPrice[count] = double.Parse(inFile.ReadLine()); // Converts Price
                 itemsQuantity[count] = int.Parse(inFile.ReadLine());
                 // Displays for Print
-                lstCheck.Items.Add(itemsPrice[count] * itemsQuantity[count]);
+                itemPrice = itemsPrice[count] * itemsQuantity[count];
+                lstCheck.Items.Add(itemPrice.ToString("c"));
 
 
                 count++;
@@ -217,10 +250,7 @@ namespace MiguelsAndJosh_Module8
 
             inFile.Close();
 
-            lstCheck.Visible = true;
-            DateTime dt = DateTime.Now;
-            DateTime ts = dt.Add(DateTime.Now.TimeOfDay);
-            lstCheck.Items.Add(ts.ToString());
+           
         }
 
     }
