@@ -55,7 +55,7 @@ namespace MiguelsAndJosh_Module8
             double pinNumbersOnlyCheck = 0;
             string pinNumbers;
 
-            if (stopDoubleOrder = false)
+            if (stopDoubleOrder == false)
             {
                 if (chbxCredit.Checked)
                 {
@@ -196,8 +196,8 @@ namespace MiguelsAndJosh_Module8
             }
         }
 
- // Set toe text reader/writer to its own function.
-        private void getFinalOrder()
+ // Set this text reader/writer to its own function.
+        public void getFinalOrder()
         {
             StreamReader inFile;
             lstCheck.Items.Clear();
@@ -214,6 +214,7 @@ namespace MiguelsAndJosh_Module8
 
                 count++;
             }
+
             inFile.Close();
 
             lstCheck.Visible = true;
