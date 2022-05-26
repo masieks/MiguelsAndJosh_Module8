@@ -362,7 +362,68 @@ namespace MiguelsAndJosh_Module8
             }
         }
 
- 
+        private void btnCannoli_Click(object sender, EventArgs e)
+        {
+            double cannoliPrice = 5.99;
+            if (cbxCannoli.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblCannoli.Text + " \t\t" + cbxCannoli.Text + " \t\t " + cannoliPrice);
+                itemsNames[count] = lblCannoli.Text;
+                itemsQuantity[count] = int.Parse(cbxCannoli.Text);
+                itemsPrice[count] = cannoliPrice;
+                count++;
 
+            }
+        }
+
+        private void btnGellato_Click(object sender, EventArgs e)
+        {
+            double gellatoPrice = 4.99;
+            if (cbxGellato.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblGellato.Text + " \t\t" + cbxGellato.Text + " \t\t " + gellatoPrice);
+                itemsNames[count] = lblGellato.Text;
+                itemsQuantity[count] = int.Parse(cbxGellato.Text);
+                itemsPrice[count] = gellatoPrice;
+                count++;
+
+            }
+        }
+
+        private void btnPannaCotta_Click(object sender, EventArgs e)
+        {
+            double pannaCottaPrice = 9.99;
+            if (cbxPannaCotta.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblPannaCotta.Text + " \t\t" + cbxPannaCotta.Text + " \t\t " + pannaCottaPrice);
+                itemsNames[count] = lblPannaCotta.Text;
+                itemsQuantity[count] = int.Parse(cbxPannaCotta.Text);
+                itemsPrice[count] = pannaCottaPrice;
+                count++;
+
+            }
+        }
+
+        private void btnTiramisu_Click(object sender, EventArgs e)
+        {
+            double tiramisuPrice = 9.99;
+            if (cbxTiramisu.Text == "")
+                MessageBox.Show("Please choose a Quantity");
+            else
+            {
+                lstOrderDisplay.Items.Add(lblTiramisu.Text + " \t\t" + cbxTiramisu.Text + " \t\t " + tiramisuPrice);
+                itemsNames[count] = lblTiramisu.Text;
+                itemsQuantity[count] = int.Parse(cbxTiramisu.Text);
+                itemsPrice[count] = tiramisuPrice;
+                count++;
+
+            }
+        }
     }
 }

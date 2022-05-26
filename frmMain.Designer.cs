@@ -128,6 +128,23 @@
             this.btnGreekSalad = new System.Windows.Forms.Button();
             this.btnCeasarSalad = new System.Windows.Forms.Button();
             this.tabDesserts = new System.Windows.Forms.TabPage();
+            this.gbxDesserts = new System.Windows.Forms.GroupBox();
+            this.cbxTiramisu = new System.Windows.Forms.ComboBox();
+            this.lblTiramisuPrice = new System.Windows.Forms.Label();
+            this.lblTiramisu = new System.Windows.Forms.Label();
+            this.btnTiramisu = new System.Windows.Forms.Button();
+            this.cbxPannaCotta = new System.Windows.Forms.ComboBox();
+            this.lblPannaCottaPrice = new System.Windows.Forms.Label();
+            this.lblPannaCotta = new System.Windows.Forms.Label();
+            this.btnPannaCotta = new System.Windows.Forms.Button();
+            this.cbxGellato = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblGellato = new System.Windows.Forms.Label();
+            this.btnGellato = new System.Windows.Forms.Button();
+            this.cbxCannoli = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblCannoli = new System.Windows.Forms.Label();
+            this.btnCannoli = new System.Windows.Forms.Button();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -140,6 +157,8 @@
             this.gbxMainDishes.SuspendLayout();
             this.tabSalads.SuspendLayout();
             this.gbxSalads.SuspendLayout();
+            this.tabDesserts.SuspendLayout();
+            this.gbxDesserts.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabBackground
@@ -1432,11 +1451,237 @@
             // tabDesserts
             // 
             this.tabDesserts.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.tabDesserts.Controls.Add(this.gbxDesserts);
             this.tabDesserts.Location = new System.Drawing.Point(4, 37);
             this.tabDesserts.Name = "tabDesserts";
             this.tabDesserts.Size = new System.Drawing.Size(1323, 929);
             this.tabDesserts.TabIndex = 4;
             this.tabDesserts.Text = "Desserts";
+            // 
+            // gbxDesserts
+            // 
+            this.gbxDesserts.Controls.Add(this.cbxTiramisu);
+            this.gbxDesserts.Controls.Add(this.lblTiramisuPrice);
+            this.gbxDesserts.Controls.Add(this.lblTiramisu);
+            this.gbxDesserts.Controls.Add(this.btnTiramisu);
+            this.gbxDesserts.Controls.Add(this.cbxPannaCotta);
+            this.gbxDesserts.Controls.Add(this.lblPannaCottaPrice);
+            this.gbxDesserts.Controls.Add(this.lblPannaCotta);
+            this.gbxDesserts.Controls.Add(this.btnPannaCotta);
+            this.gbxDesserts.Controls.Add(this.cbxGellato);
+            this.gbxDesserts.Controls.Add(this.label3);
+            this.gbxDesserts.Controls.Add(this.lblGellato);
+            this.gbxDesserts.Controls.Add(this.btnGellato);
+            this.gbxDesserts.Controls.Add(this.cbxCannoli);
+            this.gbxDesserts.Controls.Add(this.label1);
+            this.gbxDesserts.Controls.Add(this.lblCannoli);
+            this.gbxDesserts.Controls.Add(this.btnCannoli);
+            this.gbxDesserts.Location = new System.Drawing.Point(13, 10);
+            this.gbxDesserts.Name = "gbxDesserts";
+            this.gbxDesserts.Size = new System.Drawing.Size(1179, 626);
+            this.gbxDesserts.TabIndex = 0;
+            this.gbxDesserts.TabStop = false;
+            this.gbxDesserts.Text = "Desserts";
+            // 
+            // cbxTiramisu
+            // 
+            this.cbxTiramisu.FormattingEnabled = true;
+            this.cbxTiramisu.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbxTiramisu.Location = new System.Drawing.Point(820, 579);
+            this.cbxTiramisu.Name = "cbxTiramisu";
+            this.cbxTiramisu.Size = new System.Drawing.Size(56, 36);
+            this.cbxTiramisu.TabIndex = 71;
+            // 
+            // lblTiramisuPrice
+            // 
+            this.lblTiramisuPrice.AutoSize = true;
+            this.lblTiramisuPrice.ForeColor = System.Drawing.Color.Black;
+            this.lblTiramisuPrice.Location = new System.Drawing.Point(740, 582);
+            this.lblTiramisuPrice.Name = "lblTiramisuPrice";
+            this.lblTiramisuPrice.Size = new System.Drawing.Size(64, 28);
+            this.lblTiramisuPrice.TabIndex = 70;
+            this.lblTiramisuPrice.Text = "$7.99";
+            // 
+            // lblTiramisu
+            // 
+            this.lblTiramisu.AutoSize = true;
+            this.lblTiramisu.ForeColor = System.Drawing.Color.Black;
+            this.lblTiramisu.Location = new System.Drawing.Point(726, 365);
+            this.lblTiramisu.Name = "lblTiramisu";
+            this.lblTiramisu.Size = new System.Drawing.Size(92, 28);
+            this.lblTiramisu.TabIndex = 69;
+            this.lblTiramisu.Text = "Tiramisu";
+            // 
+            // btnTiramisu
+            // 
+            this.btnTiramisu.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Tiramisu_15;
+            this.btnTiramisu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTiramisu.Location = new System.Drawing.Point(703, 396);
+            this.btnTiramisu.Name = "btnTiramisu";
+            this.btnTiramisu.Size = new System.Drawing.Size(232, 171);
+            this.btnTiramisu.TabIndex = 68;
+            this.btnTiramisu.UseVisualStyleBackColor = true;
+            this.btnTiramisu.Click += new System.EventHandler(this.btnTiramisu_Click);
+            // 
+            // cbxPannaCotta
+            // 
+            this.cbxPannaCotta.FormattingEnabled = true;
+            this.cbxPannaCotta.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbxPannaCotta.Location = new System.Drawing.Point(182, 579);
+            this.cbxPannaCotta.Name = "cbxPannaCotta";
+            this.cbxPannaCotta.Size = new System.Drawing.Size(56, 36);
+            this.cbxPannaCotta.TabIndex = 67;
+            // 
+            // lblPannaCottaPrice
+            // 
+            this.lblPannaCottaPrice.AutoSize = true;
+            this.lblPannaCottaPrice.ForeColor = System.Drawing.Color.Black;
+            this.lblPannaCottaPrice.Location = new System.Drawing.Point(102, 582);
+            this.lblPannaCottaPrice.Name = "lblPannaCottaPrice";
+            this.lblPannaCottaPrice.Size = new System.Drawing.Size(65, 28);
+            this.lblPannaCottaPrice.TabIndex = 66;
+            this.lblPannaCottaPrice.Text = "$8.99";
+            // 
+            // lblPannaCotta
+            // 
+            this.lblPannaCotta.AutoSize = true;
+            this.lblPannaCotta.ForeColor = System.Drawing.Color.Black;
+            this.lblPannaCotta.Location = new System.Drawing.Point(88, 365);
+            this.lblPannaCotta.Name = "lblPannaCotta";
+            this.lblPannaCotta.Size = new System.Drawing.Size(128, 28);
+            this.lblPannaCotta.TabIndex = 65;
+            this.lblPannaCotta.Text = "Panna Cotta";
+            // 
+            // btnPannaCotta
+            // 
+            this.btnPannaCotta.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.PannaCotta;
+            this.btnPannaCotta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPannaCotta.Location = new System.Drawing.Point(65, 396);
+            this.btnPannaCotta.Name = "btnPannaCotta";
+            this.btnPannaCotta.Size = new System.Drawing.Size(232, 171);
+            this.btnPannaCotta.TabIndex = 64;
+            this.btnPannaCotta.UseVisualStyleBackColor = true;
+            this.btnPannaCotta.Click += new System.EventHandler(this.btnPannaCotta_Click);
+            // 
+            // cbxGellato
+            // 
+            this.cbxGellato.FormattingEnabled = true;
+            this.cbxGellato.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbxGellato.Location = new System.Drawing.Point(820, 254);
+            this.cbxGellato.Name = "cbxGellato";
+            this.cbxGellato.Size = new System.Drawing.Size(56, 36);
+            this.cbxGellato.TabIndex = 63;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(726, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 28);
+            this.label3.TabIndex = 62;
+            this.label3.Text = "$4.99";
+            // 
+            // lblGellato
+            // 
+            this.lblGellato.AutoSize = true;
+            this.lblGellato.ForeColor = System.Drawing.Color.Black;
+            this.lblGellato.Location = new System.Drawing.Point(726, 40);
+            this.lblGellato.Name = "lblGellato";
+            this.lblGellato.Size = new System.Drawing.Size(79, 28);
+            this.lblGellato.TabIndex = 61;
+            this.lblGellato.Text = "Gellato";
+            // 
+            // btnGellato
+            // 
+            this.btnGellato.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.ChocolateGelato;
+            this.btnGellato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGellato.Location = new System.Drawing.Point(681, 71);
+            this.btnGellato.Name = "btnGellato";
+            this.btnGellato.Size = new System.Drawing.Size(232, 171);
+            this.btnGellato.TabIndex = 60;
+            this.btnGellato.UseVisualStyleBackColor = true;
+            this.btnGellato.Click += new System.EventHandler(this.btnGellato_Click);
+            // 
+            // cbxCannoli
+            // 
+            this.cbxCannoli.FormattingEnabled = true;
+            this.cbxCannoli.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.cbxCannoli.Location = new System.Drawing.Point(182, 254);
+            this.cbxCannoli.Name = "cbxCannoli";
+            this.cbxCannoli.Size = new System.Drawing.Size(56, 36);
+            this.cbxCannoli.TabIndex = 59;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(102, 257);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 28);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "$5.99";
+            // 
+            // lblCannoli
+            // 
+            this.lblCannoli.AutoSize = true;
+            this.lblCannoli.ForeColor = System.Drawing.Color.Black;
+            this.lblCannoli.Location = new System.Drawing.Point(88, 40);
+            this.lblCannoli.Name = "lblCannoli";
+            this.lblCannoli.Size = new System.Drawing.Size(84, 28);
+            this.lblCannoli.TabIndex = 57;
+            this.lblCannoli.Text = "Cannoli";
+            // 
+            // btnCannoli
+            // 
+            this.btnCannoli.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.canolli;
+            this.btnCannoli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCannoli.Location = new System.Drawing.Point(65, 71);
+            this.btnCannoli.Name = "btnCannoli";
+            this.btnCannoli.Size = new System.Drawing.Size(232, 171);
+            this.btnCannoli.TabIndex = 56;
+            this.btnCannoli.UseVisualStyleBackColor = true;
+            this.btnCannoli.Click += new System.EventHandler(this.btnCannoli_Click);
             // 
             // frmMain
             // 
@@ -1470,6 +1715,9 @@
             this.tabSalads.ResumeLayout(false);
             this.gbxSalads.ResumeLayout(false);
             this.gbxSalads.PerformLayout();
+            this.tabDesserts.ResumeLayout(false);
+            this.gbxDesserts.ResumeLayout(false);
+            this.gbxDesserts.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1576,6 +1824,23 @@
         private System.Windows.Forms.ComboBox cbxCeasarSalad;
         private System.Windows.Forms.ComboBox cbxGreekSalad;
         private System.Windows.Forms.ComboBox cbxItalianSalad;
+        private System.Windows.Forms.GroupBox gbxDesserts;
+        private System.Windows.Forms.ComboBox cbxTiramisu;
+        private System.Windows.Forms.Label lblTiramisuPrice;
+        private System.Windows.Forms.Label lblTiramisu;
+        private System.Windows.Forms.Button btnTiramisu;
+        private System.Windows.Forms.ComboBox cbxPannaCotta;
+        private System.Windows.Forms.Label lblPannaCottaPrice;
+        private System.Windows.Forms.Label lblPannaCotta;
+        private System.Windows.Forms.Button btnPannaCotta;
+        private System.Windows.Forms.ComboBox cbxGellato;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblGellato;
+        private System.Windows.Forms.Button btnGellato;
+        private System.Windows.Forms.ComboBox cbxCannoli;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCannoli;
+        private System.Windows.Forms.Button btnCannoli;
     }
 }
 

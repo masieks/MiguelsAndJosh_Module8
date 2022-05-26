@@ -63,6 +63,16 @@ namespace MiguelsAndJosh_Module8.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap canolli {
+            get {
+                object obj = ResourceManager.GetObject("canolli", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cesar_Salad {
             get {
                 object obj = ResourceManager.GetObject("Cesar_Salad", resourceCulture);
@@ -96,6 +106,16 @@ namespace MiguelsAndJosh_Module8.Properties {
         internal static System.Drawing.Bitmap chicken_parm1 {
             get {
                 object obj = ResourceManager.GetObject("chicken parm1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ChocolateGelato {
+            get {
+                object obj = ResourceManager.GetObject("ChocolateGelato", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +243,16 @@ namespace MiguelsAndJosh_Module8.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PannaCotta {
+            get {
+                object obj = ResourceManager.GetObject("PannaCotta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rossini {
             get {
                 object obj = ResourceManager.GetObject("Rossini", resourceCulture);
@@ -296,6 +326,16 @@ namespace MiguelsAndJosh_Module8.Properties {
         internal static System.Drawing.Bitmap steak1 {
             get {
                 object obj = ResourceManager.GetObject("steak1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tiramisu_15 {
+            get {
+                object obj = ResourceManager.GetObject("Tiramisu-15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -173,5 +173,17 @@
   <ItemGroup>
     <None Include="Resources\download %281%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canolli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolateGelato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PannaCotta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiramisu-15.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
