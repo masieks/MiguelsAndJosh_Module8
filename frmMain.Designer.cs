@@ -45,7 +45,6 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.nudLimoncello = new System.Windows.Forms.TabPage();
-            this.lblClickInfo = new System.Windows.Forms.Label();
             this.cbxNonAlchoholic = new System.Windows.Forms.GroupBox();
             this.cbxLemonade = new System.Windows.Forms.ComboBox();
             this.cbxSanPellegrino = new System.Windows.Forms.ComboBox();
@@ -145,6 +144,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCannoli = new System.Windows.Forms.Label();
             this.btnCannoli = new System.Windows.Forms.Button();
+            this.lblClickInfo = new System.Windows.Forms.Label();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -208,7 +208,7 @@
             // lblPrice
             // 
             this.lblPrice.AutoSize = true;
-            this.lblPrice.Location = new System.Drawing.Point(315, 17);
+            this.lblPrice.Location = new System.Drawing.Point(346, 10);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(57, 28);
             this.lblPrice.TabIndex = 5;
@@ -217,7 +217,7 @@
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Location = new System.Drawing.Point(155, 17);
+            this.lblQuantity.Location = new System.Drawing.Point(181, 10);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(93, 28);
             this.lblQuantity.TabIndex = 4;
@@ -226,7 +226,7 @@
             // lblDisplayItem
             // 
             this.lblDisplayItem.AutoSize = true;
-            this.lblDisplayItem.Location = new System.Drawing.Point(16, 17);
+            this.lblDisplayItem.Location = new System.Drawing.Point(18, 10);
             this.lblDisplayItem.Name = "lblDisplayItem";
             this.lblDisplayItem.Size = new System.Drawing.Size(54, 28);
             this.lblDisplayItem.TabIndex = 3;
@@ -236,9 +236,9 @@
             // 
             this.btnRemoveItems.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRemoveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveItems.Location = new System.Drawing.Point(114, 824);
+            this.btnRemoveItems.Location = new System.Drawing.Point(67, 832);
             this.btnRemoveItems.Name = "btnRemoveItems";
-            this.btnRemoveItems.Size = new System.Drawing.Size(106, 73);
+            this.btnRemoveItems.Size = new System.Drawing.Size(154, 73);
             this.btnRemoveItems.TabIndex = 2;
             this.btnRemoveItems.Text = "Remove Item(s)";
             this.btnRemoveItems.UseVisualStyleBackColor = true;
@@ -249,21 +249,21 @@
             this.lstOrderDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstOrderDisplay.Font = new System.Drawing.Font("Microsoft YaHei Light", 10F);
+            this.lstOrderDisplay.Font = new System.Drawing.Font("Microsoft YaHei Light", 14F);
             this.lstOrderDisplay.FormattingEnabled = true;
-            this.lstOrderDisplay.ItemHeight = 19;
-            this.lstOrderDisplay.Location = new System.Drawing.Point(33, 81);
+            this.lstOrderDisplay.ItemHeight = 25;
+            this.lstOrderDisplay.Location = new System.Drawing.Point(8, 43);
             this.lstOrderDisplay.Name = "lstOrderDisplay";
-            this.lstOrderDisplay.Size = new System.Drawing.Size(438, 745);
+            this.lstOrderDisplay.Size = new System.Drawing.Size(433, 779);
             this.lstOrderDisplay.TabIndex = 1;
             // 
             // btnOrder
             // 
             this.btnOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(226, 823);
+            this.btnOrder.Location = new System.Drawing.Point(268, 831);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(107, 74);
+            this.btnOrder.Size = new System.Drawing.Size(135, 74);
             this.btnOrder.TabIndex = 0;
             this.btnOrder.Text = "Place Order";
             this.btnOrder.UseVisualStyleBackColor = true;
@@ -290,6 +290,7 @@
             // tabMainMenu
             // 
             this.tabMainMenu.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.tabMainMenu.Controls.Add(this.lblClickInfo);
             this.tabMainMenu.Controls.Add(this.lblWelcomeMessage);
             this.tabMainMenu.Controls.Add(this.txtLastName);
             this.tabMainMenu.Controls.Add(this.txtFirstName);
@@ -305,11 +306,10 @@
             // 
             // lblWelcomeMessage
             // 
-            this.lblWelcomeMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWelcomeMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblWelcomeMessage.AutoSize = true;
             this.lblWelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(175, 135);
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(266, 165);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
             this.lblWelcomeMessage.Size = new System.Drawing.Size(667, 55);
             this.lblWelcomeMessage.TabIndex = 5;
@@ -317,25 +317,28 @@
             // 
             // txtLastName
             // 
+            this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(539, 466);
+            this.txtLastName.Location = new System.Drawing.Point(630, 462);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(327, 44);
             this.txtLastName.TabIndex = 4;
             // 
             // txtFirstName
             // 
+            this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(539, 391);
+            this.txtFirstName.Location = new System.Drawing.Point(630, 387);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(327, 44);
             this.txtFirstName.TabIndex = 3;
             // 
             // lblLastName
             // 
+            this.lblLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLastName.AutoSize = true;
             this.lblLastName.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(129, 466);
+            this.lblLastName.Location = new System.Drawing.Point(220, 462);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(398, 39);
             this.lblLastName.TabIndex = 2;
@@ -343,9 +346,10 @@
             // 
             // lblFirstName
             // 
+            this.lblFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(125, 393);
+            this.lblFirstName.Location = new System.Drawing.Point(216, 389);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(402, 39);
             this.lblFirstName.TabIndex = 1;
@@ -355,7 +359,6 @@
             // 
             this.nudLimoncello.AutoScroll = true;
             this.nudLimoncello.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.nudLimoncello.Controls.Add(this.lblClickInfo);
             this.nudLimoncello.Controls.Add(this.cbxNonAlchoholic);
             this.nudLimoncello.Controls.Add(this.gbxDrinkAlcohol);
             this.nudLimoncello.ForeColor = System.Drawing.Color.AntiqueWhite;
@@ -365,16 +368,6 @@
             this.nudLimoncello.Size = new System.Drawing.Size(1323, 929);
             this.nudLimoncello.TabIndex = 1;
             this.nudLimoncello.Text = "Drinks";
-            // 
-            // lblClickInfo
-            // 
-            this.lblClickInfo.AutoSize = true;
-            this.lblClickInfo.ForeColor = System.Drawing.Color.Black;
-            this.lblClickInfo.Location = new System.Drawing.Point(213, 6);
-            this.lblClickInfo.Name = "lblClickInfo";
-            this.lblClickInfo.Size = new System.Drawing.Size(520, 28);
-            this.lblClickInfo.TabIndex = 2;
-            this.lblClickInfo.Text = "Select item quantity than click picture to add to order.";
             // 
             // cbxNonAlchoholic
             // 
@@ -392,9 +385,9 @@
             this.cbxNonAlchoholic.Controls.Add(this.btnSanPellegrino);
             this.cbxNonAlchoholic.Controls.Add(this.lblCoke);
             this.cbxNonAlchoholic.Controls.Add(this.btnCoke);
-            this.cbxNonAlchoholic.Location = new System.Drawing.Point(696, 37);
+            this.cbxNonAlchoholic.Location = new System.Drawing.Point(727, 3);
             this.cbxNonAlchoholic.Name = "cbxNonAlchoholic";
-            this.cbxNonAlchoholic.Size = new System.Drawing.Size(588, 886);
+            this.cbxNonAlchoholic.Size = new System.Drawing.Size(588, 922);
             this.cbxNonAlchoholic.TabIndex = 1;
             this.cbxNonAlchoholic.TabStop = false;
             this.cbxNonAlchoholic.Text = "Non-Alcoholic Drinks";
@@ -571,9 +564,9 @@
             this.gbxDrinkAlcohol.Controls.Add(this.lblSpritz);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRocca);
             this.gbxDrinkAlcohol.Controls.Add(this.btnRocca);
-            this.gbxDrinkAlcohol.Location = new System.Drawing.Point(3, 37);
+            this.gbxDrinkAlcohol.Location = new System.Drawing.Point(3, 3);
             this.gbxDrinkAlcohol.Name = "gbxDrinkAlcohol";
-            this.gbxDrinkAlcohol.Size = new System.Drawing.Size(687, 886);
+            this.gbxDrinkAlcohol.Size = new System.Drawing.Size(718, 922);
             this.gbxDrinkAlcohol.TabIndex = 0;
             this.gbxDrinkAlcohol.TabStop = false;
             this.gbxDrinkAlcohol.Text = "Alcoholic Drinks";
@@ -592,7 +585,7 @@
             "8",
             "9",
             "10"});
-            this.cbxLimoncello.Location = new System.Drawing.Point(450, 250);
+            this.cbxLimoncello.Location = new System.Drawing.Point(471, 250);
             this.cbxLimoncello.Name = "cbxLimoncello";
             this.cbxLimoncello.Size = new System.Drawing.Size(56, 36);
             this.cbxLimoncello.TabIndex = 32;
@@ -661,7 +654,7 @@
             this.lblRoccaDescript.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblRoccaDescript.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoccaDescript.ForeColor = System.Drawing.Color.Black;
-            this.lblRoccaDescript.Location = new System.Drawing.Point(684, 31);
+            this.lblRoccaDescript.Location = new System.Drawing.Point(715, 31);
             this.lblRoccaDescript.Name = "lblRoccaDescript";
             this.lblRoccaDescript.Size = new System.Drawing.Size(0, 28);
             this.lblRoccaDescript.TabIndex = 28;
@@ -681,7 +674,7 @@
             // 
             this.lblLimoncelloPrice.AutoSize = true;
             this.lblLimoncelloPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblLimoncelloPrice.Location = new System.Drawing.Point(380, 254);
+            this.lblLimoncelloPrice.Location = new System.Drawing.Point(401, 254);
             this.lblLimoncelloPrice.Name = "lblLimoncelloPrice";
             this.lblLimoncelloPrice.Size = new System.Drawing.Size(52, 28);
             this.lblLimoncelloPrice.TabIndex = 26;
@@ -711,7 +704,7 @@
             // 
             this.lblLimoncello.AutoSize = true;
             this.lblLimoncello.ForeColor = System.Drawing.Color.Black;
-            this.lblLimoncello.Location = new System.Drawing.Point(400, 58);
+            this.lblLimoncello.Location = new System.Drawing.Point(421, 44);
             this.lblLimoncello.Name = "lblLimoncello";
             this.lblLimoncello.Size = new System.Drawing.Size(115, 28);
             this.lblLimoncello.TabIndex = 10;
@@ -721,9 +714,9 @@
             // 
             this.btnLimoncello.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Limoncello;
             this.btnLimoncello.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLimoncello.Location = new System.Drawing.Point(411, 100);
+            this.btnLimoncello.Location = new System.Drawing.Point(412, 75);
             this.btnLimoncello.Name = "btnLimoncello";
-            this.btnLimoncello.Size = new System.Drawing.Size(89, 145);
+            this.btnLimoncello.Size = new System.Drawing.Size(124, 170);
             this.btnLimoncello.TabIndex = 9;
             this.btnLimoncello.UseVisualStyleBackColor = true;
             this.btnLimoncello.Click += new System.EventHandler(this.btnLimoncello_Click);
@@ -840,7 +833,7 @@
             this.gbxMainDishes.Controls.Add(this.btnSteak);
             this.gbxMainDishes.Location = new System.Drawing.Point(6, 3);
             this.gbxMainDishes.Name = "gbxMainDishes";
-            this.gbxMainDishes.Size = new System.Drawing.Size(1314, 920);
+            this.gbxMainDishes.Size = new System.Drawing.Size(1317, 920);
             this.gbxMainDishes.TabIndex = 0;
             this.gbxMainDishes.TabStop = false;
             this.gbxMainDishes.Text = "Main Dishes";
@@ -1293,7 +1286,7 @@
             this.gbxSalads.Controls.Add(this.btnCeasarSalad);
             this.gbxSalads.Location = new System.Drawing.Point(15, 20);
             this.gbxSalads.Name = "gbxSalads";
-            this.gbxSalads.Size = new System.Drawing.Size(1211, 877);
+            this.gbxSalads.Size = new System.Drawing.Size(1305, 905);
             this.gbxSalads.TabIndex = 0;
             this.gbxSalads.TabStop = false;
             this.gbxSalads.Text = "Salads";
@@ -1331,7 +1324,7 @@
             "8",
             "9",
             "10"});
-            this.cbxGreekSalad.Location = new System.Drawing.Point(589, 261);
+            this.cbxGreekSalad.Location = new System.Drawing.Point(183, 569);
             this.cbxGreekSalad.Name = "cbxGreekSalad";
             this.cbxGreekSalad.Size = new System.Drawing.Size(56, 36);
             this.cbxGreekSalad.TabIndex = 54;
@@ -1350,7 +1343,7 @@
             "8",
             "9",
             "10"});
-            this.cbxItalianSalad.Location = new System.Drawing.Point(989, 261);
+            this.cbxItalianSalad.Location = new System.Drawing.Point(166, 849);
             this.cbxItalianSalad.Name = "cbxItalianSalad";
             this.cbxItalianSalad.Size = new System.Drawing.Size(56, 36);
             this.cbxItalianSalad.TabIndex = 53;
@@ -1359,7 +1352,7 @@
             // 
             this.lblSaladPrice.AutoSize = true;
             this.lblSaladPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblSaladPrice.Location = new System.Drawing.Point(910, 264);
+            this.lblSaladPrice.Location = new System.Drawing.Point(87, 852);
             this.lblSaladPrice.Name = "lblSaladPrice";
             this.lblSaladPrice.Size = new System.Drawing.Size(65, 28);
             this.lblSaladPrice.TabIndex = 43;
@@ -1369,7 +1362,7 @@
             // 
             this.lblGreekPrice.AutoSize = true;
             this.lblGreekPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblGreekPrice.Location = new System.Drawing.Point(504, 264);
+            this.lblGreekPrice.Location = new System.Drawing.Point(98, 572);
             this.lblGreekPrice.Name = "lblGreekPrice";
             this.lblGreekPrice.Size = new System.Drawing.Size(65, 28);
             this.lblGreekPrice.TabIndex = 42;
@@ -1389,7 +1382,7 @@
             // 
             this.lblCeasarSalad.AutoSize = true;
             this.lblCeasarSalad.ForeColor = System.Drawing.Color.Black;
-            this.lblCeasarSalad.Location = new System.Drawing.Point(69, 44);
+            this.lblCeasarSalad.Location = new System.Drawing.Point(98, 44);
             this.lblCeasarSalad.Name = "lblCeasarSalad";
             this.lblCeasarSalad.Size = new System.Drawing.Size(132, 28);
             this.lblCeasarSalad.TabIndex = 23;
@@ -1399,7 +1392,7 @@
             // 
             this.lblGreekSalad.AutoSize = true;
             this.lblGreekSalad.ForeColor = System.Drawing.Color.Black;
-            this.lblGreekSalad.Location = new System.Drawing.Point(491, 44);
+            this.lblGreekSalad.Location = new System.Drawing.Point(98, 352);
             this.lblGreekSalad.Name = "lblGreekSalad";
             this.lblGreekSalad.Size = new System.Drawing.Size(123, 28);
             this.lblGreekSalad.TabIndex = 22;
@@ -1409,7 +1402,7 @@
             // 
             this.lblItalianSalad.AutoSize = true;
             this.lblItalianSalad.ForeColor = System.Drawing.Color.Black;
-            this.lblItalianSalad.Location = new System.Drawing.Point(910, 44);
+            this.lblItalianSalad.Location = new System.Drawing.Point(87, 632);
             this.lblItalianSalad.Name = "lblItalianSalad";
             this.lblItalianSalad.Size = new System.Drawing.Size(125, 28);
             this.lblItalianSalad.TabIndex = 21;
@@ -1419,7 +1412,7 @@
             // 
             this.btnItalianSalad.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.download__1_;
             this.btnItalianSalad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnItalianSalad.Location = new System.Drawing.Point(891, 75);
+            this.btnItalianSalad.Location = new System.Drawing.Point(68, 663);
             this.btnItalianSalad.Name = "btnItalianSalad";
             this.btnItalianSalad.Size = new System.Drawing.Size(171, 171);
             this.btnItalianSalad.TabIndex = 15;
@@ -1430,7 +1423,7 @@
             // 
             this.btnGreekSalad.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Greek_Salad;
             this.btnGreekSalad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGreekSalad.Location = new System.Drawing.Point(452, 75);
+            this.btnGreekSalad.Location = new System.Drawing.Point(46, 383);
             this.btnGreekSalad.Name = "btnGreekSalad";
             this.btnGreekSalad.Size = new System.Drawing.Size(246, 167);
             this.btnGreekSalad.TabIndex = 14;
@@ -1476,9 +1469,9 @@
             this.gbxDesserts.Controls.Add(this.label1);
             this.gbxDesserts.Controls.Add(this.lblCannoli);
             this.gbxDesserts.Controls.Add(this.btnCannoli);
-            this.gbxDesserts.Location = new System.Drawing.Point(13, 10);
+            this.gbxDesserts.Location = new System.Drawing.Point(3, 3);
             this.gbxDesserts.Name = "gbxDesserts";
-            this.gbxDesserts.Size = new System.Drawing.Size(1179, 626);
+            this.gbxDesserts.Size = new System.Drawing.Size(1312, 922);
             this.gbxDesserts.TabIndex = 0;
             this.gbxDesserts.TabStop = false;
             this.gbxDesserts.Text = "Desserts";
@@ -1497,7 +1490,7 @@
             "8",
             "9",
             "10"});
-            this.cbxTiramisu.Location = new System.Drawing.Point(820, 579);
+            this.cbxTiramisu.Location = new System.Drawing.Point(743, 251);
             this.cbxTiramisu.Name = "cbxTiramisu";
             this.cbxTiramisu.Size = new System.Drawing.Size(56, 36);
             this.cbxTiramisu.TabIndex = 71;
@@ -1506,7 +1499,7 @@
             // 
             this.lblTiramisuPrice.AutoSize = true;
             this.lblTiramisuPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblTiramisuPrice.Location = new System.Drawing.Point(740, 582);
+            this.lblTiramisuPrice.Location = new System.Drawing.Point(664, 254);
             this.lblTiramisuPrice.Name = "lblTiramisuPrice";
             this.lblTiramisuPrice.Size = new System.Drawing.Size(64, 28);
             this.lblTiramisuPrice.TabIndex = 70;
@@ -1516,7 +1509,7 @@
             // 
             this.lblTiramisu.AutoSize = true;
             this.lblTiramisu.ForeColor = System.Drawing.Color.Black;
-            this.lblTiramisu.Location = new System.Drawing.Point(726, 365);
+            this.lblTiramisu.Location = new System.Drawing.Point(647, 40);
             this.lblTiramisu.Name = "lblTiramisu";
             this.lblTiramisu.Size = new System.Drawing.Size(92, 28);
             this.lblTiramisu.TabIndex = 69;
@@ -1526,7 +1519,7 @@
             // 
             this.btnTiramisu.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Tiramisu_15;
             this.btnTiramisu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTiramisu.Location = new System.Drawing.Point(703, 396);
+            this.btnTiramisu.Location = new System.Drawing.Point(624, 71);
             this.btnTiramisu.Name = "btnTiramisu";
             this.btnTiramisu.Size = new System.Drawing.Size(232, 171);
             this.btnTiramisu.TabIndex = 68;
@@ -1547,7 +1540,7 @@
             "8",
             "9",
             "10"});
-            this.cbxPannaCotta.Location = new System.Drawing.Point(182, 579);
+            this.cbxPannaCotta.Location = new System.Drawing.Point(168, 525);
             this.cbxPannaCotta.Name = "cbxPannaCotta";
             this.cbxPannaCotta.Size = new System.Drawing.Size(56, 36);
             this.cbxPannaCotta.TabIndex = 67;
@@ -1556,7 +1549,7 @@
             // 
             this.lblPannaCottaPrice.AutoSize = true;
             this.lblPannaCottaPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblPannaCottaPrice.Location = new System.Drawing.Point(102, 582);
+            this.lblPannaCottaPrice.Location = new System.Drawing.Point(88, 528);
             this.lblPannaCottaPrice.Name = "lblPannaCottaPrice";
             this.lblPannaCottaPrice.Size = new System.Drawing.Size(65, 28);
             this.lblPannaCottaPrice.TabIndex = 66;
@@ -1566,7 +1559,7 @@
             // 
             this.lblPannaCotta.AutoSize = true;
             this.lblPannaCotta.ForeColor = System.Drawing.Color.Black;
-            this.lblPannaCotta.Location = new System.Drawing.Point(88, 365);
+            this.lblPannaCotta.Location = new System.Drawing.Point(88, 316);
             this.lblPannaCotta.Name = "lblPannaCotta";
             this.lblPannaCotta.Size = new System.Drawing.Size(128, 28);
             this.lblPannaCotta.TabIndex = 65;
@@ -1576,7 +1569,7 @@
             // 
             this.btnPannaCotta.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.PannaCotta;
             this.btnPannaCotta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPannaCotta.Location = new System.Drawing.Point(65, 396);
+            this.btnPannaCotta.Location = new System.Drawing.Point(36, 347);
             this.btnPannaCotta.Name = "btnPannaCotta";
             this.btnPannaCotta.Size = new System.Drawing.Size(232, 171);
             this.btnPannaCotta.TabIndex = 64;
@@ -1597,7 +1590,7 @@
             "8",
             "9",
             "10"});
-            this.cbxGellato.Location = new System.Drawing.Point(820, 254);
+            this.cbxGellato.Location = new System.Drawing.Point(168, 796);
             this.cbxGellato.Name = "cbxGellato";
             this.cbxGellato.Size = new System.Drawing.Size(56, 36);
             this.cbxGellato.TabIndex = 63;
@@ -1606,7 +1599,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(726, 262);
+            this.label3.Location = new System.Drawing.Point(88, 799);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 28);
             this.label3.TabIndex = 62;
@@ -1616,7 +1609,7 @@
             // 
             this.lblGellato.AutoSize = true;
             this.lblGellato.ForeColor = System.Drawing.Color.Black;
-            this.lblGellato.Location = new System.Drawing.Point(726, 40);
+            this.lblGellato.Location = new System.Drawing.Point(107, 582);
             this.lblGellato.Name = "lblGellato";
             this.lblGellato.Size = new System.Drawing.Size(79, 28);
             this.lblGellato.TabIndex = 61;
@@ -1626,7 +1619,7 @@
             // 
             this.btnGellato.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.ChocolateGelato;
             this.btnGellato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGellato.Location = new System.Drawing.Point(681, 71);
+            this.btnGellato.Location = new System.Drawing.Point(36, 616);
             this.btnGellato.Name = "btnGellato";
             this.btnGellato.Size = new System.Drawing.Size(232, 171);
             this.btnGellato.TabIndex = 60;
@@ -1647,7 +1640,7 @@
             "8",
             "9",
             "10"});
-            this.cbxCannoli.Location = new System.Drawing.Point(182, 254);
+            this.cbxCannoli.Location = new System.Drawing.Point(168, 251);
             this.cbxCannoli.Name = "cbxCannoli";
             this.cbxCannoli.Size = new System.Drawing.Size(56, 36);
             this.cbxCannoli.TabIndex = 59;
@@ -1656,7 +1649,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(102, 257);
+            this.label1.Location = new System.Drawing.Point(88, 254);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 28);
             this.label1.TabIndex = 58;
@@ -1666,7 +1659,7 @@
             // 
             this.lblCannoli.AutoSize = true;
             this.lblCannoli.ForeColor = System.Drawing.Color.Black;
-            this.lblCannoli.Location = new System.Drawing.Point(88, 40);
+            this.lblCannoli.Location = new System.Drawing.Point(102, 40);
             this.lblCannoli.Name = "lblCannoli";
             this.lblCannoli.Size = new System.Drawing.Size(84, 28);
             this.lblCannoli.TabIndex = 57;
@@ -1676,12 +1669,24 @@
             // 
             this.btnCannoli.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.canolli;
             this.btnCannoli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCannoli.Location = new System.Drawing.Point(65, 71);
+            this.btnCannoli.Location = new System.Drawing.Point(36, 71);
             this.btnCannoli.Name = "btnCannoli";
             this.btnCannoli.Size = new System.Drawing.Size(232, 171);
             this.btnCannoli.TabIndex = 56;
             this.btnCannoli.UseVisualStyleBackColor = true;
             this.btnCannoli.Click += new System.EventHandler(this.btnCannoli_Click);
+            // 
+            // lblClickInfo
+            // 
+            this.lblClickInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblClickInfo.AutoSize = true;
+            this.lblClickInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClickInfo.Location = new System.Drawing.Point(236, 643);
+            this.lblClickInfo.Name = "lblClickInfo";
+            this.lblClickInfo.Size = new System.Drawing.Size(721, 111);
+            this.lblClickInfo.TabIndex = 6;
+            this.lblClickInfo.Text = "While Ordering, Select the Box to the bottom right\r\nto select the Quantity. Once " +
+    "the Quantity is Set \r\nClick the Picture of the Item to Add to your Order.\r\n";
             // 
             // frmMain
             // 
@@ -1704,7 +1709,6 @@
             this.tabMainMenu.ResumeLayout(false);
             this.tabMainMenu.PerformLayout();
             this.nudLimoncello.ResumeLayout(false);
-            this.nudLimoncello.PerformLayout();
             this.cbxNonAlchoholic.ResumeLayout(false);
             this.cbxNonAlchoholic.PerformLayout();
             this.gbxDrinkAlcohol.ResumeLayout(false);
@@ -1743,7 +1747,6 @@
         private System.Windows.Forms.ListBox lstOrderDisplay;
         public System.Windows.Forms.Button btnCoke;
         private System.Windows.Forms.Label lblCoke;
-        private System.Windows.Forms.Label lblClickInfo;
         private System.Windows.Forms.Button btnSanPellegrino;
         private System.Windows.Forms.Label lblSanPellegrino;
         private System.Windows.Forms.Button btnLemonade;
@@ -1841,6 +1844,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCannoli;
         private System.Windows.Forms.Button btnCannoli;
+        private System.Windows.Forms.Label lblClickInfo;
     }
 }
 

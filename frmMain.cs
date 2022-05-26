@@ -131,7 +131,7 @@ namespace MiguelsAndJosh_Module8
         private void btnLimoncello_Click(object sender, EventArgs e)
         {
             double limoncelloPrice = 7.99;
-            if (cbxRocca.Text == "")
+            if (cbxLimoncello.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
