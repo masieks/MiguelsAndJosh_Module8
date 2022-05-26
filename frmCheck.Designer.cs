@@ -32,6 +32,10 @@
             this.btnFinalOrder = new System.Windows.Forms.Button();
             this.lstOrder = new System.Windows.Forms.ListBox();
             this.gbxPayment = new System.Windows.Forms.GroupBox();
+            this.lblPin = new System.Windows.Forms.Label();
+            this.lblDebitCard = new System.Windows.Forms.Label();
+            this.txtPin = new System.Windows.Forms.TextBox();
+            this.txtDebitNum = new System.Windows.Forms.TextBox();
             this.lblCreditCard = new System.Windows.Forms.Label();
             this.txtCreditNum = new System.Windows.Forms.TextBox();
             this.radDebit = new System.Windows.Forms.RadioButton();
@@ -39,10 +43,6 @@
             this.radMoney = new System.Windows.Forms.RadioButton();
             this.lstCheck = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblDebitCard = new System.Windows.Forms.Label();
-            this.txtDebitNum = new System.Windows.Forms.TextBox();
-            this.lblPin = new System.Windows.Forms.Label();
-            this.txtPin = new System.Windows.Forms.TextBox();
             this.gbxPayment.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,42 @@
             this.gbxPayment.TabStop = false;
             this.gbxPayment.Text = "groupBox1";
             // 
+            // lblPin
+            // 
+            this.lblPin.AutoSize = true;
+            this.lblPin.Location = new System.Drawing.Point(116, 138);
+            this.lblPin.Name = "lblPin";
+            this.lblPin.Size = new System.Drawing.Size(98, 13);
+            this.lblPin.TabIndex = 8;
+            this.lblPin.Text = "Enter your debit pin";
+            this.lblPin.Visible = false;
+            // 
+            // lblDebitCard
+            // 
+            this.lblDebitCard.AutoSize = true;
+            this.lblDebitCard.Location = new System.Drawing.Point(105, 186);
+            this.lblDebitCard.Name = "lblDebitCard";
+            this.lblDebitCard.Size = new System.Drawing.Size(145, 13);
+            this.lblDebitCard.TabIndex = 6;
+            this.lblDebitCard.Text = "Enter your Debit card number";
+            this.lblDebitCard.Visible = false;
+            // 
+            // txtPin
+            // 
+            this.txtPin.Location = new System.Drawing.Point(128, 154);
+            this.txtPin.Name = "txtPin";
+            this.txtPin.Size = new System.Drawing.Size(70, 20);
+            this.txtPin.TabIndex = 7;
+            this.txtPin.Visible = false;
+            // 
+            // txtDebitNum
+            // 
+            this.txtDebitNum.Location = new System.Drawing.Point(119, 202);
+            this.txtDebitNum.Name = "txtDebitNum";
+            this.txtDebitNum.Size = new System.Drawing.Size(100, 20);
+            this.txtDebitNum.TabIndex = 5;
+            this.txtDebitNum.Visible = false;
+            // 
             // lblCreditCard
             // 
             this.lblCreditCard.AutoSize = true;
@@ -110,6 +146,7 @@
             this.txtCreditNum.Size = new System.Drawing.Size(100, 20);
             this.txtCreditNum.TabIndex = 3;
             this.txtCreditNum.Visible = false;
+            this.txtCreditNum.TextChanged += new System.EventHandler(this.txtCreditNum_TextChanged);
             // 
             // radDebit
             // 
@@ -165,42 +202,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "label1";
-            // 
-            // lblDebitCard
-            // 
-            this.lblDebitCard.AutoSize = true;
-            this.lblDebitCard.Location = new System.Drawing.Point(105, 186);
-            this.lblDebitCard.Name = "lblDebitCard";
-            this.lblDebitCard.Size = new System.Drawing.Size(145, 13);
-            this.lblDebitCard.TabIndex = 6;
-            this.lblDebitCard.Text = "Enter your Debit card number";
-            this.lblDebitCard.Visible = false;
-            // 
-            // txtDebitNum
-            // 
-            this.txtDebitNum.Location = new System.Drawing.Point(119, 202);
-            this.txtDebitNum.Name = "txtDebitNum";
-            this.txtDebitNum.Size = new System.Drawing.Size(100, 20);
-            this.txtDebitNum.TabIndex = 5;
-            this.txtDebitNum.Visible = false;
-            // 
-            // lblPin
-            // 
-            this.lblPin.AutoSize = true;
-            this.lblPin.Location = new System.Drawing.Point(116, 138);
-            this.lblPin.Name = "lblPin";
-            this.lblPin.Size = new System.Drawing.Size(98, 13);
-            this.lblPin.TabIndex = 8;
-            this.lblPin.Text = "Enter your debit pin";
-            this.lblPin.Visible = false;
-            // 
-            // txtPin
-            // 
-            this.txtPin.Location = new System.Drawing.Point(128, 154);
-            this.txtPin.Name = "txtPin";
-            this.txtPin.Size = new System.Drawing.Size(70, 20);
-            this.txtPin.TabIndex = 7;
-            this.txtPin.Visible = false;
             // 
             // frmCheck
             // 

@@ -43,22 +43,25 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.nudLimoncello = new System.Windows.Forms.TabPage();
             this.lblClickInfo = new System.Windows.Forms.Label();
-            this.gbxNonAlcoholic = new System.Windows.Forms.GroupBox();
+            this.cbxCoke = new System.Windows.Forms.GroupBox();
+            this.cbxLemonade = new System.Windows.Forms.ComboBox();
+            this.cbxSanPellegrino = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblCokePrice = new System.Windows.Forms.Label();
             this.lblLemonadePrice = new System.Windows.Forms.Label();
             this.lblLemonade = new System.Windows.Forms.Label();
             this.lblSanPellegrinoPrice = new System.Windows.Forms.Label();
-            this.nudLemonade = new System.Windows.Forms.NumericUpDown();
             this.btnLemonade = new System.Windows.Forms.Button();
-            this.nudSanPellegrino = new System.Windows.Forms.NumericUpDown();
             this.lblSanPellegrino = new System.Windows.Forms.Label();
             this.btnSanPellegrino = new System.Windows.Forms.Button();
             this.lblCoke = new System.Windows.Forms.Label();
-            this.nudCoke = new System.Windows.Forms.NumericUpDown();
             this.btnCoke = new System.Windows.Forms.Button();
             this.gbxDrinkAlcohol = new System.Windows.Forms.GroupBox();
+            this.cbxLimoncello = new System.Windows.Forms.ComboBox();
+            this.cbxRossini = new System.Windows.Forms.ComboBox();
+            this.cbxSpritz = new System.Windows.Forms.ComboBox();
+            this.cbxRocca = new System.Windows.Forms.ComboBox();
             this.lblRoccaDescript = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.lblRoccaPrice = new System.Windows.Forms.Label();
             this.lblLimoncelloPrice = new System.Windows.Forms.Label();
             this.lblRossiniPrice = new System.Windows.Forms.Label();
@@ -66,16 +69,14 @@
             this.lblLimoncello = new System.Windows.Forms.Label();
             this.btnLimoncello = new System.Windows.Forms.Button();
             this.lblRossini = new System.Windows.Forms.Label();
-            this.nudRossini = new System.Windows.Forms.NumericUpDown();
             this.btnRossini = new System.Windows.Forms.Button();
-            this.nudSpritz = new System.Windows.Forms.NumericUpDown();
             this.btnSpritz = new System.Windows.Forms.Button();
             this.lblSpritz = new System.Windows.Forms.Label();
-            this.nudRocca = new System.Windows.Forms.NumericUpDown();
             this.lblRocca = new System.Windows.Forms.Label();
             this.btnRocca = new System.Windows.Forms.Button();
             this.tabMainDishes = new System.Windows.Forms.TabPage();
-            this.gbxMainDish = new System.Windows.Forms.GroupBox();
+            this.cbxPasta = new System.Windows.Forms.GroupBox();
+            this.cbxSteak = new System.Windows.Forms.ComboBox();
             this.lblSpaghettiDescript = new System.Windows.Forms.Label();
             this.lblChickenAlfredoDescript = new System.Windows.Forms.Label();
             this.lblSpaghettiPrice = new System.Windows.Forms.Label();
@@ -87,27 +88,19 @@
             this.lblGnocchiPrice = new System.Windows.Forms.Label();
             this.lblChickenParmPrice = new System.Windows.Forms.Label();
             this.lblChickenAlfredo = new System.Windows.Forms.Label();
-            this.nudSpaghetti = new System.Windows.Forms.NumericUpDown();
             this.lblSpaghetti = new System.Windows.Forms.Label();
             this.btnChickenAlfredo = new System.Windows.Forms.Button();
             this.lblMinestrone = new System.Windows.Forms.Label();
-            this.nudMinestrone = new System.Windows.Forms.NumericUpDown();
             this.btnGnocchi = new System.Windows.Forms.Button();
-            this.nudLasanga = new System.Windows.Forms.NumericUpDown();
             this.btnChickenParm = new System.Windows.Forms.Button();
             this.lblChickenParm = new System.Windows.Forms.Label();
-            this.nudSteak = new System.Windows.Forms.NumericUpDown();
-            this.nudChickenAlfredo = new System.Windows.Forms.NumericUpDown();
-            this.nudGnocchi = new System.Windows.Forms.NumericUpDown();
             this.lblGnocchi = new System.Windows.Forms.Label();
             this.btnMinestrone = new System.Windows.Forms.Button();
             this.lblLasanga = new System.Windows.Forms.Label();
             this.lblSteak = new System.Windows.Forms.Label();
             this.btnSpaghetti = new System.Windows.Forms.Button();
-            this.nudChickenParm = new System.Windows.Forms.NumericUpDown();
             this.btnLasanga = new System.Windows.Forms.Button();
             this.lblPasta = new System.Windows.Forms.Label();
-            this.nudPasta = new System.Windows.Forms.NumericUpDown();
             this.btnPasta = new System.Windows.Forms.Button();
             this.btnSteak = new System.Windows.Forms.Button();
             this.tabSalads = new System.Windows.Forms.TabPage();
@@ -125,31 +118,23 @@
             this.btnGreekSalad = new System.Windows.Forms.Button();
             this.btnCeasar = new System.Windows.Forms.Button();
             this.tabDesserts = new System.Windows.Forms.TabPage();
+            this.cbxChickenParm = new System.Windows.Forms.ComboBox();
+            this.cbxGnocchi = new System.Windows.Forms.ComboBox();
+            this.cbxChickenAlfredo = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxLasanga = new System.Windows.Forms.ComboBox();
+            this.cbxSpaghetti = new System.Windows.Forms.ComboBox();
+            this.cbxMinestrone = new System.Windows.Forms.ComboBox();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
             this.tabMenu.SuspendLayout();
             this.tabMainMenu.SuspendLayout();
             this.nudLimoncello.SuspendLayout();
-            this.gbxNonAlcoholic.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLemonade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCoke)).BeginInit();
+            this.cbxCoke.SuspendLayout();
             this.gbxDrinkAlcohol.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRossini)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSpritz)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRocca)).BeginInit();
             this.tabMainDishes.SuspendLayout();
-            this.gbxMainDish.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSpaghetti)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinestrone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLasanga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSteak)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChickenAlfredo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGnocchi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChickenParm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPasta)).BeginInit();
+            this.cbxPasta.SuspendLayout();
             this.tabSalads.SuspendLayout();
             this.gbxSalads.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudItalianSalad)).BeginInit();
@@ -321,7 +306,7 @@
             this.nudLimoncello.AutoScroll = true;
             this.nudLimoncello.BackColor = System.Drawing.Color.AntiqueWhite;
             this.nudLimoncello.Controls.Add(this.lblClickInfo);
-            this.nudLimoncello.Controls.Add(this.gbxNonAlcoholic);
+            this.nudLimoncello.Controls.Add(this.cbxCoke);
             this.nudLimoncello.Controls.Add(this.gbxDrinkAlcohol);
             this.nudLimoncello.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.nudLimoncello.Location = new System.Drawing.Point(4, 37);
@@ -341,28 +326,52 @@
             this.lblClickInfo.TabIndex = 2;
             this.lblClickInfo.Text = "Select item quantity than click picture to add to order.";
             // 
-            // gbxNonAlcoholic
+            // cbxCoke
             // 
-            this.gbxNonAlcoholic.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.gbxNonAlcoholic.BackColor = System.Drawing.Color.Transparent;
-            this.gbxNonAlcoholic.Controls.Add(this.lblCokePrice);
-            this.gbxNonAlcoholic.Controls.Add(this.lblLemonadePrice);
-            this.gbxNonAlcoholic.Controls.Add(this.lblLemonade);
-            this.gbxNonAlcoholic.Controls.Add(this.lblSanPellegrinoPrice);
-            this.gbxNonAlcoholic.Controls.Add(this.nudLemonade);
-            this.gbxNonAlcoholic.Controls.Add(this.btnLemonade);
-            this.gbxNonAlcoholic.Controls.Add(this.nudSanPellegrino);
-            this.gbxNonAlcoholic.Controls.Add(this.lblSanPellegrino);
-            this.gbxNonAlcoholic.Controls.Add(this.btnSanPellegrino);
-            this.gbxNonAlcoholic.Controls.Add(this.lblCoke);
-            this.gbxNonAlcoholic.Controls.Add(this.nudCoke);
-            this.gbxNonAlcoholic.Controls.Add(this.btnCoke);
-            this.gbxNonAlcoholic.Location = new System.Drawing.Point(725, 37);
-            this.gbxNonAlcoholic.Name = "gbxNonAlcoholic";
-            this.gbxNonAlcoholic.Size = new System.Drawing.Size(512, 886);
-            this.gbxNonAlcoholic.TabIndex = 1;
-            this.gbxNonAlcoholic.TabStop = false;
-            this.gbxNonAlcoholic.Text = "Non-Alcoholic Drinks";
+            this.cbxCoke.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.cbxCoke.BackColor = System.Drawing.Color.Transparent;
+            this.cbxCoke.Controls.Add(this.cbxLemonade);
+            this.cbxCoke.Controls.Add(this.cbxSanPellegrino);
+            this.cbxCoke.Controls.Add(this.comboBox1);
+            this.cbxCoke.Controls.Add(this.lblCokePrice);
+            this.cbxCoke.Controls.Add(this.lblLemonadePrice);
+            this.cbxCoke.Controls.Add(this.lblLemonade);
+            this.cbxCoke.Controls.Add(this.lblSanPellegrinoPrice);
+            this.cbxCoke.Controls.Add(this.btnLemonade);
+            this.cbxCoke.Controls.Add(this.lblSanPellegrino);
+            this.cbxCoke.Controls.Add(this.btnSanPellegrino);
+            this.cbxCoke.Controls.Add(this.lblCoke);
+            this.cbxCoke.Controls.Add(this.btnCoke);
+            this.cbxCoke.Location = new System.Drawing.Point(725, 37);
+            this.cbxCoke.Name = "cbxCoke";
+            this.cbxCoke.Size = new System.Drawing.Size(512, 886);
+            this.cbxCoke.TabIndex = 1;
+            this.cbxCoke.TabStop = false;
+            this.cbxCoke.Text = "Non-Alcoholic Drinks";
+            // 
+            // cbxLemonade
+            // 
+            this.cbxLemonade.FormattingEnabled = true;
+            this.cbxLemonade.Location = new System.Drawing.Point(117, 787);
+            this.cbxLemonade.Name = "cbxLemonade";
+            this.cbxLemonade.Size = new System.Drawing.Size(56, 36);
+            this.cbxLemonade.TabIndex = 33;
+            // 
+            // cbxSanPellegrino
+            // 
+            this.cbxSanPellegrino.FormattingEnabled = true;
+            this.cbxSanPellegrino.Location = new System.Drawing.Point(110, 515);
+            this.cbxSanPellegrino.Name = "cbxSanPellegrino";
+            this.cbxSanPellegrino.Size = new System.Drawing.Size(65, 36);
+            this.cbxSanPellegrino.TabIndex = 24;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(110, 251);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(64, 36);
+            this.comboBox1.TabIndex = 23;
             // 
             // lblCokePrice
             // 
@@ -378,7 +387,7 @@
             // 
             this.lblLemonadePrice.AutoSize = true;
             this.lblLemonadePrice.ForeColor = System.Drawing.Color.Black;
-            this.lblLemonadePrice.Location = new System.Drawing.Point(51, 802);
+            this.lblLemonadePrice.Location = new System.Drawing.Point(50, 790);
             this.lblLemonadePrice.Name = "lblLemonadePrice";
             this.lblLemonadePrice.Size = new System.Drawing.Size(61, 28);
             this.lblLemonadePrice.TabIndex = 22;
@@ -404,13 +413,6 @@
             this.lblSanPellegrinoPrice.TabIndex = 21;
             this.lblSanPellegrinoPrice.Text = "$1.75";
             // 
-            // nudLemonade
-            // 
-            this.nudLemonade.Location = new System.Drawing.Point(118, 800);
-            this.nudLemonade.Name = "nudLemonade";
-            this.nudLemonade.Size = new System.Drawing.Size(64, 35);
-            this.nudLemonade.TabIndex = 10;
-            // 
             // btnLemonade
             // 
             this.btnLemonade.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Italian_Lemonade;
@@ -421,13 +423,6 @@
             this.btnLemonade.TabIndex = 9;
             this.btnLemonade.UseVisualStyleBackColor = true;
             this.btnLemonade.Click += new System.EventHandler(this.btnLemonade_Click);
-            // 
-            // nudSanPellegrino
-            // 
-            this.nudSanPellegrino.Location = new System.Drawing.Point(110, 513);
-            this.nudSanPellegrino.Name = "nudSanPellegrino";
-            this.nudSanPellegrino.Size = new System.Drawing.Size(61, 35);
-            this.nudSanPellegrino.TabIndex = 8;
             // 
             // lblSanPellegrino
             // 
@@ -460,13 +455,6 @@
             this.lblCoke.TabIndex = 2;
             this.lblCoke.Text = "Coke ";
             // 
-            // nudCoke
-            // 
-            this.nudCoke.Location = new System.Drawing.Point(109, 251);
-            this.nudCoke.Name = "nudCoke";
-            this.nudCoke.Size = new System.Drawing.Size(66, 35);
-            this.nudCoke.TabIndex = 1;
-            // 
             // btnCoke
             // 
             this.btnCoke.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.coca_cola_4090021_1280;
@@ -483,8 +471,11 @@
             // 
             this.gbxDrinkAlcohol.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gbxDrinkAlcohol.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.gbxDrinkAlcohol.Controls.Add(this.cbxLimoncello);
+            this.gbxDrinkAlcohol.Controls.Add(this.cbxRossini);
+            this.gbxDrinkAlcohol.Controls.Add(this.cbxSpritz);
+            this.gbxDrinkAlcohol.Controls.Add(this.cbxRocca);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRoccaDescript);
-            this.gbxDrinkAlcohol.Controls.Add(this.numericUpDown2);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRoccaPrice);
             this.gbxDrinkAlcohol.Controls.Add(this.lblLimoncelloPrice);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRossiniPrice);
@@ -492,12 +483,9 @@
             this.gbxDrinkAlcohol.Controls.Add(this.lblLimoncello);
             this.gbxDrinkAlcohol.Controls.Add(this.btnLimoncello);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRossini);
-            this.gbxDrinkAlcohol.Controls.Add(this.nudRossini);
             this.gbxDrinkAlcohol.Controls.Add(this.btnRossini);
-            this.gbxDrinkAlcohol.Controls.Add(this.nudSpritz);
             this.gbxDrinkAlcohol.Controls.Add(this.btnSpritz);
             this.gbxDrinkAlcohol.Controls.Add(this.lblSpritz);
-            this.gbxDrinkAlcohol.Controls.Add(this.nudRocca);
             this.gbxDrinkAlcohol.Controls.Add(this.lblRocca);
             this.gbxDrinkAlcohol.Controls.Add(this.btnRocca);
             this.gbxDrinkAlcohol.Location = new System.Drawing.Point(3, 37);
@@ -506,6 +494,38 @@
             this.gbxDrinkAlcohol.TabIndex = 0;
             this.gbxDrinkAlcohol.TabStop = false;
             this.gbxDrinkAlcohol.Text = "Alcoholic Drinks";
+            // 
+            // cbxLimoncello
+            // 
+            this.cbxLimoncello.FormattingEnabled = true;
+            this.cbxLimoncello.Location = new System.Drawing.Point(450, 250);
+            this.cbxLimoncello.Name = "cbxLimoncello";
+            this.cbxLimoncello.Size = new System.Drawing.Size(56, 36);
+            this.cbxLimoncello.TabIndex = 32;
+            // 
+            // cbxRossini
+            // 
+            this.cbxRossini.FormattingEnabled = true;
+            this.cbxRossini.Location = new System.Drawing.Point(106, 816);
+            this.cbxRossini.Name = "cbxRossini";
+            this.cbxRossini.Size = new System.Drawing.Size(56, 36);
+            this.cbxRossini.TabIndex = 31;
+            // 
+            // cbxSpritz
+            // 
+            this.cbxSpritz.FormattingEnabled = true;
+            this.cbxSpritz.Location = new System.Drawing.Point(111, 536);
+            this.cbxSpritz.Name = "cbxSpritz";
+            this.cbxSpritz.Size = new System.Drawing.Size(56, 36);
+            this.cbxSpritz.TabIndex = 30;
+            // 
+            // cbxRocca
+            // 
+            this.cbxRocca.FormattingEnabled = true;
+            this.cbxRocca.Location = new System.Drawing.Point(111, 251);
+            this.cbxRocca.Name = "cbxRocca";
+            this.cbxRocca.Size = new System.Drawing.Size(56, 36);
+            this.cbxRocca.TabIndex = 29;
             // 
             // lblRoccaDescript
             // 
@@ -519,13 +539,6 @@
             this.lblRoccaDescript.Size = new System.Drawing.Size(0, 28);
             this.lblRoccaDescript.TabIndex = 28;
             this.lblRoccaDescript.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(460, 246);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(61, 35);
-            this.numericUpDown2.TabIndex = 27;
             // 
             // lblRoccaPrice
             // 
@@ -541,7 +554,7 @@
             // 
             this.lblLimoncelloPrice.AutoSize = true;
             this.lblLimoncelloPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblLimoncelloPrice.Location = new System.Drawing.Point(390, 248);
+            this.lblLimoncelloPrice.Location = new System.Drawing.Point(380, 254);
             this.lblLimoncelloPrice.Name = "lblLimoncelloPrice";
             this.lblLimoncelloPrice.Size = new System.Drawing.Size(64, 28);
             this.lblLimoncelloPrice.TabIndex = 26;
@@ -598,13 +611,6 @@
             this.lblRossini.TabIndex = 8;
             this.lblRossini.Text = "Rossini";
             // 
-            // nudRossini
-            // 
-            this.nudRossini.Location = new System.Drawing.Point(106, 817);
-            this.nudRossini.Name = "nudRossini";
-            this.nudRossini.Size = new System.Drawing.Size(61, 35);
-            this.nudRossini.TabIndex = 7;
-            // 
             // btnRossini
             // 
             this.btnRossini.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Rossini;
@@ -615,13 +621,6 @@
             this.btnRossini.TabIndex = 6;
             this.btnRossini.UseVisualStyleBackColor = true;
             this.btnRossini.Click += new System.EventHandler(this.btnRossini_Click);
-            // 
-            // nudSpritz
-            // 
-            this.nudSpritz.Location = new System.Drawing.Point(111, 532);
-            this.nudSpritz.Name = "nudSpritz";
-            this.nudSpritz.Size = new System.Drawing.Size(61, 35);
-            this.nudSpritz.TabIndex = 5;
             // 
             // btnSpritz
             // 
@@ -643,13 +642,6 @@
             this.lblSpritz.Size = new System.Drawing.Size(172, 28);
             this.lblSpritz.TabIndex = 3;
             this.lblSpritz.Text = "Spritz Veneziano";
-            // 
-            // nudRocca
-            // 
-            this.nudRocca.Location = new System.Drawing.Point(115, 252);
-            this.nudRocca.Name = "nudRocca";
-            this.nudRocca.Size = new System.Drawing.Size(60, 35);
-            this.nudRocca.TabIndex = 2;
             // 
             // lblRocca
             // 
@@ -675,7 +667,7 @@
             // tabMainDishes
             // 
             this.tabMainDishes.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.tabMainDishes.Controls.Add(this.gbxMainDish);
+            this.tabMainDishes.Controls.Add(this.cbxPasta);
             this.tabMainDishes.Location = new System.Drawing.Point(4, 37);
             this.tabMainDishes.Name = "tabMainDishes";
             this.tabMainDishes.Padding = new System.Windows.Forms.Padding(3);
@@ -683,49 +675,57 @@
             this.tabMainDishes.TabIndex = 2;
             this.tabMainDishes.Text = "Main Dishes";
             // 
-            // gbxMainDish
+            // cbxPasta
             // 
-            this.gbxMainDish.Controls.Add(this.lblSpaghettiDescript);
-            this.gbxMainDish.Controls.Add(this.lblChickenAlfredoDescript);
-            this.gbxMainDish.Controls.Add(this.lblSpaghettiPrice);
-            this.gbxMainDish.Controls.Add(this.lblMinestronePrice);
-            this.gbxMainDish.Controls.Add(this.lblLasangaPrice);
-            this.gbxMainDish.Controls.Add(this.lblPastaPrice);
-            this.gbxMainDish.Controls.Add(this.lblSteakPrice);
-            this.gbxMainDish.Controls.Add(this.lblChickenAlfredoPrice);
-            this.gbxMainDish.Controls.Add(this.lblGnocchiPrice);
-            this.gbxMainDish.Controls.Add(this.lblChickenParmPrice);
-            this.gbxMainDish.Controls.Add(this.lblChickenAlfredo);
-            this.gbxMainDish.Controls.Add(this.nudSpaghetti);
-            this.gbxMainDish.Controls.Add(this.lblSpaghetti);
-            this.gbxMainDish.Controls.Add(this.btnChickenAlfredo);
-            this.gbxMainDish.Controls.Add(this.lblMinestrone);
-            this.gbxMainDish.Controls.Add(this.nudMinestrone);
-            this.gbxMainDish.Controls.Add(this.btnGnocchi);
-            this.gbxMainDish.Controls.Add(this.nudLasanga);
-            this.gbxMainDish.Controls.Add(this.btnChickenParm);
-            this.gbxMainDish.Controls.Add(this.lblChickenParm);
-            this.gbxMainDish.Controls.Add(this.nudSteak);
-            this.gbxMainDish.Controls.Add(this.nudChickenAlfredo);
-            this.gbxMainDish.Controls.Add(this.nudGnocchi);
-            this.gbxMainDish.Controls.Add(this.lblGnocchi);
-            this.gbxMainDish.Controls.Add(this.btnMinestrone);
-            this.gbxMainDish.Controls.Add(this.lblLasanga);
-            this.gbxMainDish.Controls.Add(this.lblSteak);
-            this.gbxMainDish.Controls.Add(this.btnSpaghetti);
-            this.gbxMainDish.Controls.Add(this.nudChickenParm);
-            this.gbxMainDish.Controls.Add(this.btnLasanga);
-            this.gbxMainDish.Controls.Add(this.lblPasta);
-            this.gbxMainDish.Controls.Add(this.nudPasta);
-            this.gbxMainDish.Controls.Add(this.btnPasta);
-            this.gbxMainDish.Controls.Add(this.btnSteak);
-            this.gbxMainDish.Location = new System.Drawing.Point(6, 3);
-            this.gbxMainDish.Name = "gbxMainDish";
-            this.gbxMainDish.Size = new System.Drawing.Size(1245, 920);
-            this.gbxMainDish.TabIndex = 0;
-            this.gbxMainDish.TabStop = false;
-            this.gbxMainDish.Text = "Main Dishes";
-            this.gbxMainDish.Enter += new System.EventHandler(this.gbxMainDish_Enter);
+            this.cbxPasta.Controls.Add(this.cbxMinestrone);
+            this.cbxPasta.Controls.Add(this.cbxSpaghetti);
+            this.cbxPasta.Controls.Add(this.cbxLasanga);
+            this.cbxPasta.Controls.Add(this.comboBox2);
+            this.cbxPasta.Controls.Add(this.cbxChickenAlfredo);
+            this.cbxPasta.Controls.Add(this.cbxGnocchi);
+            this.cbxPasta.Controls.Add(this.cbxChickenParm);
+            this.cbxPasta.Controls.Add(this.cbxSteak);
+            this.cbxPasta.Controls.Add(this.lblSpaghettiDescript);
+            this.cbxPasta.Controls.Add(this.lblChickenAlfredoDescript);
+            this.cbxPasta.Controls.Add(this.lblSpaghettiPrice);
+            this.cbxPasta.Controls.Add(this.lblMinestronePrice);
+            this.cbxPasta.Controls.Add(this.lblLasangaPrice);
+            this.cbxPasta.Controls.Add(this.lblPastaPrice);
+            this.cbxPasta.Controls.Add(this.lblSteakPrice);
+            this.cbxPasta.Controls.Add(this.lblChickenAlfredoPrice);
+            this.cbxPasta.Controls.Add(this.lblGnocchiPrice);
+            this.cbxPasta.Controls.Add(this.lblChickenParmPrice);
+            this.cbxPasta.Controls.Add(this.lblChickenAlfredo);
+            this.cbxPasta.Controls.Add(this.lblSpaghetti);
+            this.cbxPasta.Controls.Add(this.btnChickenAlfredo);
+            this.cbxPasta.Controls.Add(this.lblMinestrone);
+            this.cbxPasta.Controls.Add(this.btnGnocchi);
+            this.cbxPasta.Controls.Add(this.btnChickenParm);
+            this.cbxPasta.Controls.Add(this.lblChickenParm);
+            this.cbxPasta.Controls.Add(this.lblGnocchi);
+            this.cbxPasta.Controls.Add(this.btnMinestrone);
+            this.cbxPasta.Controls.Add(this.lblLasanga);
+            this.cbxPasta.Controls.Add(this.lblSteak);
+            this.cbxPasta.Controls.Add(this.btnSpaghetti);
+            this.cbxPasta.Controls.Add(this.btnLasanga);
+            this.cbxPasta.Controls.Add(this.lblPasta);
+            this.cbxPasta.Controls.Add(this.btnPasta);
+            this.cbxPasta.Controls.Add(this.btnSteak);
+            this.cbxPasta.Location = new System.Drawing.Point(6, 3);
+            this.cbxPasta.Name = "cbxPasta";
+            this.cbxPasta.Size = new System.Drawing.Size(1245, 920);
+            this.cbxPasta.TabIndex = 0;
+            this.cbxPasta.TabStop = false;
+            this.cbxPasta.Text = "Main Dishes";
+            this.cbxPasta.Enter += new System.EventHandler(this.gbxMainDish_Enter);
+            // 
+            // cbxSteak
+            // 
+            this.cbxSteak.FormattingEnabled = true;
+            this.cbxSteak.Location = new System.Drawing.Point(134, 211);
+            this.cbxSteak.Name = "cbxSteak";
+            this.cbxSteak.Size = new System.Drawing.Size(56, 36);
+            this.cbxSteak.TabIndex = 52;
             // 
             // lblSpaghettiDescript
             // 
@@ -751,7 +751,7 @@
             // 
             this.lblSpaghettiPrice.AutoSize = true;
             this.lblSpaghettiPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblSpaghettiPrice.Location = new System.Drawing.Point(635, 645);
+            this.lblSpaghettiPrice.Location = new System.Drawing.Point(630, 641);
             this.lblSpaghettiPrice.Name = "lblSpaghettiPrice";
             this.lblSpaghettiPrice.Size = new System.Drawing.Size(73, 28);
             this.lblSpaghettiPrice.TabIndex = 43;
@@ -761,7 +761,7 @@
             // 
             this.lblMinestronePrice.AutoSize = true;
             this.lblMinestronePrice.ForeColor = System.Drawing.Color.Black;
-            this.lblMinestronePrice.Location = new System.Drawing.Point(637, 861);
+            this.lblMinestronePrice.Location = new System.Drawing.Point(630, 861);
             this.lblMinestronePrice.Name = "lblMinestronePrice";
             this.lblMinestronePrice.Size = new System.Drawing.Size(73, 28);
             this.lblMinestronePrice.TabIndex = 42;
@@ -801,7 +801,7 @@
             // 
             this.lblChickenAlfredoPrice.AutoSize = true;
             this.lblChickenAlfredoPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblChickenAlfredoPrice.Location = new System.Drawing.Point(68, 865);
+            this.lblChickenAlfredoPrice.Location = new System.Drawing.Point(48, 867);
             this.lblChickenAlfredoPrice.Name = "lblChickenAlfredoPrice";
             this.lblChickenAlfredoPrice.Size = new System.Drawing.Size(73, 28);
             this.lblChickenAlfredoPrice.TabIndex = 39;
@@ -811,7 +811,7 @@
             // 
             this.lblGnocchiPrice.AutoSize = true;
             this.lblGnocchiPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblGnocchiPrice.Location = new System.Drawing.Point(55, 653);
+            this.lblGnocchiPrice.Location = new System.Drawing.Point(52, 659);
             this.lblGnocchiPrice.Name = "lblGnocchiPrice";
             this.lblGnocchiPrice.Size = new System.Drawing.Size(69, 28);
             this.lblGnocchiPrice.TabIndex = 38;
@@ -836,13 +836,6 @@
             this.lblChickenAlfredo.Size = new System.Drawing.Size(161, 28);
             this.lblChickenAlfredo.TabIndex = 35;
             this.lblChickenAlfredo.Text = "Chicken Alfredo";
-            // 
-            // nudSpaghetti
-            // 
-            this.nudSpaghetti.Location = new System.Drawing.Point(714, 643);
-            this.nudSpaghetti.Name = "nudSpaghetti";
-            this.nudSpaghetti.Size = new System.Drawing.Size(61, 35);
-            this.nudSpaghetti.TabIndex = 34;
             // 
             // lblSpaghetti
             // 
@@ -875,13 +868,6 @@
             this.lblMinestrone.TabIndex = 28;
             this.lblMinestrone.Text = "Minestrone";
             // 
-            // nudMinestrone
-            // 
-            this.nudMinestrone.Location = new System.Drawing.Point(716, 859);
-            this.nudMinestrone.Name = "nudMinestrone";
-            this.nudMinestrone.Size = new System.Drawing.Size(61, 35);
-            this.nudMinestrone.TabIndex = 26;
-            // 
             // btnGnocchi
             // 
             this.btnGnocchi.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.gnocchi;
@@ -892,13 +878,6 @@
             this.btnGnocchi.TabIndex = 25;
             this.btnGnocchi.UseVisualStyleBackColor = true;
             this.btnGnocchi.Click += new System.EventHandler(this.btnGnocchi_Click);
-            // 
-            // nudLasanga
-            // 
-            this.nudLasanga.Location = new System.Drawing.Point(712, 432);
-            this.nudLasanga.Name = "nudLasanga";
-            this.nudLasanga.Size = new System.Drawing.Size(61, 35);
-            this.nudLasanga.TabIndex = 22;
             // 
             // btnChickenParm
             // 
@@ -920,27 +899,6 @@
             this.lblChickenParm.Size = new System.Drawing.Size(184, 28);
             this.lblChickenParm.TabIndex = 18;
             this.lblChickenParm.Text = "Chicken Parmesan";
-            // 
-            // nudSteak
-            // 
-            this.nudSteak.Location = new System.Drawing.Point(138, 213);
-            this.nudSteak.Name = "nudSteak";
-            this.nudSteak.Size = new System.Drawing.Size(60, 35);
-            this.nudSteak.TabIndex = 17;
-            // 
-            // nudChickenAlfredo
-            // 
-            this.nudChickenAlfredo.Location = new System.Drawing.Point(147, 861);
-            this.nudChickenAlfredo.Name = "nudChickenAlfredo";
-            this.nudChickenAlfredo.Size = new System.Drawing.Size(64, 35);
-            this.nudChickenAlfredo.TabIndex = 32;
-            // 
-            // nudGnocchi
-            // 
-            this.nudGnocchi.Location = new System.Drawing.Point(130, 651);
-            this.nudGnocchi.Name = "nudGnocchi";
-            this.nudGnocchi.Size = new System.Drawing.Size(61, 35);
-            this.nudGnocchi.TabIndex = 29;
             // 
             // lblGnocchi
             // 
@@ -994,13 +952,6 @@
             this.btnSpaghetti.UseVisualStyleBackColor = true;
             this.btnSpaghetti.Click += new System.EventHandler(this.btnSpaghetti_Click);
             // 
-            // nudChickenParm
-            // 
-            this.nudChickenParm.Location = new System.Drawing.Point(134, 433);
-            this.nudChickenParm.Name = "nudChickenParm";
-            this.nudChickenParm.Size = new System.Drawing.Size(61, 35);
-            this.nudChickenParm.TabIndex = 23;
-            // 
             // btnLasanga
             // 
             this.btnLasanga.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Lasagna;
@@ -1021,13 +972,6 @@
             this.lblPasta.Size = new System.Drawing.Size(62, 28);
             this.lblPasta.TabIndex = 16;
             this.lblPasta.Text = "Pasta";
-            // 
-            // nudPasta
-            // 
-            this.nudPasta.Location = new System.Drawing.Point(691, 209);
-            this.nudPasta.Name = "nudPasta";
-            this.nudPasta.Size = new System.Drawing.Size(66, 35);
-            this.nudPasta.TabIndex = 14;
             // 
             // btnPasta
             // 
@@ -1204,6 +1148,62 @@
             this.tabDesserts.TabIndex = 4;
             this.tabDesserts.Text = "Desserts";
             // 
+            // cbxChickenParm
+            // 
+            this.cbxChickenParm.FormattingEnabled = true;
+            this.cbxChickenParm.Location = new System.Drawing.Point(130, 434);
+            this.cbxChickenParm.Name = "cbxChickenParm";
+            this.cbxChickenParm.Size = new System.Drawing.Size(56, 36);
+            this.cbxChickenParm.TabIndex = 53;
+            // 
+            // cbxGnocchi
+            // 
+            this.cbxGnocchi.FormattingEnabled = true;
+            this.cbxGnocchi.Location = new System.Drawing.Point(130, 656);
+            this.cbxGnocchi.Name = "cbxGnocchi";
+            this.cbxGnocchi.Size = new System.Drawing.Size(56, 36);
+            this.cbxGnocchi.TabIndex = 54;
+            // 
+            // cbxChickenAlfredo
+            // 
+            this.cbxChickenAlfredo.FormattingEnabled = true;
+            this.cbxChickenAlfredo.Location = new System.Drawing.Point(130, 864);
+            this.cbxChickenAlfredo.Name = "cbxChickenAlfredo";
+            this.cbxChickenAlfredo.Size = new System.Drawing.Size(56, 36);
+            this.cbxChickenAlfredo.TabIndex = 55;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(709, 211);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(56, 36);
+            this.comboBox2.TabIndex = 56;
+            // 
+            // cbxLasanga
+            // 
+            this.cbxLasanga.FormattingEnabled = true;
+            this.cbxLasanga.Location = new System.Drawing.Point(709, 431);
+            this.cbxLasanga.Name = "cbxLasanga";
+            this.cbxLasanga.Size = new System.Drawing.Size(56, 36);
+            this.cbxLasanga.TabIndex = 57;
+            // 
+            // cbxSpaghetti
+            // 
+            this.cbxSpaghetti.FormattingEnabled = true;
+            this.cbxSpaghetti.Location = new System.Drawing.Point(709, 638);
+            this.cbxSpaghetti.Name = "cbxSpaghetti";
+            this.cbxSpaghetti.Size = new System.Drawing.Size(56, 36);
+            this.cbxSpaghetti.TabIndex = 58;
+            // 
+            // cbxMinestrone
+            // 
+            this.cbxMinestrone.FormattingEnabled = true;
+            this.cbxMinestrone.Location = new System.Drawing.Point(709, 858);
+            this.cbxMinestrone.Name = "cbxMinestrone";
+            this.cbxMinestrone.Size = new System.Drawing.Size(56, 36);
+            this.cbxMinestrone.TabIndex = 59;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1225,28 +1225,13 @@
             this.tabMainMenu.PerformLayout();
             this.nudLimoncello.ResumeLayout(false);
             this.nudLimoncello.PerformLayout();
-            this.gbxNonAlcoholic.ResumeLayout(false);
-            this.gbxNonAlcoholic.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLemonade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCoke)).EndInit();
+            this.cbxCoke.ResumeLayout(false);
+            this.cbxCoke.PerformLayout();
             this.gbxDrinkAlcohol.ResumeLayout(false);
             this.gbxDrinkAlcohol.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRossini)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSpritz)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRocca)).EndInit();
             this.tabMainDishes.ResumeLayout(false);
-            this.gbxMainDish.ResumeLayout(false);
-            this.gbxMainDish.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSpaghetti)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudMinestrone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudLasanga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSteak)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChickenAlfredo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudGnocchi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudChickenParm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPasta)).EndInit();
+            this.cbxPasta.ResumeLayout(false);
+            this.cbxPasta.PerformLayout();
             this.tabSalads.ResumeLayout(false);
             this.gbxSalads.ResumeLayout(false);
             this.gbxSalads.PerformLayout();
@@ -1265,7 +1250,7 @@
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.TabPage nudLimoncello;
         private System.Windows.Forms.GroupBox gbxDrinkAlcohol;
-        private System.Windows.Forms.GroupBox gbxNonAlcoholic;
+        private System.Windows.Forms.GroupBox cbxCoke;
         private System.Windows.Forms.TabPage tabMainDishes;
         public System.Windows.Forms.TextBox txtLastName;
         public System.Windows.Forms.TextBox txtFirstName;
@@ -1276,51 +1261,37 @@
         private System.Windows.Forms.TabControl tabOrderDisplay;
         private System.Windows.Forms.TabPage tabOrderBackground;
         private System.Windows.Forms.ListBox lstOrderDisplay;
-        private System.Windows.Forms.NumericUpDown nudCoke;
         public System.Windows.Forms.Button btnCoke;
         private System.Windows.Forms.Label lblCoke;
         private System.Windows.Forms.Label lblClickInfo;
         private System.Windows.Forms.Button btnSanPellegrino;
-        private System.Windows.Forms.NumericUpDown nudSanPellegrino;
         private System.Windows.Forms.Label lblSanPellegrino;
-        private System.Windows.Forms.NumericUpDown nudLemonade;
         private System.Windows.Forms.Button btnLemonade;
         private System.Windows.Forms.Label lblLemonade;
         private System.Windows.Forms.Button btnRocca;
         private System.Windows.Forms.Label lblRocca;
-        private System.Windows.Forms.NumericUpDown nudSpritz;
         private System.Windows.Forms.Button btnSpritz;
         private System.Windows.Forms.Label lblSpritz;
-        private System.Windows.Forms.NumericUpDown nudRocca;
         private System.Windows.Forms.Button btnRossini;
         private System.Windows.Forms.Label lblLimoncello;
         private System.Windows.Forms.Button btnLimoncello;
         private System.Windows.Forms.Label lblRossini;
-        private System.Windows.Forms.NumericUpDown nudRossini;
         private System.Windows.Forms.Label lblCokePrice;
-        private System.Windows.Forms.GroupBox gbxMainDish;
+        private System.Windows.Forms.GroupBox cbxPasta;
         private System.Windows.Forms.Label lblChickenAlfredo;
-        private System.Windows.Forms.NumericUpDown nudSpaghetti;
         private System.Windows.Forms.Label lblSpaghetti;
         private System.Windows.Forms.Button btnChickenAlfredo;
         private System.Windows.Forms.Label lblMinestrone;
-        private System.Windows.Forms.NumericUpDown nudMinestrone;
         private System.Windows.Forms.Button btnGnocchi;
-        private System.Windows.Forms.NumericUpDown nudLasanga;
         private System.Windows.Forms.Button btnChickenParm;
         private System.Windows.Forms.Label lblChickenParm;
-        private System.Windows.Forms.NumericUpDown nudSteak;
-        private System.Windows.Forms.NumericUpDown nudChickenAlfredo;
-        private System.Windows.Forms.NumericUpDown nudGnocchi;
         private System.Windows.Forms.Label lblGnocchi;
         private System.Windows.Forms.Button btnMinestrone;
         private System.Windows.Forms.Label lblLasanga;
         private System.Windows.Forms.Label lblSteak;
         private System.Windows.Forms.Button btnSpaghetti;
-        private System.Windows.Forms.NumericUpDown nudChickenParm;
         private System.Windows.Forms.Button btnLasanga;
         private System.Windows.Forms.Label lblPasta;
-        private System.Windows.Forms.NumericUpDown nudPasta;
         public System.Windows.Forms.Button btnPasta;
         private System.Windows.Forms.Button btnSteak;
         private System.Windows.Forms.GroupBox gbxSalads;
@@ -1336,7 +1307,6 @@
         private System.Windows.Forms.Button btnRemoveItems;
         private System.Windows.Forms.Label lblLemonadePrice;
         private System.Windows.Forms.Label lblSanPellegrinoPrice;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Label lblRoccaPrice;
         private System.Windows.Forms.Label lblLimoncelloPrice;
         private System.Windows.Forms.Label lblRossiniPrice;
@@ -1356,6 +1326,21 @@
         private System.Windows.Forms.Label lblRoccaDescript;
         private System.Windows.Forms.Label lblSpaghettiDescript;
         private System.Windows.Forms.Label lblChickenAlfredoDescript;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxLimoncello;
+        private System.Windows.Forms.ComboBox cbxRossini;
+        private System.Windows.Forms.ComboBox cbxSpritz;
+        private System.Windows.Forms.ComboBox cbxRocca;
+        private System.Windows.Forms.ComboBox cbxLemonade;
+        private System.Windows.Forms.ComboBox cbxSanPellegrino;
+        private System.Windows.Forms.ComboBox cbxSteak;
+        private System.Windows.Forms.ComboBox cbxChickenAlfredo;
+        private System.Windows.Forms.ComboBox cbxGnocchi;
+        private System.Windows.Forms.ComboBox cbxChickenParm;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxMinestrone;
+        private System.Windows.Forms.ComboBox cbxSpaghetti;
+        private System.Windows.Forms.ComboBox cbxLasanga;
     }
 }
 

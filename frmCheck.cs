@@ -34,7 +34,9 @@ namespace MiguelsAndJosh_Module8
         {
             const int CARDNUMBER = 25;
             const int PIN = 4;
-            string payment = " Your payment has been decided.";
+            string paymentDecline = " Your payment has been decided.";
+            char[] creditCardNumber = new char[CARDNUMBER];
+
 
             //CreditCard
             if (radCredit.Checked)
@@ -99,6 +101,11 @@ namespace MiguelsAndJosh_Module8
             txtDebitNum.Visible = false;
             txtCreditNum.Visible = false;
             lblCreditCard.Visible = false;
+        }
+
+        private void txtCreditNum_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
