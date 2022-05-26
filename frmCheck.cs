@@ -46,13 +46,13 @@ namespace MiguelsAndJosh_Module8
             //CreditCard Variables
             const int CREDITLIMIT = 16;
             double numbersOnlyCheck = 0;
+            double pinNumbersOnlyCheck = 0;
             string cardNumber;
             string expDate;
             string expMonth;
             //DebitCard specific Variables
             const int DEBITLIMIT = 16;
             const int PIN = 4;
-            double pinNumbersOnlyCheck = 0;
             string pinNumbers;
 
             if (stopDoubleOrder == false)
@@ -225,7 +225,7 @@ namespace MiguelsAndJosh_Module8
         {
             StreamReader inFile;
             double itemPrice;
-            
+            double total = 0;
             lstCheck.Visible = true;
           
             DateTime dt = DateTime.Now;
@@ -238,20 +238,38 @@ namespace MiguelsAndJosh_Module8
 
             while (!inFile.EndOfStream)
             {
+               
                 itemsPrice[count] = double.Parse(inFile.ReadLine()); // Converts Price
                 itemsQuantity[count] = int.Parse(inFile.ReadLine());
-                // Displays for Print
                 itemPrice = itemsPrice[count] * itemsQuantity[count];
-                lstCheck.Items.Add(itemPrice.ToString("c"));
+                total += itemPrice;
+                itemsNames[count] = inFile.ReadLine();
+                // Displays for Print
+               
+                lstCheck.Items.Add(itemsNames[count]+"X" +itemsQuantity[count]+itemPrice.ToString("c"));
+                
 
 
                 count++;
+                
             }
+            lstCheck.Items.Add(total.ToString("c"));
 
             inFile.Close();
 
            
         }
 
+        private void chkTip_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkTip.Checked)
+            {
+                txtTip.Visible = true;
+            }
+            else
+            {
+                txtTip.Visible = false;
+            }
+        }
     }
 }

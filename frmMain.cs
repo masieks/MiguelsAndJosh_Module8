@@ -41,37 +41,44 @@ namespace MiguelsAndJosh_Module8
         {
             string name = txtFirstName.Text + " " + txtLastName.Text;
             if (txtFirstName.Text == "")
-                MessageBox.Show("Please enter your first name.");
+            {
+                MessageBox.Show("Please enter your first name in the main menu.");
+            }
             else if (txtLastName.Text == "")
-                MessageBox.Show("Please enter your last name.");
+            {
+                MessageBox.Show("Please enter your last name in the main menu.");
+            }
+            else if (lstOrderDisplay.Items.Count == 0)
+            {
+                MessageBox.Show("Please Add Item to your order!");
+            }
             else
             {
-                if (lstOrderDisplay.Items.Count < 0)
-                    MessageBox.Show("Please Add Item!");
+                frmCheck frmShowOrder = new frmCheck();
+                frmShowOrder.lstCheck.Items.Add(name);
+                for (int i = 0; i < lstOrderDisplay.Items.Count; i++)
+                    frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
+                if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS
+                {
+                    MessageBox.Show("No items, Please Add Items!!");
+                }
                 else
                 {
-                    frmCheck frmShowOrder = new frmCheck();
-                    frmShowOrder.lstCheck.Items.Add(name);
-                    for (int i = 0; i < lstOrderDisplay.Items.Count; i++)
-                        frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
-                    if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS
-                        MessageBox.Show("No items, Please Add Items!!");
-                    else
-                    {
-                        
-                        outFile = File.CreateText(filePath); // OPENS FILE
-                        for (int i = 0; i < lstOrderDisplay.Items.Count; i++) // FILLS ARRAY WITH TOTAL LIST ITEMS               
-                        {
-                            outFile.WriteLine(itemsPrice[i]); // PRICE ONLY
-                            outFile.WriteLine(itemsQuantity[i]);
-                        }
-                        outFile.Close();// CLOSES FILE
-                    }
-                    
 
-                    frmShowOrder.ShowDialog();
+                    outFile = File.CreateText(filePath); // OPENS FILE
+                    for (int i = 0; i < lstOrderDisplay.Items.Count; i++) // FILLS ARRAY WITH TOTAL LIST ITEMS               
+                    {
+                        outFile.WriteLine(itemsPrice[i]); // PRICE ONLY
+                        outFile.WriteLine(itemsQuantity[i]);
+                        outFile.WriteLine(itemsNames[i]);
+                    }
+                    outFile.Close();// CLOSES FILE
                 }
+
+
+                frmShowOrder.ShowDialog();
             }
+            
         }
 
         //Remove Items Button
@@ -258,7 +265,7 @@ namespace MiguelsAndJosh_Module8
         //Pastas
         private void btnPasta_Click(object sender, EventArgs e)
         {
-            double pastaPrice = 13.99;
+            double pastaPrice = 9.99;
             if (cbxPasta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
@@ -273,7 +280,7 @@ namespace MiguelsAndJosh_Module8
 
         private void btnLasanga_Click(object sender, EventArgs e)
         {
-            double lasangaPrice = 15.99;
+            double lasangaPrice = 12.99;
             if (cbxLasanga.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
@@ -399,7 +406,7 @@ namespace MiguelsAndJosh_Module8
 
         private void btnPannaCotta_Click(object sender, EventArgs e)
         {
-            double pannaCottaPrice = 9.99;
+            double pannaCottaPrice = 8.99;
             if (cbxPannaCotta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
@@ -415,7 +422,7 @@ namespace MiguelsAndJosh_Module8
 
         private void btnTiramisu_Click(object sender, EventArgs e)
         {
-            double tiramisuPrice = 9.99;
+            double tiramisuPrice = 7.99;
             if (cbxTiramisu.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
@@ -427,6 +434,11 @@ namespace MiguelsAndJosh_Module8
                 count++;
 
             }
+        }
+
+        private void tabMainMenu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

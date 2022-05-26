@@ -56,6 +56,8 @@
             this.lstCheck = new System.Windows.Forms.ListBox();
             this.lblOrderReview = new System.Windows.Forms.Label();
             this.lblFinalOrder = new System.Windows.Forms.Label();
+            this.chkTip = new System.Windows.Forms.CheckBox();
+            this.txtTip = new System.Windows.Forms.TextBox();
             this.gbxPayment.SuspendLayout();
             this.gbxCreditInfo.SuspendLayout();
             this.gbxDebitInfo.SuspendLayout();
@@ -100,6 +102,8 @@
             // gbxPayment
             // 
             this.gbxPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gbxPayment.Controls.Add(this.txtTip);
+            this.gbxPayment.Controls.Add(this.chkTip);
             this.gbxPayment.Controls.Add(this.gbxCreditInfo);
             this.gbxPayment.Controls.Add(this.chbxCash);
             this.gbxPayment.Controls.Add(this.gbxDebitInfo);
@@ -485,6 +489,27 @@
             this.lblFinalOrder.Text = "Final Order";
             this.lblFinalOrder.Visible = false;
             // 
+            // chkTip
+            // 
+            this.chkTip.AutoSize = true;
+            this.chkTip.Location = new System.Drawing.Point(262, 46);
+            this.chkTip.Name = "chkTip";
+            this.chkTip.Size = new System.Drawing.Size(60, 30);
+            this.chkTip.TabIndex = 21;
+            this.chkTip.Text = "Tip";
+            this.chkTip.UseVisualStyleBackColor = true;
+            this.chkTip.CheckedChanged += new System.EventHandler(this.chkTip_CheckedChanged);
+            // 
+            // txtTip
+            // 
+            this.txtTip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTip.Location = new System.Drawing.Point(337, 46);
+            this.txtTip.Name = "txtTip";
+            this.txtTip.Size = new System.Drawing.Size(111, 32);
+            this.txtTip.TabIndex = 23;
+            this.txtTip.Visible = false;
+            // 
             // frmCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,5 +566,7 @@
         private System.Windows.Forms.CheckBox chbxCredit;
         private System.Windows.Forms.CheckBox chbxCash;
         private System.Windows.Forms.CheckBox chbxDebit;
+        private System.Windows.Forms.TextBox txtTip;
+        private System.Windows.Forms.CheckBox chkTip;
     }
 }

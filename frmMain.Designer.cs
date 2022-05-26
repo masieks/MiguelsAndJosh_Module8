@@ -39,6 +39,7 @@
             this.btnOrder = new System.Windows.Forms.Button();
             this.tabMenu = new System.Windows.Forms.TabControl();
             this.tabMainMenu = new System.Windows.Forms.TabPage();
+            this.lblClickInfo = new System.Windows.Forms.Label();
             this.lblWelcomeMessage = new System.Windows.Forms.Label();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
@@ -144,7 +145,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCannoli = new System.Windows.Forms.Label();
             this.btnCannoli = new System.Windows.Forms.Button();
-            this.lblClickInfo = new System.Windows.Forms.Label();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -303,6 +303,19 @@
             this.tabMainMenu.Size = new System.Drawing.Size(1323, 929);
             this.tabMainMenu.TabIndex = 0;
             this.tabMainMenu.Text = "Main Menu";
+            this.tabMainMenu.Click += new System.EventHandler(this.tabMainMenu_Click);
+            // 
+            // lblClickInfo
+            // 
+            this.lblClickInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lblClickInfo.AutoSize = true;
+            this.lblClickInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClickInfo.Location = new System.Drawing.Point(236, 643);
+            this.lblClickInfo.Name = "lblClickInfo";
+            this.lblClickInfo.Size = new System.Drawing.Size(721, 111);
+            this.lblClickInfo.TabIndex = 6;
+            this.lblClickInfo.Text = "While Ordering, Select the Box to the bottom right\r\nto select the Quantity. Once " +
+    "the Quantity is Set \r\nClick the Picture of the Item to Add to your Order.\r\n";
             // 
             // lblWelcomeMessage
             // 
@@ -311,9 +324,9 @@
             this.lblWelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcomeMessage.Location = new System.Drawing.Point(266, 165);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(667, 55);
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(497, 55);
             this.lblWelcomeMessage.TabIndex = 5;
-            this.lblWelcomeMessage.Text = "Welcome to [Resturant Name]";
+            this.lblWelcomeMessage.Text = "Welcome to  Delicioso";
             // 
             // txtLastName
             // 
@@ -735,9 +748,9 @@
             // 
             this.btnRossini.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Rossini;
             this.btnRossini.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRossini.Location = new System.Drawing.Point(60, 657);
+            this.btnRossini.Location = new System.Drawing.Point(51, 657);
             this.btnRossini.Name = "btnRossini";
-            this.btnRossini.Size = new System.Drawing.Size(95, 153);
+            this.btnRossini.Size = new System.Drawing.Size(136, 153);
             this.btnRossini.TabIndex = 6;
             this.btnRossini.UseVisualStyleBackColor = true;
             this.btnRossini.Click += new System.EventHandler(this.btnRossini_Click);
@@ -1675,18 +1688,6 @@
             this.btnCannoli.TabIndex = 56;
             this.btnCannoli.UseVisualStyleBackColor = true;
             this.btnCannoli.Click += new System.EventHandler(this.btnCannoli_Click);
-            // 
-            // lblClickInfo
-            // 
-            this.lblClickInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblClickInfo.AutoSize = true;
-            this.lblClickInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClickInfo.Location = new System.Drawing.Point(236, 643);
-            this.lblClickInfo.Name = "lblClickInfo";
-            this.lblClickInfo.Size = new System.Drawing.Size(721, 111);
-            this.lblClickInfo.TabIndex = 6;
-            this.lblClickInfo.Text = "While Ordering, Select the Box to the bottom right\r\nto select the Quantity. Once " +
-    "the Quantity is Set \r\nClick the Picture of the Item to Add to your Order.\r\n";
             // 
             // frmMain
             // 
