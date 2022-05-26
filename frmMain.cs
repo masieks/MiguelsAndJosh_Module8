@@ -195,7 +195,7 @@ namespace MiguelsAndJosh_Module8
         private void btnSteak_Click(object sender, EventArgs e)
         {
             double steakPrice = 19.99;
-            if (cbxSteak.Text == " ")
+            if (cbxSteak.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -225,7 +225,7 @@ namespace MiguelsAndJosh_Module8
         private void btnGnocchi_Click(object sender, EventArgs e)
         {
             double gnocchiPrice = 11.99;
-            if (cbxGnocchi.Text == " ")
+            if (cbxGnocchi.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -240,7 +240,7 @@ namespace MiguelsAndJosh_Module8
         private void btnChickenAlfredo_Click(object sender, EventArgs e)
         {
             double chickenAlfredoPrice = 13.99;
-            if (cbxChickenAlfredo.Text == " ")
+            if (cbxChickenAlfredo.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -256,7 +256,7 @@ namespace MiguelsAndJosh_Module8
         private void btnPasta_Click(object sender, EventArgs e)
         {
             double pastaPrice = 13.99;
-            if (cbxPasta.Text == " ")
+            if (cbxPasta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -271,7 +271,7 @@ namespace MiguelsAndJosh_Module8
         private void btnLasanga_Click(object sender, EventArgs e)
         {
             double lasangaPrice = 15.99;
-            if (cbxLasanga.Text == " ")
+            if (cbxLasanga.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -286,7 +286,7 @@ namespace MiguelsAndJosh_Module8
         private void btnMinestrone_Click(object sender, EventArgs e)
         {
             double minestronePrice = 14.99;
-            if (cbxMinestrone.Text == " ")
+            if (cbxMinestrone.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -301,7 +301,7 @@ namespace MiguelsAndJosh_Module8
         private void btnSpaghetti_Click(object sender, EventArgs e)
         {
             double spaghettiPrice = 14.99;
-            if (cbxSpaghetti.Text == " ")
+            if (cbxSpaghetti.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -317,7 +317,7 @@ namespace MiguelsAndJosh_Module8
         private void btnGreekSalad_Click(object sender, EventArgs e)
         {
             double greekSaladPrice = 9.99;
-            if (cbxCeasarSalad.Text == " ")
+            if (cbxCeasarSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -333,7 +333,7 @@ namespace MiguelsAndJosh_Module8
         private void btnCeasar_Click(object sender, EventArgs e)
         {
             double ceasarSaladPrice = 9.99;
-            if (cbxCeasarSalad.Text == " ")
+            if (cbxCeasarSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
@@ -349,7 +349,7 @@ namespace MiguelsAndJosh_Module8
         private void btnItalianSalad_Click(object sender, EventArgs e)
         {
             double italianSaladPrice = 9.99;
-            if (cbxItalianSalad.Text == " ")
+            if (cbxItalianSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {
