@@ -127,10 +127,13 @@ namespace MiguelsAndJosh_Module8
                         getFinalOrder();
                     }
                 }
-
+                btnRemoveItems.Enabled = false;
+                btnReturn.Enabled = false;
+                btnFinalOrder.Enabled = false;  
             }
             else MessageBox.Show("Payment was already accepted");
         }
+
         private void chbxCash_CheckedChanged(object sender, EventArgs e)
         {         
             if (chbxCash.Checked) //If checked uncheck others

@@ -52,16 +52,15 @@ namespace MiguelsAndJosh_Module8
             {
                 MessageBox.Show("Please Add Item to your order!");
             }
+            
             else
             {
                 frmCheck frmShowOrder = new frmCheck();
                 frmShowOrder.lstCheck.Items.Add(name);
                 for (int i = 0; i < lstOrderDisplay.Items.Count; i++)
                     frmShowOrder.lstOrder.Items.Add(lstOrderDisplay.Items[i].ToString());
-                if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS
-                {
-                    MessageBox.Show("No items, Please Add Items!!");
-                }
+                if (lstOrderDisplay.Items.Count == 0) // ERROR CHECHS ITEMS              
+                    MessageBox.Show("No items, Please Add Items!!");               
                 else
                 {
                     outFile = File.CreateText(filePath); // OPENS FILE
@@ -81,11 +80,13 @@ namespace MiguelsAndJosh_Module8
         //Remove Items Button
         private void btnRemoveItems_Click(object sender, EventArgs e)
         {
+            int x = 1;
             if (lstOrderDisplay.SelectedIndex > -1)
             {
                 lstOrderDisplay.Items.RemoveAt(lstOrderDisplay.SelectedIndex);
-                lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItems);
+               
             }
+            
         }
 
 

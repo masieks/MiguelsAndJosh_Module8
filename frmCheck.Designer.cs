@@ -72,7 +72,7 @@
             // 
             this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(94, 736);
+            this.btnReturn.Location = new System.Drawing.Point(78, 726);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(240, 51);
             this.btnReturn.TabIndex = 0;
@@ -322,7 +322,7 @@
             this.gbxDebitInfo.Controls.Add(this.cbxDeditExpDay);
             this.gbxDebitInfo.Location = new System.Drawing.Point(8, 238);
             this.gbxDebitInfo.Name = "gbxDebitInfo";
-            this.gbxDebitInfo.Size = new System.Drawing.Size(528, 221);
+            this.gbxDebitInfo.Size = new System.Drawing.Size(528, 222);
             this.gbxDebitInfo.TabIndex = 20;
             this.gbxDebitInfo.TabStop = false;
             // 
@@ -519,7 +519,7 @@
             // 
             this.btnRemoveItems.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRemoveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveItems.Location = new System.Drawing.Point(75, 688);
+            this.btnRemoveItems.Location = new System.Drawing.Point(141, 688);
             this.btnRemoveItems.Name = "btnRemoveItems";
             this.btnRemoveItems.Size = new System.Drawing.Size(110, 32);
             this.btnRemoveItems.TabIndex = 8;
@@ -531,7 +531,7 @@
             // 
             this.btnSaveChanges.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSaveChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(220, 688);
+            this.btnSaveChanges.Location = new System.Drawing.Point(1088, 688);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(129, 32);
             this.btnSaveChanges.TabIndex = 10;
@@ -591,7 +591,6 @@
             this.Name = "frmCheck";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-          //  this.Load += new System.EventHandler(this.frmCheck_Load);
             this.gbxPayment.ResumeLayout(false);
             this.gbxPayment.PerformLayout();
             this.gbxCreditInfo.ResumeLayout(false);
