@@ -145,6 +145,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCannoli = new System.Windows.Forms.Label();
             this.btnCannoli = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -192,6 +193,7 @@
             // 
             this.tabOrderBackground.BackColor = System.Drawing.Color.Transparent;
             this.tabOrderBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabOrderBackground.Controls.Add(this.button1);
             this.tabOrderBackground.Controls.Add(this.lblPrice);
             this.tabOrderBackground.Controls.Add(this.lblQuantity);
             this.tabOrderBackground.Controls.Add(this.lblDisplayItem);
@@ -236,9 +238,9 @@
             // 
             this.btnRemoveItems.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRemoveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveItems.Location = new System.Drawing.Point(67, 832);
+            this.btnRemoveItems.Location = new System.Drawing.Point(8, 832);
             this.btnRemoveItems.Name = "btnRemoveItems";
-            this.btnRemoveItems.Size = new System.Drawing.Size(154, 73);
+            this.btnRemoveItems.Size = new System.Drawing.Size(144, 73);
             this.btnRemoveItems.TabIndex = 2;
             this.btnRemoveItems.Text = "Remove Item(s)";
             this.btnRemoveItems.UseVisualStyleBackColor = true;
@@ -261,9 +263,9 @@
             // 
             this.btnOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(268, 831);
+            this.btnOrder.Location = new System.Drawing.Point(317, 832);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(135, 74);
+            this.btnOrder.Size = new System.Drawing.Size(124, 74);
             this.btnOrder.TabIndex = 0;
             this.btnOrder.Text = "Place Order";
             this.btnOrder.UseVisualStyleBackColor = true;
@@ -1689,6 +1691,17 @@
             this.btnCannoli.UseVisualStyleBackColor = true;
             this.btnCannoli.Click += new System.EventHandler(this.btnCannoli_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(158, 832);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 73);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Clear All Items(s)";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1846,6 +1859,7 @@
         private System.Windows.Forms.Label lblCannoli;
         private System.Windows.Forms.Button btnCannoli;
         private System.Windows.Forms.Label lblClickInfo;
+        private System.Windows.Forms.Button button1;
     }
 }
 
