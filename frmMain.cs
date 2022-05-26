@@ -81,7 +81,10 @@ namespace MiguelsAndJosh_Module8
         private void btnRemoveItems_Click(object sender, EventArgs e)
         {
             if (lstOrderDisplay.SelectedIndex > -1)
+            {
                 lstOrderDisplay.Items.RemoveAt(lstOrderDisplay.SelectedIndex);
+                lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItems);
+            }
         }
         
 
@@ -220,5 +223,9 @@ namespace MiguelsAndJosh_Module8
             getListDisplay(name, quantity);
         }
 
+        private void gbxMainDish_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
