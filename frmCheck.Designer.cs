@@ -175,38 +175,14 @@
             this.cbxCreditExpDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCreditExpDay.FormattingEnabled = true;
             this.cbxCreditExpDay.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
             "22",
             "23",
             "24",
             "25",
             "26",
             "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cbxCreditExpDay.Location = new System.Drawing.Point(354, 89);
+            "28"});
+            this.cbxCreditExpDay.Location = new System.Drawing.Point(434, 89);
             this.cbxCreditExpDay.Name = "cbxCreditExpDay";
             this.cbxCreditExpDay.Size = new System.Drawing.Size(61, 33);
             this.cbxCreditExpDay.TabIndex = 9;
@@ -229,7 +205,7 @@
             "10",
             "11",
             "12"});
-            this.cbxCreditExpMonth.Location = new System.Drawing.Point(440, 89);
+            this.cbxCreditExpMonth.Location = new System.Drawing.Point(337, 89);
             this.cbxCreditExpMonth.Name = "cbxCreditExpMonth";
             this.cbxCreditExpMonth.Size = new System.Drawing.Size(61, 33);
             this.cbxCreditExpMonth.TabIndex = 11;
@@ -239,7 +215,7 @@
             this.lblCreditExpMonth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreditExpMonth.AutoSize = true;
             this.lblCreditExpMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreditExpMonth.Location = new System.Drawing.Point(436, 66);
+            this.lblCreditExpMonth.Location = new System.Drawing.Point(333, 66);
             this.lblCreditExpMonth.Name = "lblCreditExpMonth";
             this.lblCreditExpMonth.Size = new System.Drawing.Size(54, 20);
             this.lblCreditExpMonth.TabIndex = 13;
@@ -261,11 +237,11 @@
             this.lblCreditExpDate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCreditExpDate.AutoSize = true;
             this.lblCreditExpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreditExpDate.Location = new System.Drawing.Point(350, 66);
+            this.lblCreditExpDate.Location = new System.Drawing.Point(440, 66);
             this.lblCreditExpDate.Name = "lblCreditExpDate";
-            this.lblCreditExpDate.Size = new System.Drawing.Size(44, 20);
+            this.lblCreditExpDate.Size = new System.Drawing.Size(43, 20);
             this.lblCreditExpDate.TabIndex = 10;
-            this.lblCreditExpDate.Text = "Date";
+            this.lblCreditExpDate.Text = "Year";
             // 
             // chbxCash
             // 
@@ -362,7 +338,7 @@
             this.lblDebitExpMonth.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDebitExpMonth.AutoSize = true;
             this.lblDebitExpMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDebitExpMonth.Location = new System.Drawing.Point(430, 134);
+            this.lblDebitExpMonth.Location = new System.Drawing.Point(344, 132);
             this.lblDebitExpMonth.Name = "lblDebitExpMonth";
             this.lblDebitExpMonth.Size = new System.Drawing.Size(54, 20);
             this.lblDebitExpMonth.TabIndex = 18;
@@ -397,7 +373,7 @@
             "10",
             "11",
             "12"});
-            this.cbxDeditExpMonth.Location = new System.Drawing.Point(434, 157);
+            this.cbxDeditExpMonth.Location = new System.Drawing.Point(337, 155);
             this.cbxDeditExpMonth.Name = "cbxDeditExpMonth";
             this.cbxDeditExpMonth.Size = new System.Drawing.Size(61, 33);
             this.cbxDeditExpMonth.TabIndex = 16;
@@ -407,11 +383,11 @@
             this.lblDebitExpDay.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDebitExpDay.AutoSize = true;
             this.lblDebitExpDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDebitExpDay.Location = new System.Drawing.Point(344, 134);
+            this.lblDebitExpDay.Location = new System.Drawing.Point(451, 132);
             this.lblDebitExpDay.Name = "lblDebitExpDay";
-            this.lblDebitExpDay.Size = new System.Drawing.Size(44, 20);
+            this.lblDebitExpDay.Size = new System.Drawing.Size(43, 20);
             this.lblDebitExpDay.TabIndex = 15;
-            this.lblDebitExpDay.Text = "Date";
+            this.lblDebitExpDay.Text = "Year";
             // 
             // cbxDeditExpDay
             // 
@@ -419,38 +395,14 @@
             this.cbxDeditExpDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxDeditExpDay.FormattingEnabled = true;
             this.cbxDeditExpDay.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
             "22",
             "23",
             "24",
             "25",
             "26",
             "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cbxDeditExpDay.Location = new System.Drawing.Point(348, 157);
+            "28"});
+            this.cbxDeditExpDay.Location = new System.Drawing.Point(444, 155);
             this.cbxDeditExpDay.Name = "cbxDeditExpDay";
             this.cbxDeditExpDay.Size = new System.Drawing.Size(61, 33);
             this.cbxDeditExpDay.TabIndex = 14;
@@ -472,8 +424,9 @@
             // 
             this.lblOrderReview.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblOrderReview.AutoSize = true;
+            this.lblOrderReview.BackColor = System.Drawing.Color.Gainsboro;
             this.lblOrderReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderReview.Location = new System.Drawing.Point(136, 47);
+            this.lblOrderReview.Location = new System.Drawing.Point(88, 34);
             this.lblOrderReview.Name = "lblOrderReview";
             this.lblOrderReview.Size = new System.Drawing.Size(145, 26);
             this.lblOrderReview.TabIndex = 6;
@@ -483,6 +436,7 @@
             // 
             this.lblFinalOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFinalOrder.AutoSize = true;
+            this.lblFinalOrder.BackColor = System.Drawing.Color.Gainsboro;
             this.lblFinalOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFinalOrder.Location = new System.Drawing.Point(1186, 59);
             this.lblFinalOrder.Name = "lblFinalOrder";
@@ -507,7 +461,7 @@
             // 
             this.btnSaveChanges.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSaveChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(1177, 679);
+            this.btnSaveChanges.Location = new System.Drawing.Point(1316, 679);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(129, 32);
             this.btnSaveChanges.TabIndex = 10;
@@ -518,8 +472,9 @@
             // 
             // lblDisplayItem
             // 
-            this.lblDisplayItem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblDisplayItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblDisplayItem.AutoSize = true;
+            this.lblDisplayItem.BackColor = System.Drawing.Color.Gainsboro;
             this.lblDisplayItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDisplayItem.Location = new System.Drawing.Point(12, 75);
             this.lblDisplayItem.Name = "lblDisplayItem";
@@ -529,8 +484,9 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblQuantity.AutoSize = true;
+            this.lblQuantity.BackColor = System.Drawing.Color.Gainsboro;
             this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuantity.Location = new System.Drawing.Point(127, 73);
             this.lblQuantity.Name = "lblQuantity";
@@ -540,8 +496,9 @@
             // 
             // lblPrice
             // 
-            this.lblPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPrice.AutoSize = true;
+            this.lblPrice.BackColor = System.Drawing.Color.Gainsboro;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.Location = new System.Drawing.Point(274, 73);
             this.lblPrice.Name = "lblPrice";
@@ -553,7 +510,7 @@
             // 
             this.btnRestart.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestart.Location = new System.Drawing.Point(1030, 679);
+            this.btnRestart.Location = new System.Drawing.Point(1060, 679);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(129, 32);
             this.btnRestart.TabIndex = 14;
@@ -567,6 +524,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.chicken_parm;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1583, 799);
             this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblPrice);

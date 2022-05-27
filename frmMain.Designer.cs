@@ -31,7 +31,7 @@
             this.tabBackground = new System.Windows.Forms.Panel();
             this.tabOrderDisplay = new System.Windows.Forms.TabControl();
             this.tabOrderBackground = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnClearAll = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblDisplayItem = new System.Windows.Forms.Label();
@@ -48,6 +48,9 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.nudLimoncello = new System.Windows.Forms.TabPage();
             this.cbxNonAlchoholic = new System.Windows.Forms.GroupBox();
+            this.lblLemDes = new System.Windows.Forms.Label();
+            this.lblOraDec = new System.Windows.Forms.Label();
+            this.lblCokeDes = new System.Windows.Forms.Label();
             this.cbxLemonade = new System.Windows.Forms.ComboBox();
             this.cbxSanPellegrino = new System.Windows.Forms.ComboBox();
             this.cbxCoke = new System.Windows.Forms.ComboBox();
@@ -61,6 +64,10 @@
             this.lblCoke = new System.Windows.Forms.Label();
             this.btnCoke = new System.Windows.Forms.Button();
             this.gbxDrinkAlcohol = new System.Windows.Forms.GroupBox();
+            this.lblRosDes = new System.Windows.Forms.Label();
+            this.lblSprDes = new System.Windows.Forms.Label();
+            this.desLimDec = new System.Windows.Forms.Label();
+            this.lblSrDes = new System.Windows.Forms.Label();
             this.cbxLimoncello = new System.Windows.Forms.ComboBox();
             this.cbxRossini = new System.Windows.Forms.ComboBox();
             this.cbxSpritz = new System.Windows.Forms.ComboBox();
@@ -80,6 +87,14 @@
             this.btnRocca = new System.Windows.Forms.Button();
             this.tabMainDishes = new System.Windows.Forms.TabPage();
             this.gbxMainDishes = new System.Windows.Forms.GroupBox();
+            this.lblMinDes = new System.Windows.Forms.Label();
+            this.lblSpaDes = new System.Windows.Forms.Label();
+            this.lblLasDes = new System.Windows.Forms.Label();
+            this.lblPasDec = new System.Windows.Forms.Label();
+            this.lblChiAlfDes = new System.Windows.Forms.Label();
+            this.lblGnoDes = new System.Windows.Forms.Label();
+            this.lblChiDes = new System.Windows.Forms.Label();
+            this.lblStaDes = new System.Windows.Forms.Label();
             this.cbxMinestrone = new System.Windows.Forms.ComboBox();
             this.cbxSpaghetti = new System.Windows.Forms.ComboBox();
             this.cbxLasanga = new System.Windows.Forms.ComboBox();
@@ -116,6 +131,10 @@
             this.btnSteak = new System.Windows.Forms.Button();
             this.tabSalads = new System.Windows.Forms.TabPage();
             this.gbxSalads = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblItaSalDec = new System.Windows.Forms.Label();
+            this.lblGreDes = new System.Windows.Forms.Label();
+            this.lblCeaDes = new System.Windows.Forms.Label();
             this.cbxCeasarSalad = new System.Windows.Forms.ComboBox();
             this.cbxGreekSalad = new System.Windows.Forms.ComboBox();
             this.cbxItalianSalad = new System.Windows.Forms.ComboBox();
@@ -130,6 +149,10 @@
             this.btnCeasarSalad = new System.Windows.Forms.Button();
             this.tabDesserts = new System.Windows.Forms.TabPage();
             this.gbxDesserts = new System.Windows.Forms.GroupBox();
+            this.lblTirDes = new System.Windows.Forms.Label();
+            this.lblGelDes = new System.Windows.Forms.Label();
+            this.lblPanDes = new System.Windows.Forms.Label();
+            this.lblCanDec = new System.Windows.Forms.Label();
             this.cbxTiramisu = new System.Windows.Forms.ComboBox();
             this.lblTiramisuPrice = new System.Windows.Forms.Label();
             this.lblTiramisu = new System.Windows.Forms.Label();
@@ -193,7 +216,7 @@
             // 
             this.tabOrderBackground.BackColor = System.Drawing.Color.Transparent;
             this.tabOrderBackground.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabOrderBackground.Controls.Add(this.button1);
+            this.tabOrderBackground.Controls.Add(this.btnClearAll);
             this.tabOrderBackground.Controls.Add(this.lblPrice);
             this.tabOrderBackground.Controls.Add(this.lblQuantity);
             this.tabOrderBackground.Controls.Add(this.lblDisplayItem);
@@ -207,16 +230,17 @@
             this.tabOrderBackground.TabIndex = 0;
             this.tabOrderBackground.Text = "Order";
             // 
-            // button1
+            // btnClearAll
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(158, 728);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 73);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Clear All Items(s)";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClearAll.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnClearAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearAll.Location = new System.Drawing.Point(158, 728);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(153, 73);
+            this.btnClearAll.TabIndex = 6;
+            this.btnClearAll.Text = "Clear All Items(s)";
+            this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click_1);
             // 
             // lblPrice
             // 
@@ -303,6 +327,8 @@
             // tabMainMenu
             // 
             this.tabMainMenu.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.tabMainMenu.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.flag;
+            this.tabMainMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabMainMenu.Controls.Add(this.lblClickInfo);
             this.tabMainMenu.Controls.Add(this.lblWelcomeMessage);
             this.tabMainMenu.Controls.Add(this.txtLastName);
@@ -319,10 +345,11 @@
             // 
             // lblClickInfo
             // 
-            this.lblClickInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblClickInfo.AutoSize = true;
+            this.lblClickInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblClickInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClickInfo.Location = new System.Drawing.Point(255, 638);
+            this.lblClickInfo.ForeColor = System.Drawing.Color.Black;
+            this.lblClickInfo.Location = new System.Drawing.Point(332, 659);
             this.lblClickInfo.Name = "lblClickInfo";
             this.lblClickInfo.Size = new System.Drawing.Size(721, 111);
             this.lblClickInfo.TabIndex = 6;
@@ -333,18 +360,20 @@
             // 
             this.lblWelcomeMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblWelcomeMessage.AutoSize = true;
+            this.lblWelcomeMessage.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcomeMessage.Location = new System.Drawing.Point(266, 165);
+            this.lblWelcomeMessage.ForeColor = System.Drawing.Color.Black;
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(260, 100);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
-            this.lblWelcomeMessage.Size = new System.Drawing.Size(497, 55);
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(777, 55);
             this.lblWelcomeMessage.TabIndex = 5;
-            this.lblWelcomeMessage.Text = "Welcome to  Delicioso";
+            this.lblWelcomeMessage.Text = "Welcome to  Delicioso E-Ristorante";
             // 
             // txtLastName
             // 
             this.txtLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(630, 462);
+            this.txtLastName.Location = new System.Drawing.Point(685, 313);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(327, 44);
             this.txtLastName.TabIndex = 4;
@@ -353,17 +382,18 @@
             // 
             this.txtFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(630, 387);
+            this.txtFirstName.Location = new System.Drawing.Point(689, 212);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(327, 44);
             this.txtFirstName.TabIndex = 3;
             // 
             // lblLastName
             // 
-            this.lblLastName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLastName.AutoSize = true;
+            this.lblLastName.BackColor = System.Drawing.Color.Transparent;
             this.lblLastName.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(220, 462);
+            this.lblLastName.ForeColor = System.Drawing.Color.Black;
+            this.lblLastName.Location = new System.Drawing.Point(275, 313);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(398, 39);
             this.lblLastName.TabIndex = 2;
@@ -371,10 +401,11 @@
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblFirstName.AutoSize = true;
+            this.lblFirstName.BackColor = System.Drawing.Color.Transparent;
             this.lblFirstName.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(216, 389);
+            this.lblFirstName.ForeColor = System.Drawing.Color.Black;
+            this.lblFirstName.Location = new System.Drawing.Point(275, 214);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(402, 39);
             this.lblFirstName.TabIndex = 1;
@@ -398,6 +429,9 @@
             // 
             this.cbxNonAlchoholic.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.cbxNonAlchoholic.BackColor = System.Drawing.Color.Transparent;
+            this.cbxNonAlchoholic.Controls.Add(this.lblLemDes);
+            this.cbxNonAlchoholic.Controls.Add(this.lblOraDec);
+            this.cbxNonAlchoholic.Controls.Add(this.lblCokeDes);
             this.cbxNonAlchoholic.Controls.Add(this.cbxLemonade);
             this.cbxNonAlchoholic.Controls.Add(this.cbxSanPellegrino);
             this.cbxNonAlchoholic.Controls.Add(this.cbxCoke);
@@ -410,12 +444,45 @@
             this.cbxNonAlchoholic.Controls.Add(this.btnSanPellegrino);
             this.cbxNonAlchoholic.Controls.Add(this.lblCoke);
             this.cbxNonAlchoholic.Controls.Add(this.btnCoke);
-            this.cbxNonAlchoholic.Location = new System.Drawing.Point(727, 3);
+            this.cbxNonAlchoholic.Location = new System.Drawing.Point(883, 3);
             this.cbxNonAlchoholic.Name = "cbxNonAlchoholic";
-            this.cbxNonAlchoholic.Size = new System.Drawing.Size(588, 922);
+            this.cbxNonAlchoholic.Size = new System.Drawing.Size(432, 922);
             this.cbxNonAlchoholic.TabIndex = 1;
             this.cbxNonAlchoholic.TabStop = false;
             this.cbxNonAlchoholic.Text = "Non-Alcoholic Drinks";
+            // 
+            // lblLemDes
+            // 
+            this.lblLemDes.AutoSize = true;
+            this.lblLemDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblLemDes.ForeColor = System.Drawing.Color.Black;
+            this.lblLemDes.Location = new System.Drawing.Point(175, 612);
+            this.lblLemDes.Name = "lblLemDes";
+            this.lblLemDes.Size = new System.Drawing.Size(174, 28);
+            this.lblLemDes.TabIndex = 39;
+            this.lblLemDes.Text = "Freshly squeezed";
+            // 
+            // lblOraDec
+            // 
+            this.lblOraDec.AutoSize = true;
+            this.lblOraDec.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblOraDec.ForeColor = System.Drawing.Color.Black;
+            this.lblOraDec.Location = new System.Drawing.Point(189, 337);
+            this.lblOraDec.Name = "lblOraDec";
+            this.lblOraDec.Size = new System.Drawing.Size(143, 28);
+            this.lblOraDec.TabIndex = 38;
+            this.lblOraDec.Text = "Orange Soda!";
+            // 
+            // lblCokeDes
+            // 
+            this.lblCokeDes.AutoSize = true;
+            this.lblCokeDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblCokeDes.ForeColor = System.Drawing.Color.Black;
+            this.lblCokeDes.Location = new System.Drawing.Point(181, 75);
+            this.lblCokeDes.Name = "lblCokeDes";
+            this.lblCokeDes.Size = new System.Drawing.Size(117, 28);
+            this.lblCokeDes.TabIndex = 37;
+            this.lblCokeDes.Text = "It\'s a staple";
             // 
             // cbxLemonade
             // 
@@ -572,6 +639,10 @@
             // 
             this.gbxDrinkAlcohol.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gbxDrinkAlcohol.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.gbxDrinkAlcohol.Controls.Add(this.lblRosDes);
+            this.gbxDrinkAlcohol.Controls.Add(this.lblSprDes);
+            this.gbxDrinkAlcohol.Controls.Add(this.desLimDec);
+            this.gbxDrinkAlcohol.Controls.Add(this.lblSrDes);
             this.gbxDrinkAlcohol.Controls.Add(this.cbxLimoncello);
             this.gbxDrinkAlcohol.Controls.Add(this.cbxRossini);
             this.gbxDrinkAlcohol.Controls.Add(this.cbxSpritz);
@@ -591,10 +662,54 @@
             this.gbxDrinkAlcohol.Controls.Add(this.btnRocca);
             this.gbxDrinkAlcohol.Location = new System.Drawing.Point(3, 3);
             this.gbxDrinkAlcohol.Name = "gbxDrinkAlcohol";
-            this.gbxDrinkAlcohol.Size = new System.Drawing.Size(718, 922);
+            this.gbxDrinkAlcohol.Size = new System.Drawing.Size(874, 922);
             this.gbxDrinkAlcohol.TabIndex = 0;
             this.gbxDrinkAlcohol.TabStop = false;
             this.gbxDrinkAlcohol.Text = "Alcoholic Drinks";
+            // 
+            // lblRosDes
+            // 
+            this.lblRosDes.AutoSize = true;
+            this.lblRosDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblRosDes.ForeColor = System.Drawing.Color.Black;
+            this.lblRosDes.Location = new System.Drawing.Point(193, 657);
+            this.lblRosDes.Name = "lblRosDes";
+            this.lblRosDes.Size = new System.Drawing.Size(215, 28);
+            this.lblRosDes.TabIndex = 36;
+            this.lblRosDes.Text = "Its red and strawberry";
+            // 
+            // lblSprDes
+            // 
+            this.lblSprDes.AutoSize = true;
+            this.lblSprDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblSprDes.ForeColor = System.Drawing.Color.Black;
+            this.lblSprDes.Location = new System.Drawing.Point(183, 372);
+            this.lblSprDes.Name = "lblSprDes";
+            this.lblSprDes.Size = new System.Drawing.Size(328, 28);
+            this.lblSprDes.TabIndex = 35;
+            this.lblSprDes.Text = "Citrist Tangy flavor in your mouth";
+            // 
+            // desLimDec
+            // 
+            this.desLimDec.AutoSize = true;
+            this.desLimDec.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.desLimDec.ForeColor = System.Drawing.Color.Black;
+            this.desLimDec.Location = new System.Drawing.Point(585, 85);
+            this.desLimDec.Name = "desLimDec";
+            this.desLimDec.Size = new System.Drawing.Size(238, 56);
+            this.desLimDec.TabIndex = 34;
+            this.desLimDec.Text = "Our delicious lemonade\r\nmixed with vodka";
+            // 
+            // lblSrDes
+            // 
+            this.lblSrDes.AutoSize = true;
+            this.lblSrDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblSrDes.ForeColor = System.Drawing.Color.Black;
+            this.lblSrDes.Location = new System.Drawing.Point(161, 85);
+            this.lblSrDes.Name = "lblSrDes";
+            this.lblSrDes.Size = new System.Drawing.Size(146, 28);
+            this.lblSrDes.TabIndex = 33;
+            this.lblSrDes.Text = "Delicious wine";
             // 
             // cbxLimoncello
             // 
@@ -610,7 +725,7 @@
             "8",
             "9",
             "10"});
-            this.cbxLimoncello.Location = new System.Drawing.Point(471, 250);
+            this.cbxLimoncello.Location = new System.Drawing.Point(514, 250);
             this.cbxLimoncello.Name = "cbxLimoncello";
             this.cbxLimoncello.Size = new System.Drawing.Size(56, 36);
             this.cbxLimoncello.TabIndex = 32;
@@ -679,7 +794,7 @@
             this.lblRoccaDescript.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblRoccaDescript.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoccaDescript.ForeColor = System.Drawing.Color.Black;
-            this.lblRoccaDescript.Location = new System.Drawing.Point(715, 31);
+            this.lblRoccaDescript.Location = new System.Drawing.Point(871, 31);
             this.lblRoccaDescript.Name = "lblRoccaDescript";
             this.lblRoccaDescript.Size = new System.Drawing.Size(0, 28);
             this.lblRoccaDescript.TabIndex = 28;
@@ -699,7 +814,7 @@
             // 
             this.lblLimoncelloPrice.AutoSize = true;
             this.lblLimoncelloPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblLimoncelloPrice.Location = new System.Drawing.Point(401, 254);
+            this.lblLimoncelloPrice.Location = new System.Drawing.Point(444, 254);
             this.lblLimoncelloPrice.Name = "lblLimoncelloPrice";
             this.lblLimoncelloPrice.Size = new System.Drawing.Size(52, 28);
             this.lblLimoncelloPrice.TabIndex = 26;
@@ -729,7 +844,7 @@
             // 
             this.lblLimoncello.AutoSize = true;
             this.lblLimoncello.ForeColor = System.Drawing.Color.Black;
-            this.lblLimoncello.Location = new System.Drawing.Point(421, 44);
+            this.lblLimoncello.Location = new System.Drawing.Point(464, 44);
             this.lblLimoncello.Name = "lblLimoncello";
             this.lblLimoncello.Size = new System.Drawing.Size(115, 28);
             this.lblLimoncello.TabIndex = 10;
@@ -739,7 +854,7 @@
             // 
             this.btnLimoncello.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.Limoncello;
             this.btnLimoncello.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLimoncello.Location = new System.Drawing.Point(412, 75);
+            this.btnLimoncello.Location = new System.Drawing.Point(455, 75);
             this.btnLimoncello.Name = "btnLimoncello";
             this.btnLimoncello.Size = new System.Drawing.Size(124, 170);
             this.btnLimoncello.TabIndex = 9;
@@ -822,6 +937,14 @@
             // 
             // gbxMainDishes
             // 
+            this.gbxMainDishes.Controls.Add(this.lblMinDes);
+            this.gbxMainDishes.Controls.Add(this.lblSpaDes);
+            this.gbxMainDishes.Controls.Add(this.lblLasDes);
+            this.gbxMainDishes.Controls.Add(this.lblPasDec);
+            this.gbxMainDishes.Controls.Add(this.lblChiAlfDes);
+            this.gbxMainDishes.Controls.Add(this.lblGnoDes);
+            this.gbxMainDishes.Controls.Add(this.lblChiDes);
+            this.gbxMainDishes.Controls.Add(this.lblStaDes);
             this.gbxMainDishes.Controls.Add(this.cbxMinestrone);
             this.gbxMainDishes.Controls.Add(this.cbxSpaghetti);
             this.gbxMainDishes.Controls.Add(this.cbxLasanga);
@@ -862,6 +985,94 @@
             this.gbxMainDishes.TabIndex = 0;
             this.gbxMainDishes.TabStop = false;
             this.gbxMainDishes.Text = "Main Dishes";
+            // 
+            // lblMinDes
+            // 
+            this.lblMinDes.AutoSize = true;
+            this.lblMinDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblMinDes.ForeColor = System.Drawing.Color.Black;
+            this.lblMinDes.Location = new System.Drawing.Point(995, 724);
+            this.lblMinDes.Name = "lblMinDes";
+            this.lblMinDes.Size = new System.Drawing.Size(123, 28);
+            this.lblMinDes.TabIndex = 67;
+            this.lblMinDes.Text = "Good Broth";
+            // 
+            // lblSpaDes
+            // 
+            this.lblSpaDes.AutoSize = true;
+            this.lblSpaDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblSpaDes.ForeColor = System.Drawing.Color.Black;
+            this.lblSpaDes.Location = new System.Drawing.Point(995, 520);
+            this.lblSpaDes.Name = "lblSpaDes";
+            this.lblSpaDes.Size = new System.Drawing.Size(109, 28);
+            this.lblSpaDes.TabIndex = 66;
+            this.lblSpaDes.Text = "Meatballs!";
+            // 
+            // lblLasDes
+            // 
+            this.lblLasDes.AutoSize = true;
+            this.lblLasDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblLasDes.ForeColor = System.Drawing.Color.Black;
+            this.lblLasDes.Location = new System.Drawing.Point(995, 292);
+            this.lblLasDes.Name = "lblLasDes";
+            this.lblLasDes.Size = new System.Drawing.Size(131, 28);
+            this.lblLasDes.TabIndex = 65;
+            this.lblLasDes.Text = "It\'s like Pizza";
+            // 
+            // lblPasDec
+            // 
+            this.lblPasDec.AutoSize = true;
+            this.lblPasDec.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblPasDec.ForeColor = System.Drawing.Color.Black;
+            this.lblPasDec.Location = new System.Drawing.Point(995, 73);
+            this.lblPasDec.Name = "lblPasDec";
+            this.lblPasDec.Size = new System.Drawing.Size(124, 28);
+            this.lblPasDec.TabIndex = 64;
+            this.lblPasDec.Text = "Fresh Pasta ";
+            // 
+            // lblChiAlfDes
+            // 
+            this.lblChiAlfDes.AutoSize = true;
+            this.lblChiAlfDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblChiAlfDes.ForeColor = System.Drawing.Color.Black;
+            this.lblChiAlfDes.Location = new System.Drawing.Point(223, 725);
+            this.lblChiAlfDes.Name = "lblChiAlfDes";
+            this.lblChiAlfDes.Size = new System.Drawing.Size(146, 28);
+            this.lblChiAlfDes.TabIndex = 63;
+            this.lblChiAlfDes.Text = "Chicken Sause";
+            // 
+            // lblGnoDes
+            // 
+            this.lblGnoDes.AutoSize = true;
+            this.lblGnoDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblGnoDes.ForeColor = System.Drawing.Color.Black;
+            this.lblGnoDes.Location = new System.Drawing.Point(204, 508);
+            this.lblGnoDes.Name = "lblGnoDes";
+            this.lblGnoDes.Size = new System.Drawing.Size(84, 28);
+            this.lblGnoDes.TabIndex = 62;
+            this.lblGnoDes.Text = "Yummy";
+            // 
+            // lblChiDes
+            // 
+            this.lblChiDes.AutoSize = true;
+            this.lblChiDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblChiDes.ForeColor = System.Drawing.Color.Black;
+            this.lblChiDes.Location = new System.Drawing.Point(223, 292);
+            this.lblChiDes.Name = "lblChiDes";
+            this.lblChiDes.Size = new System.Drawing.Size(229, 28);
+            this.lblChiDes.TabIndex = 61;
+            this.lblChiDes.Text = "Extra Cheesy Parmesan";
+            // 
+            // lblStaDes
+            // 
+            this.lblStaDes.AutoSize = true;
+            this.lblStaDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblStaDes.ForeColor = System.Drawing.Color.Black;
+            this.lblStaDes.Location = new System.Drawing.Point(204, 73);
+            this.lblStaDes.Name = "lblStaDes";
+            this.lblStaDes.Size = new System.Drawing.Size(234, 28);
+            this.lblStaDes.TabIndex = 60;
+            this.lblStaDes.Text = "Everyone likes big meat";
             // 
             // cbxMinestrone
             // 
@@ -1297,6 +1508,10 @@
             // 
             // gbxSalads
             // 
+            this.gbxSalads.Controls.Add(this.label2);
+            this.gbxSalads.Controls.Add(this.lblItaSalDec);
+            this.gbxSalads.Controls.Add(this.lblGreDes);
+            this.gbxSalads.Controls.Add(this.lblCeaDes);
             this.gbxSalads.Controls.Add(this.cbxCeasarSalad);
             this.gbxSalads.Controls.Add(this.cbxGreekSalad);
             this.gbxSalads.Controls.Add(this.cbxItalianSalad);
@@ -1315,6 +1530,49 @@
             this.gbxSalads.TabIndex = 0;
             this.gbxSalads.TabStop = false;
             this.gbxSalads.Text = "Salads";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(304, 383);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(190, 28);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Freesh Greek Salad";
+            // 
+            // lblItaSalDec
+            // 
+            this.lblItaSalDec.AutoSize = true;
+            this.lblItaSalDec.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblItaSalDec.ForeColor = System.Drawing.Color.Black;
+            this.lblItaSalDec.Location = new System.Drawing.Point(245, 663);
+            this.lblItaSalDec.Name = "lblItaSalDec";
+            this.lblItaSalDec.Size = new System.Drawing.Size(181, 28);
+            this.lblItaSalDec.TabIndex = 58;
+            this.lblItaSalDec.Text = "Fresh Italian Salad";
+            // 
+            // lblGreDes
+            // 
+            this.lblGreDes.AutoSize = true;
+            this.lblGreDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblGreDes.ForeColor = System.Drawing.Color.Black;
+            this.lblGreDes.Location = new System.Drawing.Point(298, 383);
+            this.lblGreDes.Name = "lblGreDes";
+            this.lblGreDes.Size = new System.Drawing.Size(0, 28);
+            this.lblGreDes.TabIndex = 57;
+            // 
+            // lblCeaDes
+            // 
+            this.lblCeaDes.AutoSize = true;
+            this.lblCeaDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblCeaDes.ForeColor = System.Drawing.Color.Black;
+            this.lblCeaDes.Location = new System.Drawing.Point(284, 75);
+            this.lblCeaDes.Name = "lblCeaDes";
+            this.lblCeaDes.Size = new System.Drawing.Size(303, 28);
+            this.lblCeaDes.TabIndex = 56;
+            this.lblCeaDes.Text = "Fresh Ceasar Salad with cheese";
             // 
             // cbxCeasarSalad
             // 
@@ -1478,6 +1736,10 @@
             // 
             // gbxDesserts
             // 
+            this.gbxDesserts.Controls.Add(this.lblTirDes);
+            this.gbxDesserts.Controls.Add(this.lblGelDes);
+            this.gbxDesserts.Controls.Add(this.lblPanDes);
+            this.gbxDesserts.Controls.Add(this.lblCanDec);
             this.gbxDesserts.Controls.Add(this.cbxTiramisu);
             this.gbxDesserts.Controls.Add(this.lblTiramisuPrice);
             this.gbxDesserts.Controls.Add(this.lblTiramisu);
@@ -1500,6 +1762,50 @@
             this.gbxDesserts.TabIndex = 0;
             this.gbxDesserts.TabStop = false;
             this.gbxDesserts.Text = "Desserts";
+            // 
+            // lblTirDes
+            // 
+            this.lblTirDes.AutoSize = true;
+            this.lblTirDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblTirDes.ForeColor = System.Drawing.Color.Black;
+            this.lblTirDes.Location = new System.Drawing.Point(862, 71);
+            this.lblTirDes.Name = "lblTirDes";
+            this.lblTirDes.Size = new System.Drawing.Size(117, 28);
+            this.lblTirDes.TabIndex = 75;
+            this.lblTirDes.Text = "It\'s a staple";
+            // 
+            // lblGelDes
+            // 
+            this.lblGelDes.AutoSize = true;
+            this.lblGelDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblGelDes.ForeColor = System.Drawing.Color.Black;
+            this.lblGelDes.Location = new System.Drawing.Point(274, 616);
+            this.lblGelDes.Name = "lblGelDes";
+            this.lblGelDes.Size = new System.Drawing.Size(147, 28);
+            this.lblGelDes.TabIndex = 74;
+            this.lblGelDes.Text = "Best ice cream";
+            // 
+            // lblPanDes
+            // 
+            this.lblPanDes.AutoSize = true;
+            this.lblPanDes.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblPanDes.ForeColor = System.Drawing.Color.Black;
+            this.lblPanDes.Location = new System.Drawing.Point(274, 347);
+            this.lblPanDes.Name = "lblPanDes";
+            this.lblPanDes.Size = new System.Drawing.Size(298, 28);
+            this.lblPanDes.TabIndex = 73;
+            this.lblPanDes.Text = "Fresh berries, with a sweet jam";
+            // 
+            // lblCanDec
+            // 
+            this.lblCanDec.AutoSize = true;
+            this.lblCanDec.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.lblCanDec.ForeColor = System.Drawing.Color.Black;
+            this.lblCanDec.Location = new System.Drawing.Point(274, 71);
+            this.lblCanDec.Name = "lblCanDec";
+            this.lblCanDec.Size = new System.Drawing.Size(304, 56);
+            this.lblCanDec.TabIndex = 72;
+            this.lblCanDec.Text = "Chocolate, Cream cheese, and \r\nbread";
             // 
             // cbxTiramisu
             // 
@@ -1859,7 +2165,30 @@
         private System.Windows.Forms.Label lblCannoli;
         private System.Windows.Forms.Button btnCannoli;
         private System.Windows.Forms.Label lblClickInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnClearAll;
+        private System.Windows.Forms.Label lblLemDes;
+        private System.Windows.Forms.Label lblOraDec;
+        private System.Windows.Forms.Label lblCokeDes;
+        private System.Windows.Forms.Label lblRosDes;
+        private System.Windows.Forms.Label lblSprDes;
+        private System.Windows.Forms.Label desLimDec;
+        private System.Windows.Forms.Label lblSrDes;
+        private System.Windows.Forms.Label lblMinDes;
+        private System.Windows.Forms.Label lblSpaDes;
+        private System.Windows.Forms.Label lblLasDes;
+        private System.Windows.Forms.Label lblPasDec;
+        private System.Windows.Forms.Label lblChiAlfDes;
+        private System.Windows.Forms.Label lblGnoDes;
+        private System.Windows.Forms.Label lblChiDes;
+        private System.Windows.Forms.Label lblStaDes;
+        private System.Windows.Forms.Label lblItaSalDec;
+        private System.Windows.Forms.Label lblGreDes;
+        private System.Windows.Forms.Label lblCeaDes;
+        private System.Windows.Forms.Label lblTirDes;
+        private System.Windows.Forms.Label lblGelDes;
+        private System.Windows.Forms.Label lblPanDes;
+        private System.Windows.Forms.Label lblCanDec;
+        private System.Windows.Forms.Label label2;
     }
 }
 

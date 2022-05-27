@@ -117,7 +117,7 @@ namespace MiguelsAndJosh_Module8
                         else if (!double.TryParse(cardNumber, out numbersOnlyCheck) || !double.TryParse(pinNumbers, out pinNumbersOnlyCheck))
                             MessageBox.Show("Card Numbers & Pin must be numbers.");
                         else if (expDate == "" || expMonth == "")
-                            MessageBox.Show("Please enter expiration day and month.");
+                            MessageBox.Show("Please enter expiration Month and Year.");
                         else
                             declinedPayment = false;
                     }

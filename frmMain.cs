@@ -154,7 +154,7 @@ namespace MiguelsAndJosh_Module8
         private void btnChickenParm_Click(object sender, EventArgs e)
         {
             double chickenPramPrice = 15.99;
-            if (cbxSteak.Text == " ")
+            if (cbxChickenParm.Text == " ")
                 MessageBox.Show("Please choose a Quantity");
             addItem(chickenPramPrice, int.Parse(cbxChickenParm.Text), lblChickenParm.Text);
         }
@@ -189,7 +189,7 @@ namespace MiguelsAndJosh_Module8
             double lasangaPrice = 12.99;
             if (cbxLasanga.Text == "")
                 MessageBox.Show("Please choose a Quantity");
-            addItem(lasangaPrice, int.Parse(cbxPasta.Text), lblPasta.Text);
+            addItem(lasangaPrice, int.Parse(cbxLasanga.Text), lblLasanga.Text);
         }
         private void btnMinestrone_Click(object sender, EventArgs e)
         {
@@ -210,7 +210,7 @@ namespace MiguelsAndJosh_Module8
         private void btnGreekSalad_Click(object sender, EventArgs e)
         {
             double greekSaladPrice = 9.99;
-            if (cbxCeasarSalad.Text == "")
+            if (cbxGreekSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
                 addItem(greekSaladPrice, int.Parse(cbxGreekSalad.Text), lblGreekSalad.Text);
@@ -253,7 +253,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxPannaCotta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(pannaCottaPrice, int.Parse(cbxPannaCotta.Text), lblPannaCottaPrice.Text);
+                addItem(pannaCottaPrice, int.Parse(cbxPannaCotta.Text), lblPannaCotta.Text);
         }
         private void btnTiramisu_Click(object sender, EventArgs e)
         {
@@ -263,10 +263,9 @@ namespace MiguelsAndJosh_Module8
             else
                 addItem(tiramisuPrice, int.Parse(cbxTiramisu.Text), lblTiramisu.Text);
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnClearAll_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            lstOrderDisplay.Items.Clear();
         }
     }
 }
