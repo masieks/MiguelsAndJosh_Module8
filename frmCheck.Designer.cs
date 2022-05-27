@@ -493,7 +493,7 @@
             // 
             // btnRemoveItems
             // 
-            this.btnRemoveItems.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRemoveItems.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRemoveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveItems.Location = new System.Drawing.Point(141, 679);
             this.btnRemoveItems.Name = "btnRemoveItems";
