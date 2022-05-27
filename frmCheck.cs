@@ -11,8 +11,10 @@ using System.IO;
 
 namespace MiguelsAndJosh_Module8
 {
+
     public partial class frmCheck : Form
     {
+        StreamWriter outFile;
         //Variables
         int receipt = 0;
         const int SIZE = 10000;
@@ -53,7 +55,7 @@ namespace MiguelsAndJosh_Module8
             const int DEBITLIMIT = 16;
             const int PIN = 4;
             string pinNumbers;
-            
+
 
             if (stopDoubleOrder == false)
             {
@@ -66,15 +68,15 @@ namespace MiguelsAndJosh_Module8
                         expDate = cbxCreditExpDay.Text;
                         expMonth = cbxCreditExpMonth.Text;
                         //Error Check CREDIT CARD
-                        if (cardNumber == "") 
-                            MessageBox.Show("Please enter a card number.");                       
-                        else if (cardNumber.Length != CREDITLIMIT)                
-                            MessageBox.Show("Please enter credit card number with 16 digits."); 
+                        if (cardNumber == "")
+                            MessageBox.Show("Please enter a card number.");
+                        else if (cardNumber.Length != CREDITLIMIT)
+                            MessageBox.Show("Please enter credit card number with 16 digits.");
                         else if (!double.TryParse(cardNumber, out numbersOnlyCheck))
-                            MessageBox.Show("Please enter credit card number with 16 digits.");                       
-                        else if (expDate == "" || expMonth == "") 
-                            MessageBox.Show("Please enter both expiration day and month.");                      
-                        else 
+                            MessageBox.Show("Please enter credit card number with 16 digits.");
+                        else if (expDate == "" || expMonth == "")
+                            MessageBox.Show("Please enter both expiration day and month.");
+                        else
                             declinedPayment = false;
                     }
                     if (!declinedPayment)
@@ -108,25 +110,25 @@ namespace MiguelsAndJosh_Module8
                             MessageBox.Show("Please enter both card number & pin.");
                         else if (cardNumber.Length != DEBITLIMIT)
                             MessageBox.Show("Please enter Debit Card number with 16 digits");
-                        else if(pinNumbers.Length != PIN)
+                        else if (pinNumbers.Length != PIN)
                             MessageBox.Show("Please enter Pin with 4 digits");
                         else if (!double.TryParse(cardNumber, out numbersOnlyCheck) || !double.TryParse(pinNumbers, out pinNumbersOnlyCheck))
                             MessageBox.Show("Card Numbers & Pin must be numbers.");
                         else if (expDate == "" || expMonth == "")
                             MessageBox.Show("Please enter expiration day and month.");
                         else
-                            declinedPayment = false;                       
+                            declinedPayment = false;
                     }
                     if (!declinedPayment)
                     {
                         bool credit = false;
                         bool cash = false;
                         bool debit = true;
-                        if (lstCheck.Visible == true)                       
-                            MessageBox.Show("You already placed your order.");                       
+                        if (lstCheck.Visible == true)
+                            MessageBox.Show("You already placed your order.");
                         else
                         {
-                          
+
                             MessageBox.Show("Payment was accepted.");
                             btnRemoveItems.Enabled = false;
                             btnReturn.Enabled = false;
@@ -151,13 +153,13 @@ namespace MiguelsAndJosh_Module8
                         getFinalOrder(credit, debit, cash);
                     }
                 }
-                
+
             }
             else MessageBox.Show("Payment was already accepted");
         }
 
         private void chbxCash_CheckedChanged(object sender, EventArgs e)
-        {         
+        {
             if (chbxCash.Checked) //If checked uncheck others
             {
                 chbxCredit.Checked = false;
@@ -165,7 +167,7 @@ namespace MiguelsAndJosh_Module8
             }
         }
         private void chbxCredit_CheckedChanged(object sender, EventArgs e)
-        {       
+        {
             if (chbxCredit.Checked) //If checked uncheck others
             {
                 chbxCash.Checked = false;
@@ -173,7 +175,7 @@ namespace MiguelsAndJosh_Module8
             }
         }
         private void chbxDebit_CheckedChanged(object sender, EventArgs e)
-        {           
+        {
             if (chbxDebit.Checked) //If checked uncheck others
             {
                 chbxCash.Checked = false;
@@ -192,7 +194,7 @@ namespace MiguelsAndJosh_Module8
             lstCheck.Visible = true;
             receipt++;
 
-            
+
             lstCheck.Items.Add("Receipt#:" + receipt);
             DateTime dt = DateTime.Now;
             string ts = (DateTime.Now.ToString("h:mm:ss tt"));
@@ -249,6 +251,11 @@ namespace MiguelsAndJosh_Module8
                 lstOrder.Items.RemoveAt(lstOrder.SelectedIndex);
                 lstOrder.Items.Remove(lstOrder.SelectedItems);
             }
+        }
+        private void printRecipt()
+        {
+
+
         }
     }
 }

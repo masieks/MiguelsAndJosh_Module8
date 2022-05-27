@@ -531,7 +531,7 @@
             // 
             this.btnSaveChanges.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSaveChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(1088, 688);
+            this.btnSaveChanges.Location = new System.Drawing.Point(1177, 679);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(129, 32);
             this.btnSaveChanges.TabIndex = 10;
