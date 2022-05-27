@@ -156,7 +156,7 @@ namespace MiguelsAndJosh_Module8
             double chickenPramPrice = 15.99;
             if (cbxSteak.Text == " ")
                 MessageBox.Show("Please choose a Quantity");
-            addItem(chickenPramPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+            addItem(chickenPramPrice, int.Parse(cbxChickenParm.Text), lblChickenParm.Text);
         }
         private void btnGnocchi_Click(object sender, EventArgs e)
         {
@@ -164,7 +164,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxGnocchi.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(gnocchiPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(gnocchiPrice, int.Parse(cbxGnocchi.Text), lblGnocchi.Text);
         }
         private void btnChickenAlfredo_Click(object sender, EventArgs e)
         {
@@ -172,7 +172,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxChickenAlfredo.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(chickenAlfredoPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(chickenAlfredoPrice, int.Parse(cbxChickenAlfredo.Text), lblChickenAlfredo.Text);
         }
         
         //Pastas
@@ -182,14 +182,14 @@ namespace MiguelsAndJosh_Module8
             if (cbxPasta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(pastaPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(pastaPrice, int.Parse(cbxPasta.Text), lblPasta.Text);
         }
         private void btnLasanga_Click(object sender, EventArgs e)
         {
             double lasangaPrice = 12.99;
             if (cbxLasanga.Text == "")
                 MessageBox.Show("Please choose a Quantity");
-            addItem(lasangaPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+            addItem(lasangaPrice, int.Parse(cbxPasta.Text), lblPasta.Text);
         }
         private void btnMinestrone_Click(object sender, EventArgs e)
         {
@@ -197,7 +197,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxMinestrone.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(minestronePrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(minestronePrice, int.Parse(cbxMinestrone.Text), lblMinestrone.Text);
         }
         private void btnSpaghetti_Click(object sender, EventArgs e)
         {
@@ -205,7 +205,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxSpaghetti.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(spaghettiPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(spaghettiPrice, int.Parse(cbxSpaghetti.Text), lblSpaghetti.Text);
         }
         private void btnGreekSalad_Click(object sender, EventArgs e)
         {
@@ -213,7 +213,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxCeasarSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(greekSaladPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(greekSaladPrice, int.Parse(cbxGreekSalad.Text), lblGreekSalad.Text);
         }
         private void btnCeasar_Click(object sender, EventArgs e)
         {
@@ -221,7 +221,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxCeasarSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(ceasarSaladPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(ceasarSaladPrice, int.Parse(cbxCeasarSalad.Text), lblCeasarSalad.Text);
         }
         private void btnItalianSalad_Click(object sender, EventArgs e)
         {
@@ -229,7 +229,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxItalianSalad.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(italianSaladPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(italianSaladPrice, int.Parse(cbxItalianSalad.Text), lblItalianSalad.Text);
         }
         private void btnCannoli_Click(object sender, EventArgs e)
         {
@@ -237,7 +237,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxCannoli.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(cannoliPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(cannoliPrice, int.Parse(cbxCannoli.Text), lblCannoli.Text);
         }
         private void btnGellato_Click(object sender, EventArgs e)
         {
@@ -245,7 +245,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxGellato.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(gellatoPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(gellatoPrice, int.Parse(cbxGellato.Text), lblGellato.Text);
         }
         private void btnPannaCotta_Click(object sender, EventArgs e)
         {
@@ -253,7 +253,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxPannaCotta.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(pannaCottaPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(pannaCottaPrice, int.Parse(cbxPannaCotta.Text), lblPannaCottaPrice.Text);
         }
         private void btnTiramisu_Click(object sender, EventArgs e)
         {
@@ -261,7 +261,7 @@ namespace MiguelsAndJosh_Module8
             if (cbxTiramisu.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
-                addItem(tiramisuPrice, int.Parse(cbxSpritz.Text), lblRossini.Text);
+                addItem(tiramisuPrice, int.Parse(cbxTiramisu.Text), lblTiramisu.Text);
         }
         private void tabMainMenu_Click(object sender, EventArgs e)
         {

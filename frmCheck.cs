@@ -194,7 +194,6 @@ namespace MiguelsAndJosh_Module8
             lstCheck.Visible = true;
             receipt++;
 
-
             lstCheck.Items.Add("Receipt#:" + receipt);
             DateTime dt = DateTime.Now;
             string ts = (DateTime.Now.ToString("h:mm:ss tt"));
