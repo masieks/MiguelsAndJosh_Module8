@@ -163,26 +163,52 @@ namespace MiguelsAndJosh_Module8
             StreamReader inFile;
             double itemPrice;
             double total = 0;
+            double taxTotal = 0;
+            double tip = 0;
+            double grandTotal = 0;
+            const double TAXFORTOTAL = 9.5;
             lstCheck.Visible = true;
-          
+            if (chkTip.Checked)
+            {
+                txtTip.Visible = true;
+                if (txtTip.Text == "")
+                {
+                    MessageBox.Show("You need to enter a tip. Uncheck the if you don't want to tip ");
+                }
+                else if (!double.TryParse(txtTip.Text, out tip))
+                {
+                    MessageBox.Show("Please enter the number you want to tip.");
+                }
+                else
+                    tip = double.Parse(txtTip.Text);
+            }
+
+
+
             DateTime dt = DateTime.Now;
             DateTime ts = dt.Add(DateTime.Now.TimeOfDay);
             lstCheck.Items.Add(ts.ToString());
-         
+
             inFile = new StreamReader(filePath); // READS
 
             while (!inFile.EndOfStream)
-            {           
+            {
                 itemsPrice[count] = double.Parse(inFile.ReadLine()); // Converts Price
                 itemsQuantity[count] = int.Parse(inFile.ReadLine());
                 itemPrice = itemsPrice[count] * itemsQuantity[count];
                 total += itemPrice;
+
                 itemsNames[count] = inFile.ReadLine();
-                // Displays for Print              
-                lstCheck.Items.Add(itemsNames[count]+"X" +itemsQuantity[count]+itemPrice.ToString("c"));
-                count++;      
+                // Displays for Print
+                lstCheck.Items.Add(itemsNames[count] + "      X" + itemsQuantity[count] + "      " + itemPrice.ToString("c"));
+                count++;
             }
-            lstCheck.Items.Add(total.ToString("c"));
+            lstCheck.Items.Add("Total: \t" + total.ToString("c"));
+            taxTotal += total / TAXFORTOTAL;
+            lstCheck.Items.Add("Tax:\t" + taxTotal.ToString("c"));
+            lstCheck.Items.Add("Tip: \t" + tip.ToString("c"));
+            grandTotal += taxTotal + total + tip;
+            lstCheck.Items.Add("Grand Total:\t" + grandTotal.ToString("c"));
             inFile.Close();          
         }
 

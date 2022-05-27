@@ -84,7 +84,7 @@ namespace MiguelsAndJosh_Module8
             if (lstOrderDisplay.SelectedIndex > -1)
             {
                 lstOrderDisplay.Items.RemoveAt(lstOrderDisplay.SelectedIndex);
-               
+                lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItems);
             }
             
         }
