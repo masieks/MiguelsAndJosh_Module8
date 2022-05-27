@@ -21,6 +21,9 @@ namespace MiguelsAndJosh_Module8
         private string[] itemsNames = new string[SIZE];
         private int[] itemsQuantity = new int[SIZE];
         private double[] itemsPrice = new double[SIZE];
+        bool credit = false;
+        bool debit = false;
+        bool cash = false;
         public frmCheck()
         {
             InitializeComponent();
@@ -50,6 +53,7 @@ namespace MiguelsAndJosh_Module8
             const int DEBITLIMIT = 16;
             const int PIN = 4;
             string pinNumbers;
+            
 
             if (stopDoubleOrder == false)
             {
@@ -79,8 +83,14 @@ namespace MiguelsAndJosh_Module8
                             MessageBox.Show("You already placed your order.");
                         else
                         {
+                            bool credit = true;
+                            bool cash = false;
+                            bool debit = false;
                             MessageBox.Show("Payment was accepted.");
-                            getFinalOrder();
+                            btnRemoveItems.Enabled = false;
+                            btnReturn.Enabled = false;
+                            btnFinalOrder.Enabled = false;
+                            getFinalOrder(credit, debit, cash);
                         }
                     }
                 }
@@ -109,28 +119,39 @@ namespace MiguelsAndJosh_Module8
                     }
                     if (!declinedPayment)
                     {
+                        bool credit = false;
+                        bool cash = false;
+                        bool debit = true;
                         if (lstCheck.Visible == true)                       
                             MessageBox.Show("You already placed your order.");                       
                         else
                         {
+                          
                             MessageBox.Show("Payment was accepted.");
-                            getFinalOrder();
+                            btnRemoveItems.Enabled = false;
+                            btnReturn.Enabled = false;
+                            btnFinalOrder.Enabled = false;
+                            getFinalOrder(credit, debit, cash);
                         }
                     }
                 }
                 else if (chbxCash.Checked)
                 {
+                    bool credit = false;
+                    bool cash = true;
+                    bool debit = false;
                     if (lstCheck.Visible == true)
                         MessageBox.Show("You already placed your order.");
                     else
                     {
                         MessageBox.Show("Payment was accepted.");
-                        getFinalOrder();
+                        btnRemoveItems.Enabled = false;
+                        btnReturn.Enabled = false;
+                        btnFinalOrder.Enabled = false;
+                        getFinalOrder(credit, debit, cash);
                     }
                 }
-                btnRemoveItems.Enabled = false;
-                btnReturn.Enabled = false;
-                btnFinalOrder.Enabled = false;  
+                
             }
             else MessageBox.Show("Payment was already accepted");
         }
@@ -159,7 +180,7 @@ namespace MiguelsAndJosh_Module8
                 chbxCredit.Checked = false;
             }
         }
-        public void getFinalOrder()// Set this text reader/writer to its own function.
+        public void getFinalOrder(bool credit, bool debit, bool cash)// Set this text reader/writer to its own function.
         {
             StreamReader inFile;
             double itemPrice;
@@ -197,8 +218,19 @@ namespace MiguelsAndJosh_Module8
             lstCheck.Items.Add("Tip: \t" + tip.ToString("c"));
             grandTotal += taxTotal + total + tip;
             lstCheck.Items.Add("Grand Total:\t" + grandTotal.ToString("c"));
-           
-            
+
+            if (credit)
+            {
+                lstCheck.Items.Add("Payment Method:\tCredit Card");
+            }
+            else if (debit)
+            {
+                lstCheck.Items.Add("Payment Method:\tDebit Card");
+            }
+            else if (cash)
+            {
+                lstCheck.Items.Add("Payment Method:\tCash");
+            }
             inFile.Close();
         }
 
