@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIntro));
-            this.lblTitle = new System.Windows.Forms.Label();
             this.tmrIntro = new System.Windows.Forms.Timer(this.components);
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // tmrIntro
+            // 
+            this.tmrIntro.Interval = 3000;
+            this.tmrIntro.Tick += new System.EventHandler(this.tmrIntro_Tick);
             // 
             // lblTitle
             // 
@@ -43,21 +47,16 @@
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(1321, 779);
-            this.lblTitle.TabIndex = 0;
+            this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Welcome to Delicioso E-Ristorante \r\n\r\n\r\n\r\n\r\n     Getting your Menu Ready!\r\n";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tmrIntro
-            // 
-            this.tmrIntro.Interval = 3000;
-            this.tmrIntro.Tick += new System.EventHandler(this.tmrIntro_Tick);
             // 
             // frmIntro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::MiguelsAndJosh_Module8.Properties.Resources.flag;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1321, 779);
             this.Controls.Add(this.lblTitle);
@@ -73,8 +72,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Timer tmrIntro;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

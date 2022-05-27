@@ -185,5 +185,8 @@
   <ItemGroup>
     <None Include="Resources\Tiramisu-15.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
