@@ -537,6 +537,7 @@
             this.btnSaveChanges.TabIndex = 10;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // lblDisplayItem
             // 

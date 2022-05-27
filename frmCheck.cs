@@ -15,6 +15,7 @@ namespace MiguelsAndJosh_Module8
     public partial class frmCheck : Form
     {
         StreamWriter outFile;
+        string filePath1 = "Reciept.txt";
         //Variables
         int receipt = 0;
         const int SIZE = 10000;
@@ -255,6 +256,18 @@ namespace MiguelsAndJosh_Module8
         {
 
 
+        }
+
+        private void btnSaveChanges_Click(object sender, EventArgs e)
+        {
+            outFile = File.AppendText(filePath1);
+            for (int i = 0; i < lstCheck.Items.Count; i++)
+
+            {
+                outFile.WriteLine(lstCheck.Items[i].ToString());
+
+            }
+            outFile.Close();
         }
     }
 }
