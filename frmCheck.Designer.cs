@@ -32,8 +32,6 @@
             this.btnFinalOrder = new System.Windows.Forms.Button();
             this.lstOrder = new System.Windows.Forms.ListBox();
             this.gbxPayment = new System.Windows.Forms.GroupBox();
-            this.txtTip = new System.Windows.Forms.TextBox();
-            this.chkTip = new System.Windows.Forms.CheckBox();
             this.gbxCreditInfo = new System.Windows.Forms.GroupBox();
             this.chbxCredit = new System.Windows.Forms.CheckBox();
             this.txtCreditNum = new System.Windows.Forms.TextBox();
@@ -63,6 +61,7 @@
             this.lblDisplayItem = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.gbxPayment.SuspendLayout();
             this.gbxCreditInfo.SuspendLayout();
             this.gbxDebitInfo.SuspendLayout();
@@ -72,7 +71,7 @@
             // 
             this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturn.Location = new System.Drawing.Point(78, 726);
+            this.btnReturn.Location = new System.Drawing.Point(434, 649);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(240, 51);
             this.btnReturn.TabIndex = 0;
@@ -84,7 +83,7 @@
             // 
             this.btnFinalOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnFinalOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalOrder.Location = new System.Drawing.Point(740, 643);
+            this.btnFinalOrder.Location = new System.Drawing.Point(713, 643);
             this.btnFinalOrder.Name = "btnFinalOrder";
             this.btnFinalOrder.Size = new System.Drawing.Size(216, 63);
             this.btnFinalOrder.TabIndex = 2;
@@ -99,16 +98,14 @@
             this.lstOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstOrder.FormattingEnabled = true;
             this.lstOrder.ItemHeight = 25;
-            this.lstOrder.Location = new System.Drawing.Point(53, 98);
+            this.lstOrder.Location = new System.Drawing.Point(1, 98);
             this.lstOrder.Name = "lstOrder";
-            this.lstOrder.Size = new System.Drawing.Size(322, 575);
+            this.lstOrder.Size = new System.Drawing.Size(374, 575);
             this.lstOrder.TabIndex = 3;
             // 
             // gbxPayment
             // 
             this.gbxPayment.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gbxPayment.Controls.Add(this.txtTip);
-            this.gbxPayment.Controls.Add(this.chkTip);
             this.gbxPayment.Controls.Add(this.gbxCreditInfo);
             this.gbxPayment.Controls.Add(this.chbxCash);
             this.gbxPayment.Controls.Add(this.gbxDebitInfo);
@@ -119,27 +116,6 @@
             this.gbxPayment.TabIndex = 4;
             this.gbxPayment.TabStop = false;
             this.gbxPayment.Text = "Select Payment Method";
-            // 
-            // txtTip
-            // 
-            this.txtTip.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTip.Location = new System.Drawing.Point(105, 480);
-            this.txtTip.Name = "txtTip";
-            this.txtTip.Size = new System.Drawing.Size(111, 32);
-            this.txtTip.TabIndex = 23;
-            this.txtTip.Visible = false;
-            // 
-            // chkTip
-            // 
-            this.chkTip.AutoSize = true;
-            this.chkTip.Location = new System.Drawing.Point(19, 480);
-            this.chkTip.Name = "chkTip";
-            this.chkTip.Size = new System.Drawing.Size(60, 30);
-            this.chkTip.TabIndex = 21;
-            this.chkTip.Text = "Tip";
-            this.chkTip.UseVisualStyleBackColor = true;
-            this.chkTip.CheckedChanged += new System.EventHandler(this.chkTip_CheckedChanged);
             // 
             // gbxCreditInfo
             // 
@@ -535,8 +511,9 @@
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(129, 32);
             this.btnSaveChanges.TabIndex = 10;
-            this.btnSaveChanges.Text = "Save Changes";
+            this.btnSaveChanges.Text = "Save Reciept";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Visible = false;
             this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // lblDisplayItem
@@ -544,7 +521,7 @@
             this.lblDisplayItem.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDisplayItem.AutoSize = true;
             this.lblDisplayItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplayItem.Location = new System.Drawing.Point(90, 75);
+            this.lblDisplayItem.Location = new System.Drawing.Point(12, 75);
             this.lblDisplayItem.Name = "lblDisplayItem";
             this.lblDisplayItem.Size = new System.Drawing.Size(41, 20);
             this.lblDisplayItem.TabIndex = 11;
@@ -555,7 +532,7 @@
             this.lblQuantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblQuantity.AutoSize = true;
             this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(224, 75);
+            this.lblQuantity.Location = new System.Drawing.Point(127, 73);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(68, 20);
             this.lblQuantity.TabIndex = 12;
@@ -566,17 +543,32 @@
             this.lblPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(322, 75);
+            this.lblPrice.Location = new System.Drawing.Point(274, 73);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(44, 20);
             this.lblPrice.TabIndex = 13;
             this.lblPrice.Text = "Price";
             // 
+            // btnRestart
+            // 
+            this.btnRestart.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestart.Location = new System.Drawing.Point(1030, 679);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(129, 32);
+            this.btnRestart.TabIndex = 14;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Visible = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1583, 799);
+            this.Controls.Add(this.btnRestart);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.lblDisplayItem);
@@ -589,6 +581,7 @@
             this.Controls.Add(this.btnFinalOrder);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.gbxPayment);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCheck";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -633,12 +626,11 @@
         private System.Windows.Forms.CheckBox chbxCredit;
         private System.Windows.Forms.CheckBox chbxCash;
         private System.Windows.Forms.CheckBox chbxDebit;
-        private System.Windows.Forms.TextBox txtTip;
-        private System.Windows.Forms.CheckBox chkTip;
         private System.Windows.Forms.Button btnRemoveItems;
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.Label lblDisplayItem;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Button btnRestart;
     }
 }

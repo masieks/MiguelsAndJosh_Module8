@@ -263,14 +263,10 @@ namespace MiguelsAndJosh_Module8
             else
                 addItem(tiramisuPrice, int.Parse(cbxTiramisu.Text), lblTiramisu.Text);
         }
-        private void tabMainMenu_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
-            lstOrderDisplay.Items.Clear();
+            this.Close();
         }
     }
 }

@@ -31,6 +31,7 @@
             this.tabBackground = new System.Windows.Forms.Panel();
             this.tabOrderDisplay = new System.Windows.Forms.TabControl();
             this.tabOrderBackground = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.lblDisplayItem = new System.Windows.Forms.Label();
@@ -145,7 +146,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCannoli = new System.Windows.Forms.Label();
             this.btnCannoli = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabBackground.SuspendLayout();
             this.tabOrderDisplay.SuspendLayout();
             this.tabOrderBackground.SuspendLayout();
@@ -173,7 +173,7 @@
             this.tabBackground.Controls.Add(this.tabMenu);
             this.tabBackground.Location = new System.Drawing.Point(12, 12);
             this.tabBackground.Name = "tabBackground";
-            this.tabBackground.Size = new System.Drawing.Size(1783, 1054);
+            this.tabBackground.Size = new System.Drawing.Size(1799, 1093);
             this.tabBackground.TabIndex = 2;
             // 
             // tabOrderDisplay
@@ -182,11 +182,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabOrderDisplay.Controls.Add(this.tabOrderBackground);
             this.tabOrderDisplay.Font = new System.Drawing.Font("Microsoft YaHei Light", 15.75F);
-            this.tabOrderDisplay.Location = new System.Drawing.Point(1325, 3);
+            this.tabOrderDisplay.Location = new System.Drawing.Point(1341, 3);
             this.tabOrderDisplay.Multiline = true;
             this.tabOrderDisplay.Name = "tabOrderDisplay";
             this.tabOrderDisplay.SelectedIndex = 0;
-            this.tabOrderDisplay.Size = new System.Drawing.Size(455, 970);
+            this.tabOrderDisplay.Size = new System.Drawing.Size(455, 1009);
             this.tabOrderDisplay.TabIndex = 1;
             // 
             // tabOrderBackground
@@ -203,9 +203,20 @@
             this.tabOrderBackground.Location = new System.Drawing.Point(4, 37);
             this.tabOrderBackground.Name = "tabOrderBackground";
             this.tabOrderBackground.Padding = new System.Windows.Forms.Padding(3);
-            this.tabOrderBackground.Size = new System.Drawing.Size(447, 929);
+            this.tabOrderBackground.Size = new System.Drawing.Size(447, 968);
             this.tabOrderBackground.TabIndex = 0;
             this.tabOrderBackground.Text = "Order";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(158, 728);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 73);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Clear All Items(s)";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // lblPrice
             // 
@@ -238,7 +249,7 @@
             // 
             this.btnRemoveItems.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRemoveItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveItems.Location = new System.Drawing.Point(8, 832);
+            this.btnRemoveItems.Location = new System.Drawing.Point(8, 728);
             this.btnRemoveItems.Name = "btnRemoveItems";
             this.btnRemoveItems.Size = new System.Drawing.Size(144, 73);
             this.btnRemoveItems.TabIndex = 2;
@@ -256,14 +267,14 @@
             this.lstOrderDisplay.ItemHeight = 25;
             this.lstOrderDisplay.Location = new System.Drawing.Point(8, 43);
             this.lstOrderDisplay.Name = "lstOrderDisplay";
-            this.lstOrderDisplay.Size = new System.Drawing.Size(433, 779);
+            this.lstOrderDisplay.Size = new System.Drawing.Size(433, 679);
             this.lstOrderDisplay.TabIndex = 1;
             // 
             // btnOrder
             // 
             this.btnOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrder.Location = new System.Drawing.Point(317, 832);
+            this.btnOrder.Location = new System.Drawing.Point(320, 728);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(124, 74);
             this.btnOrder.TabIndex = 0;
@@ -286,7 +297,7 @@
             this.tabMenu.Name = "tabMenu";
             this.tabMenu.Padding = new System.Drawing.Point(15, 3);
             this.tabMenu.SelectedIndex = 0;
-            this.tabMenu.Size = new System.Drawing.Size(1331, 970);
+            this.tabMenu.Size = new System.Drawing.Size(1347, 1009);
             this.tabMenu.TabIndex = 0;
             // 
             // tabMainMenu
@@ -302,17 +313,16 @@
             this.tabMainMenu.Location = new System.Drawing.Point(4, 37);
             this.tabMainMenu.Name = "tabMainMenu";
             this.tabMainMenu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainMenu.Size = new System.Drawing.Size(1323, 929);
+            this.tabMainMenu.Size = new System.Drawing.Size(1339, 968);
             this.tabMainMenu.TabIndex = 0;
             this.tabMainMenu.Text = "Main Menu";
-            this.tabMainMenu.Click += new System.EventHandler(this.tabMainMenu_Click);
             // 
             // lblClickInfo
             // 
             this.lblClickInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblClickInfo.AutoSize = true;
             this.lblClickInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClickInfo.Location = new System.Drawing.Point(236, 643);
+            this.lblClickInfo.Location = new System.Drawing.Point(255, 638);
             this.lblClickInfo.Name = "lblClickInfo";
             this.lblClickInfo.Size = new System.Drawing.Size(721, 111);
             this.lblClickInfo.TabIndex = 6;
@@ -380,7 +390,7 @@
             this.nudLimoncello.Location = new System.Drawing.Point(4, 37);
             this.nudLimoncello.Name = "nudLimoncello";
             this.nudLimoncello.Padding = new System.Windows.Forms.Padding(3);
-            this.nudLimoncello.Size = new System.Drawing.Size(1323, 929);
+            this.nudLimoncello.Size = new System.Drawing.Size(1339, 968);
             this.nudLimoncello.TabIndex = 1;
             this.nudLimoncello.Text = "Drinks";
             // 
@@ -806,7 +816,7 @@
             this.tabMainDishes.Location = new System.Drawing.Point(4, 37);
             this.tabMainDishes.Name = "tabMainDishes";
             this.tabMainDishes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMainDishes.Size = new System.Drawing.Size(1323, 929);
+            this.tabMainDishes.Size = new System.Drawing.Size(1339, 968);
             this.tabMainDishes.TabIndex = 2;
             this.tabMainDishes.Text = "Main Dishes";
             // 
@@ -1281,7 +1291,7 @@
             this.tabSalads.Controls.Add(this.gbxSalads);
             this.tabSalads.Location = new System.Drawing.Point(4, 37);
             this.tabSalads.Name = "tabSalads";
-            this.tabSalads.Size = new System.Drawing.Size(1323, 929);
+            this.tabSalads.Size = new System.Drawing.Size(1339, 968);
             this.tabSalads.TabIndex = 3;
             this.tabSalads.Text = "Salads";
             // 
@@ -1462,7 +1472,7 @@
             this.tabDesserts.Controls.Add(this.gbxDesserts);
             this.tabDesserts.Location = new System.Drawing.Point(4, 37);
             this.tabDesserts.Name = "tabDesserts";
-            this.tabDesserts.Size = new System.Drawing.Size(1323, 929);
+            this.tabDesserts.Size = new System.Drawing.Size(1339, 968);
             this.tabDesserts.TabIndex = 4;
             this.tabDesserts.Text = "Desserts";
             // 
@@ -1691,18 +1701,6 @@
             this.btnCannoli.UseVisualStyleBackColor = true;
             this.btnCannoli.Click += new System.EventHandler(this.btnCannoli_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(158, 832);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 73);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Clear All Items(s)";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1712,6 +1710,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1807, 989);
             this.Controls.Add(this.tabBackground);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Text = "Miguels & Josh ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

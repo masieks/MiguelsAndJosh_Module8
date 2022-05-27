@@ -17,7 +17,6 @@ namespace MiguelsAndJosh_Module8
         StreamWriter outFile;
         string filePath1 = "Reciept.txt";
         //Variables
-        int receipt = 0;
         const int SIZE = 10000;
         int count = 0;
         string filePath = "Order.txt";
@@ -93,6 +92,8 @@ namespace MiguelsAndJosh_Module8
                             btnRemoveItems.Enabled = false;
                             btnReturn.Enabled = false;
                             btnFinalOrder.Enabled = false;
+                            btnSaveChanges.Visible = true;
+                            btnRestart.Visible = true;
                             getFinalOrder(credit, debit, cash);
                         }
                     }
@@ -134,6 +135,8 @@ namespace MiguelsAndJosh_Module8
                             btnRemoveItems.Enabled = false;
                             btnReturn.Enabled = false;
                             btnFinalOrder.Enabled = false;
+                            btnSaveChanges.Visible = true;
+                            btnRestart.Visible = true;
                             getFinalOrder(credit, debit, cash);
                         }
                     }
@@ -151,6 +154,8 @@ namespace MiguelsAndJosh_Module8
                         btnRemoveItems.Enabled = false;
                         btnReturn.Enabled = false;
                         btnFinalOrder.Enabled = false;
+                        btnSaveChanges.Visible = true;
+                        btnRestart.Visible = true;
                         getFinalOrder(credit, debit, cash);
                     }
                 }
@@ -191,7 +196,9 @@ namespace MiguelsAndJosh_Module8
             double taxTotal = 0;
             double tip = 0;
             double grandTotal = 0;
+            int receipt = 0;
             const double TAXFORTOTAL = 9.5;
+            string dash = "------------------------------";
             lstCheck.Visible = true;
             receipt++;
 
@@ -236,13 +243,7 @@ namespace MiguelsAndJosh_Module8
             inFile.Close();
         }
 
-        private void chkTip_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkTip.Checked)
-                txtTip.Visible = true;
-            else
-                txtTip.Visible = false;
-        }
+   
 
         private void btnRemoveItems_Click(object sender, EventArgs e)
         {
@@ -252,11 +253,7 @@ namespace MiguelsAndJosh_Module8
                 lstOrder.Items.Remove(lstOrder.SelectedItems);
             }
         }
-        private void printRecipt()
-        {
-
-
-        }
+  
 
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
@@ -268,6 +265,12 @@ namespace MiguelsAndJosh_Module8
 
             }
             outFile.Close();
+            MessageBox.Show("Your reciept has been saved");
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }

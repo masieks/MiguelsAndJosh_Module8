@@ -47,7 +47,7 @@
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(1321, 779);
-            this.lblTitle.TabIndex = 1;
+            this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "Welcome to Delicioso E-Ristorante \r\n\r\n\r\n\r\n\r\n     Getting your Menu Ready!\r\n";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
