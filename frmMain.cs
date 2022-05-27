@@ -80,12 +80,19 @@ namespace MiguelsAndJosh_Module8
         //Remove Items Button
         private void btnRemoveItems_Click(object sender, EventArgs e)
         {
-            int x = 1;
-            if (lstOrderDisplay.SelectedIndex > -1)
+            for (int i = lstOrderDisplay.Items.Count; i <0; i--)
             {
-                lstOrderDisplay.Items.RemoveAt(lstOrderDisplay.SelectedIndex);
-                lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItems);
+                if (lstOrderDisplay.SelectedIndex == i)
+                {
+                    lstOrderDisplay.Items.RemoveAt(lstOrderDisplay.SelectedIndex);
+                    lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedItem);
+                     lstOrderDisplay.Items.Remove(lstOrderDisplay.SelectedIndex);
+                  
+
+                }
+
             }
+         
             
         }
 
@@ -109,7 +116,7 @@ namespace MiguelsAndJosh_Module8
         private void btnSpritz_Click(object sender, EventArgs e)
         {
             double spritzPrice = 9.99;
-            if (cbxRocca.Text == "")
+            if (cbxSpritz.Text == "")
                 MessageBox.Show("Please choose a Quantity");
             else
             {

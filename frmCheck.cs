@@ -14,6 +14,7 @@ namespace MiguelsAndJosh_Module8
     public partial class frmCheck : Form
     {
         //Variables
+        int receipt = 0;
         const int SIZE = 10000;
         int count = 0;
         string filePath = "Order.txt";
@@ -168,26 +169,13 @@ namespace MiguelsAndJosh_Module8
             double grandTotal = 0;
             const double TAXFORTOTAL = 9.5;
             lstCheck.Visible = true;
-            if (chkTip.Checked)
-            {
-                txtTip.Visible = true;
-                if (txtTip.Text == "")
-                {
-                    MessageBox.Show("You need to enter a tip. Uncheck the if you don't want to tip ");
-                }
-                else if (!double.TryParse(txtTip.Text, out tip))
-                {
-                    MessageBox.Show("Please enter the number you want to tip.");
-                }
-                else
-                    tip = double.Parse(txtTip.Text);
-            }
+            receipt++;
 
-
-
+            
+            lstCheck.Items.Add("Receipt#:" + receipt);
             DateTime dt = DateTime.Now;
-            DateTime ts = dt.Add(DateTime.Now.TimeOfDay);
-            lstCheck.Items.Add(ts.ToString());
+            string ts = (DateTime.Now.ToString("h:mm:ss tt"));
+            lstCheck.Items.Add(dt);
 
             inFile = new StreamReader(filePath); // READS
 
@@ -209,7 +197,9 @@ namespace MiguelsAndJosh_Module8
             lstCheck.Items.Add("Tip: \t" + tip.ToString("c"));
             grandTotal += taxTotal + total + tip;
             lstCheck.Items.Add("Grand Total:\t" + grandTotal.ToString("c"));
-            inFile.Close();          
+           
+            
+            inFile.Close();
         }
 
         private void chkTip_CheckedChanged(object sender, EventArgs e)
